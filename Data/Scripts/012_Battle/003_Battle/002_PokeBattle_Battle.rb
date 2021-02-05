@@ -652,6 +652,7 @@ class PokeBattle_Battle
     duration = (fixedDuration) ? 5 : -1
     if newWeather == PBWeather::GreatFlood # Duration for great flood
       duration = 15
+    end
     if duration>0 && user && user.itemActive?
       duration = BattleHandlers.triggerWeatherExtenderItem(user.item,
          @field.weather,duration,user,self)
@@ -782,5 +783,5 @@ class PokeBattle_Battle
   def pbReplaceAbilitySplash(battler)
     return if !PokeBattle_SceneConstants::USE_ABILITY_SPLASH
     @scene.pbReplaceAbilitySplash(battler)
-  end
+  end  
 end
