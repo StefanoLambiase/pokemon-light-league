@@ -717,6 +717,73 @@ ItemHandlers::UseOnPokemon.add(:CARBOS,proc { |item,pkmn,scene|
   next true
 })
 
+#--------------------
+# CUSTOM VITAMIN
+#--------------------
+
+ItemHandlers::UseOnPokemon.add(:SUPERPSSU,proc { |item,pkmn,scene|
+  if pbRaiseEffortValues(pkmn,PBStats::HP,255,false)==0
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbRefresh
+  scene.pbDisplay(_INTL("{1}'s HP increased to max.",pkmn.name))
+  pkmn.changeHappiness("vitamin")
+  next true
+})
+
+ItemHandlers::UseOnPokemon.add(:SUPERPROTEINA,proc { |item,pkmn,scene|
+  if pbRaiseEffortValues(pkmn,PBStats::ATTACK,255,false)==0
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbDisplay(_INTL("{1}'s Attack increased to max.",pkmn.name))
+  pkmn.changeHappiness("vitamin")
+  next true
+})
+
+ItemHandlers::UseOnPokemon.add(:SUPERFERRO,proc { |item,pkmn,scene|
+  if pbRaiseEffortValues(pkmn,PBStats::DEFENSE,255,false)==0
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbDisplay(_INTL("{1}'s Defense increased to max.",pkmn.name))
+  pkmn.changeHappiness("vitamin")
+  next true
+})
+
+ItemHandlers::UseOnPokemon.add(:SUPERCALCIO,proc { |item,pkmn,scene|
+  if pbRaiseEffortValues(pkmn,PBStats::SPATK,255,false)==0
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbDisplay(_INTL("{1}'s Special Attack increased to max.",pkmn.name))
+  pkmn.changeHappiness("vitamin")
+  next true
+})
+
+ItemHandlers::UseOnPokemon.add(:SUPERZINCO,proc { |item,pkmn,scene|
+  if pbRaiseEffortValues(pkmn,PBStats::SPDEF,255,false)==0
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbDisplay(_INTL("{1}'s Special Defense increased to max.",pkmn.name))
+  pkmn.changeHappiness("vitamin")
+  next true
+})
+
+ItemHandlers::UseOnPokemon.add(:SUPERCARBURANTE,proc { |item,pkmn,scene|
+  if pbRaiseEffortValues(pkmn,PBStats::SPEED,255,false)==0
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbDisplay(_INTL("{1}'s Speed increased to max.",pkmn.name))
+  pkmn.changeHappiness("vitamin")
+  next true
+})
+
+#--------------------------
+
 ItemHandlers::UseOnPokemon.add(:HEALTHWING,proc { |item,pkmn,scene|
   if pbRaiseEffortValues(pkmn,PBStats::HP,1,false)==0
     scene.pbDisplay(_INTL("It won't have any effect."))
