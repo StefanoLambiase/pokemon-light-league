@@ -2185,7 +2185,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:DROUGHT,
 
 BattleHandlers::AbilityOnSwitchIn.add(:SKYFALL,
   proc { |ability,battler,battle|
-    pbBattleWeatherAbility(PBWeather::Sun,battler,battle)
+    pbBattleWeatherAbility(PBWeather::GreatFlood,battler,battle)
   }
 )
 
