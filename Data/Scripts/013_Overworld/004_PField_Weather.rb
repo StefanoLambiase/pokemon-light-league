@@ -8,6 +8,7 @@ begin
     Sandstorm   = 5
     HeavyRain   = 6
     Sun = Sunny = 7
+    GreatFlood  = 9
 
     def PBFieldWeather.maxValue; return 7; end
   end
@@ -47,6 +48,7 @@ module RPG
       @weatherTypes[PBFieldWeather::Blizzard]  = [[], -16, 16, -4]
       @weatherTypes[PBFieldWeather::Sandstorm] = [[], -12,  4, -2]
       @weatherTypes[PBFieldWeather::Sun]       = nil
+      @weatherTypes[PBFieldWeather::GreatFlood]= [[], -24, 24, -4]
       @sprites = []
     end
 
@@ -233,6 +235,7 @@ module RPG
       when PBFieldWeather::Snow;      @viewport.tone.set(   @max/2,    @max/2,    @max/2,  0)
       when PBFieldWeather::Blizzard;  @viewport.tone.set( @max*3/4,  @max*3/4,   max*3/4,  0)
       when PBFieldWeather::Sandstorm; @viewport.tone.set(   @max/2,         0,   -@max/2,  0)
+      when PBFieldWeather::GreatFlood;@viewport.tone.set(-@max*6/4, -@max*6/4, -@max*6/4, 20)
       when PBFieldWeather::Sun
         @sun = @max if @sun!=@max && @sun!=-@max
         @sun = -@sun if @sunValue>@max || @sunValue<0
