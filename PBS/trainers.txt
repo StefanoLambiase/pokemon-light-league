@@ -225,7 +225,7 @@ Pokemon = BATITIV,12
 #
 #-------------------------------
 [RECLUTAMETRO,Giordano]
-Pokemon = WARTOTLE,14
+Pokemon = WARTORTLE,14
     Name = Circaeus
     Gender = female
     Ability = 2
@@ -251,7 +251,7 @@ Pokemon = BAGON,15
 #-------------------------------
 [VICE,Emiliano]
 Pokemon = SHARPEDO,15
-    Name = Comportamento
+    Name = Ribelle
     Gender = male
     Ability = 2
     IV = 3

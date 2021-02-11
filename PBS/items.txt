@@ -646,3 +646,31 @@
 631,NSOLARIZER,N-Solarizer,N-Solarizers,8,0,"A machine to fuse Necrozma, which needs light, and Solgaleo.",5,0,6,
 632,NLUNARIZER,N-Lunarizer,N-Lunarizers,8,0,"A machine to fuse Necrozma, which needs light, and Lunala.",5,0,6,
 633,MEGARING,Mega Ring,Mega Rings,8,0,"This ring contains an untold power that somehow enables Pokémon carrying Mega Stones to Mega Evolve.",0,0,6,
+#--------------------------------
+# CUSTOM ITEMS
+#--------------------------------
+634,PILLOLEDIGATTO,Pillole di Gatto,Pillole di Gatto,2,0,"Un medicinale usato da Gatto per contenere l'oscurità che lo possiede.",1,1,0,
+635,DARKSANDBALL,Dark Sandball,Dark Sandball,3,0,"Una Pokéball formidabile. È concepita per rafforzare al massimo il pokèmon catturato.",0,2,4,
+#--------------------------------
+636,PIASTRINA,Piastrina,Piastrine,1,750,"Simboleggia una vittoria nella competizione della lega della Luce. È una valuta per un certo negozio",0,0,0,
+637,PIASTRINAGOLD,Piastrina Gold,Piastrine Gold,8,0,"Simboleggia il raggiungimento di un grande obiettivo. 7 concedono l'accesso alla Lega.",0,0,0,
+#--------------------------------
+638,CROMOCOMETA,Cromocometa,Cromocomete,1,100000,"Frammento di una rarissima cometa. Usandola su un pokémon, questo diventa cromatico",1,0,0,
+639,TESSERACOMPETIZIONE,Tessera Competizione, Tessera Competizione,8,0,"È una documento di riconoscimento per tutti i partecipanti alla competizione della Lega.",0,0,0,
+640,INVITOLEGA,Invito della Lega,Invito della Lega,8,0,"Solo gli allenatori più potenti del mondo ricevono questo invito.",0,0,0,
+641,MALWARESANDMAN,Malware Sandman,Malware Sandman,1,0,"Un malware programmato da Gatto. Manda in overclock un certo pokémon al costo della sua stabilità. È molto pericoloso.",1,0,7,
+642,ZAMPADIKRICKETUNE,Zampa di Kricketune,Zampe di Kricketune,1,250,"Brandita dal pokémon giusto, lo evolve e diventa un'arma letale.",1,0,7,
+#--------------------------------
+643,SUPERCALCIO,Super-calcio,Super-calcio,2,100000,"Fornisce il massimo aumento dell'attacco speciale di un pokémon.",1,0,0,
+644,SUPERCARBURANTE,Super-carburante,Super-carburante,2,100000,"Fornisce il massimo aumento della velocità di un pokémon.",1,0,0,
+645,SUPERFERRO,Super-ferro,Super-ferro,2,100000,"Fornisce il massimo aumento della difesa di un pokémon.",1,0,0,
+646,SUPERPROTEINA,Super-proteina,Super-proteina,2,100000,"Fornisce il massimo aumento dell'attacco di un pokémon.",1,0,0,
+647,SUPERZINCO,Super-zinco,Super-zinco,2,100000,"Fornisce il massimo aumento della difesa speciale di un pokémon.",1,0,0,
+648,SUPERPSSU,PS-Max,PS-Max,2,100000,"Fornisce il massimo aumento degli HP di un pokémon.",1,0,0,
+#--------------------------------
+649,SPIRITORIGOGLIOSO,Sprito Rigoglioso,Sprito Rigoglioso,1,0,"Uno spirito rigoglioso accresce la competitività di un certo pokémon.",1,0,7,
+650,SPIRITOARDENTE,Sprito Ardente,Sprito Ardente,1,0,"Uno spirito ardente accende la competitività di un certo pokémon.",1,0,7,
+651,SPIRITOTEMPESTOSO,Sprito Tempestoso,Sprito Tempestoso,1,0,"Uno spirito tempestoso scatena la competitività di un certo pokémon.",1,0,7,
+#--------------------------------
+652,STRANAPIETRA,Strana Pietra,Strana Pietra,8,0,"Una strana pietra caduta dal cielo. Emana una aura misteriosa.",0,0,0,
+653,ADAMASFERA,Adamasfera,Adamasfera,8,0,"L'adamasfera di Dialga persa dal campione. Rievoca momenti del passato",0,0,0,
