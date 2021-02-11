@@ -469,3 +469,44 @@ Land
     CUBONE,11,14
     CUBONE,11,14
     CUBONE,11,14
+#------------------------------------------------------------------------
+#-------------- Wild encounters for Pokèmon Light League ----------------
+#------------------------------------------------------------------------
+096                     # Percorso 2
+25,10,10
+Land
+    STARLY,3,4          # 20%
+    STARLY,3,4          # 20%
+    GROWLITHE,3,5       # 10%
+    GROWLITHE,3,5       # 10%
+    GROWLITHE,3,5       # 10%
+    GROWLITHE,3,5       # 10%
+    POOCHYENA,5,6       # 5%
+    POOCHYENA,5,6       # 5%
+    POOCHYENA,5,6       # 4%
+    POOCHYENA,5,6       # 4%
+    POOCHYENA,5,6       # 1%
+    POOCHYENA,5,6       # 1%
+Water
+    MAGIKARP,10,12      # 60%
+    MARILL,16,20        # 30%
+    MARILL,16,20        # 5%
+    MARILL,16,20        # 4%
+    MARILL,16,20        # 1%
+#------------------------------------------------------------------------
+097                     # Percorso 3
+25,10,10
+Land
+    STARLY,5,9          # 20%
+    ZIGZAGOON,5,9       # 20%
+    METAPOD,6,9         # 10%
+    METAPOD,6,9         # 10%
+    METAPOD,6,9         # 10%
+    SHINX,7,10          # 10%
+    SHINX,7,10          # 5%
+    SHINX,7,10          # 5%
+    SHINX,7,10          # 4%
+    SHINX,7,10          # 4%
+    ZIGZAGOON,10,40     # 1%
+    ZIGZAGOON,10,40     # 1%
+
