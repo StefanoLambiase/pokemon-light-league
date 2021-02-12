@@ -51,7 +51,7 @@ class PokeBattle_Battle
       when PBWeather::ShadowSky
         pbDisplay(_INTL("The shadow sky faded."))
       when PBWeather::GreatFlood
-        pbDisplay(_INTL("The sky is calm, for."))
+        pbDisplay(_INTL("The sky is calm, for now."))
       end
       @field.weather = PBWeather::None
       # Check for form changes caused by the weather changing
@@ -99,9 +99,10 @@ class PokeBattle_Battle
         b.pbItemHPHealCheck
         b.pbFaint if b.fainted?
       when PBWeather::GreatFlood
-        next if true
+        next if !b.takesGreatFloodDamage?
         pbDisplay(_INTL("{1} will not survive the end of the world!",b.pbThis))
         @scene.pbDamageAnimation(b)
+        @scene.pbAnimation(getConst(PBMoves,:AQUARING),b,b)
         b.pbReduceHP(b.totalhp/5,false)
         b.pbItemHPHealCheck
         b.pbFaint if b.fainted?

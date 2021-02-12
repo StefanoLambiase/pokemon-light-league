@@ -21,7 +21,7 @@ begin
       when HeavyRain;   return "HeavyRain"
       when StrongWinds; return "StrongWinds"
       when ShadowSky;   return "ShadowSky"
-      when GreatFlood;  return "HeavyRain"
+      when GreatFlood;  return "Rain"
       end
       return nil
     end

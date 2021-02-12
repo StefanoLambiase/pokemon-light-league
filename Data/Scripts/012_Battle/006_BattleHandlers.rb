@@ -596,7 +596,8 @@ def pbBattleWeatherAbility(weather,battler,battle,ignorePrimal=false)
   return if !ignorePrimal &&
      (battle.field.weather==PBWeather::HarshSun ||
      battle.field.weather==PBWeather::HeavyRain ||
-     battle.field.weather==PBWeather::StrongWinds)
+     battle.field.weather==PBWeather::StrongWinds ||
+     battle.field.weather==PBWeather::GreatFlood)
   return if battle.field.weather==weather
   battle.pbShowAbilitySplash(battler)
   if !PokeBattle_SceneConstants::USE_ABILITY_SPLASH
@@ -606,7 +607,8 @@ def pbBattleWeatherAbility(weather,battler,battle,ignorePrimal=false)
   fixedDuration = true if NEWEST_BATTLE_MECHANICS &&
                           weather!=PBWeather::HarshSun &&
                           weather!=PBWeather::HeavyRain &&
-                          weather!=PBWeather::StrongWinds
+                          weather!=PBWeather::StrongWinds &&
+                          weather!=PBWeather::GreatFlood
   battle.pbStartWeather(battler,weather,fixedDuration)
   # NOTE: The ability splash is hidden again in def pbStartWeather.
 end
