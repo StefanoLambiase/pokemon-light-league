@@ -1189,3 +1189,16 @@ ItemHandlers::UseOnPokemon.add(:ABILITYCAPSULE,proc { |item,pkmn,scene|
   end
   next false
 })
+
+#--------------------
+# CUSTOM ITEMS
+#--------------------
+ItemHandlers::UseOnPokemon.add(:CROMOCOMETA,proc { |item,pkmn,scene|
+  if pkmn.isShiny? || pkmn.shadowPokemon?
+    scene.pbDisplay(_INTL("It won't have any effect."))
+    next false
+  end
+  scene.pbDisplay(_INTL("{1}'s skin has changed!",pkmn.name))
+  pkmn.makeShiny
+  next true
+})
