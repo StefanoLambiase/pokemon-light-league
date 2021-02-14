@@ -101,8 +101,8 @@ class PokeBattle_Battle
       when PBWeather::GreatFlood
         next if !b.takesGreatFloodDamage?
         pbDisplay(_INTL("{1} will not survive the end of the world!",b.pbThis))
-        @scene.pbDamageAnimation(b)
         @scene.pbAnimation(getConst(PBMoves,:AQUARING),b,b)
+        @scene.pbDamageAnimation(b)
         b.pbReduceHP(b.totalhp/5,false)
         b.pbItemHPHealCheck
         b.pbFaint if b.fainted?

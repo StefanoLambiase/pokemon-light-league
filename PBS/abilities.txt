@@ -236,4 +236,6 @@
 #-------------------------------
 # Custom abilties
 #-------------------------------
-234,SKYFALL,Skyfall,"Makes the sky throw massive drops of water on the world."
+234,SKYFALL,Skyfall,"Genera una pioggia di bombe d'acqua."
+235,OVERCLOCK,Overclock,"Surriscalda la CPU ma aumenta la velocità"
+236,FLAMESWORD,Flame Sword,"Rispedisce indietro le mosse tipo Fuoco."

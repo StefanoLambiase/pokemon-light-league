@@ -1230,6 +1230,12 @@ BattleHandlers::DamageCalcTargetAbility.add(:WATERBUBBLE,
   }
 )
 
+BattleHandlers::DamageCalcTargetAbility.add(:FLAMESWORD,
+  proc { |ability,user,target,move,mults,baseDmg,type|
+    mults[BASE_DMG_MULT] /= 4 if isConst?(type,PBTypes,:FIRE)
+  }
+)
+
 #===============================================================================
 # DamageCalcTargetAbilityNonIgnorable handlers
 #===============================================================================
@@ -1619,6 +1625,23 @@ BattleHandlers::TargetAbilityOnHit.add(:WEAKARMOR,
     target.pbRaiseStatStageByAbility(PBStats::SPEED,
        (NEWEST_BATTLE_MECHANICS) ? 2 : 1,target,false)
     battle.pbHideAbilitySplash(target)
+  }
+)
+
+#-------------------------------
+# CUSTOM ABILITIES
+#-------------------------------
+BattleHandlers::TargetAbilityOnHit.add(:FLAMESWORD,
+  proc { |ability,user,target,move,battle|
+
+    if user.takesIndirectDamage? && isConst?(move.type,PBTypes,:FIRE)
+      battle.pbShowAbilitySplash(target)
+      battle.pbAnimation(getConst(PBMoves,:AIRCUTTER),target,user)
+      battle.scene.pbDamageAnimation(user)
+      user.pbReduceHP(move.baseDamage/2,false)
+      battle.pbHideAbilitySplash(target)
+
+    end
   }
 )
 
@@ -2395,6 +2418,19 @@ BattleHandlers::AbilityOnSwitchIn.add(:UNNERVE,
   proc { |ability,battler,battle|
     battle.pbShowAbilitySplash(battler)
     battle.pbDisplay(_INTL("{1} is too nervous to eat Berries!",battler.pbOpposingTeam))
+    battle.pbHideAbilitySplash(battler)
+  }
+)
+
+#--------------------------
+# CUSTOM ABILITIES
+#--------------------------
+BattleHandlers::AbilityOnSwitchIn.add(:OVERCLOCK,
+  proc { |ability,battler,battle|
+    battle.pbShowAbilitySplash(battler)
+    battler.pbBurn()
+    battler.pbRaiseStatStageByAbility(PBStats::SPEED,1,battler)
+    battle.pbDisplay(_INTL("{1} is on fire!",battler.pbThis))
     battle.pbHideAbilitySplash(battler)
   }
 )
