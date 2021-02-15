@@ -3746,3 +3746,54 @@ class PokeBattle_Move_0FF < PokeBattle_WeatherMove
     @weatherType = PBWeather::Sun
   end
 end
+
+#--------------------------------------------------------------------------
+#                               CUSTOM MOVES
+#--------------------------------------------------------------------------
+
+#===============================================================================
+# De-evolves a pokémon. (Roar of time)
+#===============================================================================
+class PokeBattle_Move_FFF < PokeBattle_Move
+
+  def pbEffectGeneral(user)
+    user.effects[PBEffects::HyperBeam] = 2
+    user.currentMove = @id
+  end
+
+  def pbEffectAgainstTarget(user,target)      
+    prevForm = PBEvolution.pbGetPreviousForm(target.species)
+    newPkmn = pbNewPkmn(prevForm,target.level)
+
+    idxParty = target.pokemonIndex
+    lifeLost = (target.totalhp.to_f-target.hp)/target.totalhp
+    oldName = target.pbThis
+
+
+    target.pbInitPokemon(newPkmn,idxParty)
+    target.pbUpdate(true)
+    target.pbReduceHP(lifeLost*target.totalhp,anim=false,registerDamage=false,anyAnim=false)
+    target.pbReduceHP(0,anim=false,registerDamage=false,anyAnim=true)
+
+    if target.hp > 0
+      #Animation
+      name = target.pbThis
+      @battle.pbDisplay(_INTL("Che succede a {1}?",oldName))
+      @battle.scene.pbAnimation(getConst(PBMoves,:CHARGE),target,user)
+      @battle.scene.pbChangePokemon(target,newPkmn)
+      @battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
+    end
+  end
+  
+  def pbShowAnimation(id,user,targets,hitNum=0,showAnimation=true)
+    super
+    #name = targets[0].pbThis
+    #@battle.pbDisplay(_INTL("Che succede a {1}?",name))
+    #@battle.scene.pbAnimation(getConst(PBMoves,:CHARGE),targets[0],user)
+    #prevForm = PBEvolution.pbGetPreviousForm(targets[0].species)
+    #newPkmn = pbNewPkmn(prevForm,targets[0].level)
+    #@battle.scene.pbChangePokemon(targets[0],newPkmn)
+    #@battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
+  end
+
+end

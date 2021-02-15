@@ -125,10 +125,10 @@ Pokemon = BLASTOISE,63
 #
 #-------------------------------
 [ENGINEER,Johnny Debugger]
-Pokemon = KYOGRE,50
+Pokemon = DIALGA,50
     Ability = 1
     Nature = MODEST
-    Moves = TACKLE,FLAMETHROWER,,
+    Moves = ROAROFTIME,,,
 #-------------------------------
 #
 # Percorso 1 ------------------------------------------------------
