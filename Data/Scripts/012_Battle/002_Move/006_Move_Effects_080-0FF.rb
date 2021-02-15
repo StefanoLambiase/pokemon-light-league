@@ -3752,7 +3752,7 @@ end
 #--------------------------------------------------------------------------
 
 #===============================================================================
-# De-evolves a pokémon. (Roar of time)
+# De-evolves a pokémon. ()
 #===============================================================================
 class PokeBattle_Move_FFF < PokeBattle_Move
 
@@ -3763,7 +3763,10 @@ class PokeBattle_Move_FFF < PokeBattle_Move
 
   def pbEffectAgainstTarget(user,target)      
     prevForm = PBEvolution.pbGetPreviousForm(target.species)
+    
     newPkmn = pbNewPkmn(prevForm,target.level)
+    oldPkmn = target.pokemon
+    newPkmn.genderflag = oldPkmn.genderflag
 
     idxParty = target.pokemonIndex
     lifeLost = (target.totalhp.to_f-target.hp)/target.totalhp
@@ -3774,15 +3777,20 @@ class PokeBattle_Move_FFF < PokeBattle_Move
     target.pbUpdate(true)
     target.pbReduceHP(lifeLost*target.totalhp,anim=false,registerDamage=false,anyAnim=false)
     target.pbReduceHP(0,anim=false,registerDamage=false,anyAnim=true)
+    target.pbInitPokemon(oldPkmn,idxParty)
+    target.species = newPkmn.species
+
 
     if target.hp > 0
       #Animation
       name = target.pbThis
       @battle.pbDisplay(_INTL("Che succede a {1}?",oldName))
       @battle.scene.pbAnimation(getConst(PBMoves,:CHARGE),target,user)
+      @battle.scene.pbAnimation(getConst(PBMoves,:TRANSFORM),target,user)
       @battle.scene.pbChangePokemon(target,newPkmn)
       @battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
     end
+
   end
   
   def pbShowAnimation(id,user,targets,hitNum=0,showAnimation=true)
