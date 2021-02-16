@@ -3777,7 +3777,10 @@ class PokeBattle_Move_FFF < PokeBattle_Move
     target.pbUpdate(true)
     target.pbReduceHP(lifeLost*target.totalhp,anim=false,registerDamage=false,anyAnim=false)
     target.pbReduceHP(0,anim=false,registerDamage=false,anyAnim=true)
-    target.pbInitPokemon(oldPkmn,idxParty)
+    #target.pbInitPokemon(oldPkmn,idxParty)
+    if !target.effects[PBEffects::DeEvolve]
+      target.effects[PBEffects::DeEvolve] = oldPkmn
+    end
     target.species = newPkmn.species
 
 

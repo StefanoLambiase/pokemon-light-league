@@ -226,6 +226,15 @@ class PokeBattle_Battle
   def pbRecallAndReplace(idxBattler,idxParty,randomReplacement=false,batonPass=false)
     @scene.pbRecall(idxBattler) if !@battlers[idxBattler].fainted?
     @battlers[idxBattler].pbAbilitiesOnSwitchOut   # Inc. primordial weather check
+    # Checks if it's de-evolved
+    battler = @battlers[idxBattler]
+    if battler.effects[PBEffects::DeEvolve] 
+      oldHP = battler.pokemon.hp
+      pkmn = battler.effects[PBEffects::DeEvolve]
+      battler.pbInitPokemon(pkmn,idxParty)
+      pkmn.hp = oldHP
+      battler.effects[PBEffects::DeEvolve] = nil
+    end
     @scene.pbShowPartyLineup(idxBattler&1) if pbSideSize(idxBattler)==1
     pbMessagesOnReplace(idxBattler,idxParty) if !randomReplacement
     pbReplace(idxBattler,idxParty,batonPass)
