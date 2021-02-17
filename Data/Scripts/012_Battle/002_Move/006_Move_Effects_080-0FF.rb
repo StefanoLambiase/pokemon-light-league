@@ -3752,7 +3752,62 @@ end
 #--------------------------------------------------------------------------
 
 #===============================================================================
-# De-evolves a pokémon. ()
+# Kicks away the pokèmon before damage. (Spacial rend)
+#===============================================================================
+class PokeBattle_Move_FFE < PokeBattle_Move
+  def ignoresSubstitute?(user); return true; end
+
+  def pbFailsAgainstTarget?(user,target)
+    if @battle.trainerBattle?
+      canSwitch = false
+      @battle.eachInTeamFromBattlerIndex(target.index) do |_pkmn,i|
+        next if !@battle.pbCanSwitchLax?(target.index,i)
+        canSwitch = true
+        break
+      end
+      if !canSwitch
+        @battle.pbDisplay(_INTL("But it failed!"))
+        return true
+      end
+    end
+    return false
+  end
+
+  def pbEffectGeneral(user)
+    @battle.decision = 3 if @battle.wildBattle?   # Escaped from battle
+  end
+
+  def pbInitialEffect(user,targets,numHits)
+    switchedBattlers = []
+    return if @battle.wildBattle?
+    return if user.fainted? #|| numHits==0
+    roarSwitched = []
+    targets.each do |b|
+      next if b.fainted? || b.damageState.unaffected || switchedBattlers.include?(b.index)
+      newPkmn = @battle.pbGetReplacementPokemonIndex(b.index,true)   # Random
+      next if newPkmn<0
+      @battle.scene.pbAnimation(getConst(PBMoves,:DETECT),user,targets[0])
+      @battle.pbRecallAndReplace(b.index, newPkmn, true)
+      @battle.pbDisplay(_INTL("{1} viene teletrasporato via da Palkia!",b.pbThis))
+      @battle.pbClearChoice(b.index)   # Replacement Pokémon does nothing this round
+      switchedBattlers.push(b.index)
+      roarSwitched.push(b.index)
+      #@target = @battle.battlers[b.index]
+      user.pbSuccessCheckAgainstTarget(self,user,targets[0]) # Updates the damage calculation on the new Target
+    end
+    if roarSwitched.length>0
+      @battle.moldBreaker = false if roarSwitched.include?(user.index)
+      @battle.pbPriority(true).each do |b|
+        b.pbEffectsOnSwitchIn(true) if roarSwitched.include?(b.index)
+      end
+    end
+  end  
+end
+
+
+
+#===============================================================================
+# De-evolves a pokémon. (Roar of time)
 #===============================================================================
 class PokeBattle_Move_FFF < PokeBattle_Move
 
