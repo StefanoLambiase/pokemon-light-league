@@ -128,7 +128,7 @@ Pokemon = BLASTOISE,63
 Pokemon = PALKIA,50
     Ability = 1
     Nature = MODEST
-    Moves = SPACIALREND,,,
+    Moves = BUGBITE,,,
 #-------------------------------
 #
 # Percorso 1 ------------------------------------------------------

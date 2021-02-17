@@ -104,7 +104,7 @@ class PokeBattle_Battle
   def pbUseItemOnBattler(item,idxBattler,userBattler)
     trainerName = pbGetOwnerName(userBattler.index)
     pbUseItemMessage(item,trainerName)
-    idxBattler = userBattler.index if idxBattler<0
+    idxBattler = userBattler.index if idxBattler<0 || !@battlers[idxBattler]
     battler = @battlers[idxBattler]
     ch = @choices[userBattler.index]
     if ItemHandlers.triggerCanUseInBattle(item,battler.pokemon,battler,ch[3],true,self,@scene,false)

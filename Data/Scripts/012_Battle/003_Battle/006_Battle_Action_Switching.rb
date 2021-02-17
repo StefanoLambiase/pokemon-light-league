@@ -228,7 +228,7 @@ class PokeBattle_Battle
     @battlers[idxBattler].pbAbilitiesOnSwitchOut   # Inc. primordial weather check
     # Checks if it's de-evolved
     battler = @battlers[idxBattler]
-    if battler.effects[PBEffects::DeEvolve] 
+    if battler.effects[PBEffects::DeEvolve]
       oldHP = battler.pokemon.hp
       pkmn = battler.effects[PBEffects::DeEvolve]
       battler.pbInitPokemon(pkmn,idxParty)

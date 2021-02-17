@@ -649,7 +649,7 @@
 #--------------------------------
 # CUSTOM ITEMS
 #--------------------------------
-634,PILLOLEDIGATTO,Pillole di Gatto,Pillole di Gatto,2,0,"Un medicinale usato da Gatto per contenere l'oscurità che lo possiede.",1,1,0,
+634,PILLOLEDIGATTO,Pillole di Gatto,Pillole di Gatto,2,0,"Un medicinale usato da Gatto per contenere l'oscurità che lo possiede.",0,3,0,
 635,DARKSANDBALL,Dark Sandball,Dark Sandball,3,0,"Una Pokéball formidabile. È concepita per rafforzare al massimo il pokèmon catturato.",0,4,4,
 #--------------------------------
 636,PIASTRINA,Piastrina,Piastrine,1,750,"Simboleggia una vittoria nella competizione della lega della Luce. È una valuta per un certo negozio",0,0,0,
