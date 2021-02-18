@@ -55,6 +55,13 @@ class PokeBattle_Battler
     @battle.pbDisplayBrief(_INTL("{1} fainted!",pbThis)) if showMessage
     PBDebug.log("[Pokémon fainted] #{pbThis} (#{@index})") if !showMessage
     @battle.scene.pbFaintBattler(self)
+    # Checks if it's de-evolved
+    if @effects[PBEffects::DeEvolve] 
+      pkmn = @effects[PBEffects::DeEvolve]
+      pkmn.hp = 0
+      pbInitPokemon(pkmn,@pokemonIndex)
+      @effects[PBEffects::DeEvolve] = nil
+    end
     pbInitEffects(false)
     # Reset status
     self.status      = PBStatuses::NONE

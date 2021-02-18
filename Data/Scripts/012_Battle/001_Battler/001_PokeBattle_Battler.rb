@@ -519,6 +519,12 @@ class PokeBattle_Battler
     return true
   end
 
+  def takesGreatFloodDamage?
+    return false if !takesIndirectDamage?
+    return false if hasActiveAbility?(:SKYFALL)
+    return true
+  end
+
   def takesShadowSkyDamage?
     return false if fainted?
     return false if shadowPokemon?

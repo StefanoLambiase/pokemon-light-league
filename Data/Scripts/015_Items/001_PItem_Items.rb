@@ -528,7 +528,7 @@ def pbRaiseHappinessAndLowerEV(pkmn,scene,ev,messages)
     pkmn.changeHappiness("evberry")
   end
   if e
-    pkmn.ev[ev] -= 10
+    pkmn.ev[ev] -= 255
     pkmn.ev[ev] = 0 if pkmn.ev[ev]<0
     pkmn.calcStats
   end

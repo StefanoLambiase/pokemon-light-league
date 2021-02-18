@@ -675,3 +675,29 @@ ItemHandlers::BattleUseOnBattler.add(:DIREHIT3,proc { |item,battler,scene|
   scene.pbDisplay(_INTL("{1} is getting pumped!",battler.pbThis))
   battler.pokemon.changeHappiness("battleitem")
 })
+
+#--------------------------------
+# CUSTOM ITEMS
+#--------------------------------
+ItemHandlers::BattleUseOnBattler.add(:PILLOLEDIGATTO,proc { |item,battler,scene|
+  dark = getID(PBTypes,:DARK)
+  norm = getID(PBTypes,:NORMAL)
+
+  changed = false
+  if battler.type1 == dark
+    battler.type1 = norm
+    changed = true
+  end
+  if battler.type2 == dark
+    battler.type2 = norm
+    changed = true
+  end
+  if battler.type1 == battler.type2
+    battler.type2 = 0
+  end
+  if changed
+    scene.pbDisplay(_INTL("La natura oscura di {1} è stata repressa!",battler.pbThis))
+  else
+    scene.pbDisplay(_INTL("Non ha avuto alcun effetto.",battler.pbThis))
+  end
+})

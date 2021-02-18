@@ -3746,3 +3746,120 @@ class PokeBattle_Move_0FF < PokeBattle_WeatherMove
     @weatherType = PBWeather::Sun
   end
 end
+
+#--------------------------------------------------------------------------
+#                               CUSTOM MOVES
+#--------------------------------------------------------------------------
+
+#===============================================================================
+# Kicks away the pokèmon before damage. (Spacial rend)
+#===============================================================================
+class PokeBattle_Move_FFE < PokeBattle_Move
+  def ignoresSubstitute?(user); return true; end
+
+  def pbFailsAgainstTarget?(user,target)
+    if @battle.trainerBattle?
+      canSwitch = false
+      @battle.eachInTeamFromBattlerIndex(target.index) do |_pkmn,i|
+        next if !@battle.pbCanSwitchLax?(target.index,i)
+        canSwitch = true
+        break
+      end
+      if !canSwitch
+        @battle.pbDisplay(_INTL("But it failed!"))
+        return true
+      end
+    end
+    return false
+  end
+
+  def pbEffectGeneral(user)
+    @battle.decision = 3 if @battle.wildBattle?   # Escaped from battle
+  end
+
+  def pbInitialEffect(user,targets,numHits)
+    switchedBattlers = []
+    return if @battle.wildBattle?
+    return if user.fainted? #|| numHits==0
+    roarSwitched = []
+    targets.each do |b|
+      next if b.fainted? || b.damageState.unaffected || switchedBattlers.include?(b.index)
+      newPkmn = @battle.pbGetReplacementPokemonIndex(b.index,true)   # Random
+      next if newPkmn<0
+      @battle.scene.pbAnimation(getConst(PBMoves,:DETECT),user,targets[0])
+      @battle.pbRecallAndReplace(b.index, newPkmn, true)
+      @battle.pbDisplay(_INTL("{1} viene teletrasporato via da Palkia!",b.pbThis))
+      @battle.pbClearChoice(b.index)   # Replacement Pokémon does nothing this round
+      switchedBattlers.push(b.index)
+      roarSwitched.push(b.index)
+      #@target = @battle.battlers[b.index]
+      user.pbSuccessCheckAgainstTarget(self,user,targets[0]) # Updates the damage calculation on the new Target
+    end
+    if roarSwitched.length>0
+      @battle.moldBreaker = false if roarSwitched.include?(user.index)
+      @battle.pbPriority(true).each do |b|
+        b.pbEffectsOnSwitchIn(true) if roarSwitched.include?(b.index)
+      end
+    end
+  end  
+end
+
+
+
+#===============================================================================
+# De-evolves a pokémon. (Roar of time)
+#===============================================================================
+class PokeBattle_Move_FFF < PokeBattle_Move
+
+  def pbEffectGeneral(user)
+    user.effects[PBEffects::HyperBeam] = 2
+    user.currentMove = @id
+  end
+
+  def pbEffectAgainstTarget(user,target)      
+    prevForm = PBEvolution.pbGetPreviousForm(target.species)
+    
+    newPkmn = pbNewPkmn(prevForm,target.level)
+    oldPkmn = target.pokemon
+    newPkmn.genderflag = oldPkmn.genderflag
+
+    idxParty = target.pokemonIndex
+    lifeLost = (target.totalhp.to_f-target.hp)/target.totalhp
+    oldName = target.pbThis
+
+
+    target.pbInitPokemon(newPkmn,idxParty)
+    target.pbUpdate(true)
+    target.pbReduceHP(lifeLost*target.totalhp,anim=false,registerDamage=false,anyAnim=false)
+    target.pbReduceHP(0,anim=false,registerDamage=false,anyAnim=true)
+    #target.pbInitPokemon(oldPkmn,idxParty)
+    if !target.effects[PBEffects::DeEvolve]
+      target.effects[PBEffects::DeEvolve] = oldPkmn
+    end
+    target.species = newPkmn.species
+
+
+    if target.hp > 0
+      #Animation
+      name = target.pbThis
+      @battle.pbDisplay(_INTL("Che succede a {1}?",oldName))
+      @battle.scene.pbAnimation(getConst(PBMoves,:CHARGE),target,user)
+      @battle.scene.pbAnimation(getConst(PBMoves,:TRANSFORM),target,user)
+      @battle.scene.pbChangePokemon(target,newPkmn)
+      @battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
+    end
+
+  end
+  
+  def pbShowAnimation(id,user,targets,hitNum=0,showAnimation=true)
+    super
+    #name = targets[0].pbThis
+    #@battle.pbDisplay(_INTL("Che succede a {1}?",name))
+    #@battle.scene.pbAnimation(getConst(PBMoves,:CHARGE),targets[0],user)
+    #prevForm = PBEvolution.pbGetPreviousForm(targets[0].species)
+    #newPkmn = pbNewPkmn(prevForm,targets[0].level)
+    #@battle.scene.pbChangePokemon(targets[0],newPkmn)
+    #@battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
+  end
+
+end

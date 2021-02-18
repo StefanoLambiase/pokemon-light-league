@@ -290,7 +290,7 @@ class PokeBattle_Move
         BattleHandlers.triggerDamageCalcTargetAllyAbility(b.ability,
            user,target,self,multipliers,baseDmg,type)
       end
-    end
+    end    
     # Item effects that alter damage
     if user.itemActive?
       BattleHandlers.triggerDamageCalcUserItem(user.item,
@@ -418,7 +418,7 @@ class PokeBattle_Move
         multipliers[FINAL_DMG_MULT] *= 1.5
       end
     end
-    # Type effectiveness
+    # Type effectiveness   
     multipliers[FINAL_DMG_MULT] *= target.damageState.typeMod.to_f/PBTypeEffectiveness::NORMAL_EFFECTIVE
     # Burn
     if user.status==PBStatuses::BURN && physicalMove? && damageReducedByBurn? &&

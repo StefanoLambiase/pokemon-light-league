@@ -50,6 +50,8 @@ class PokeBattle_Battle
         pbDisplay(_INTL("The hail stopped."))
       when PBWeather::ShadowSky
         pbDisplay(_INTL("The shadow sky faded."))
+      when PBWeather::GreatFlood
+        pbDisplay(_INTL("The sky is calm, for now."))
       end
       @field.weather = PBWeather::None
       # Check for form changes caused by the weather changing
@@ -68,7 +70,8 @@ class PokeBattle_Battle
 #    when PBWeather::HarshSun;    pbDisplay(_INTL("The sunlight is extremely harsh."))
 #    when PBWeather::HeavyRain;   pbDisplay(_INTL("It is raining heavily."))
 #    when PBWeather::StrongWinds; pbDisplay(_INTL("The wind is strong."))
-    when PBWeather::ShadowSky;   pbDisplay(_INTL("The shadow sky continues."));
+    when PBWeather::ShadowSky;   pbDisplay(_INTL("The shadow sky continues."))
+    when PBWeather::GreatFlood;  pbDisplay(_INTL("It's falling tears like water bombs!"))
     end
     # Effects due to weather
     curWeather = pbWeather
@@ -93,6 +96,14 @@ class PokeBattle_Battle
         pbDisplay(_INTL("{1} is buffeted by the hail!",b.pbThis))
         @scene.pbDamageAnimation(b)
         b.pbReduceHP(b.totalhp/16,false)
+        b.pbItemHPHealCheck
+        b.pbFaint if b.fainted?
+      when PBWeather::GreatFlood
+        next if !b.takesGreatFloodDamage?
+        pbDisplay(_INTL("{1} will not survive the end of the world!",b.pbThis))
+        @scene.pbAnimation(getConst(PBMoves,:AQUARING),b,b)
+        @scene.pbDamageAnimation(b)
+        b.pbReduceHP(b.totalhp/5,false)
         b.pbItemHPHealCheck
         b.pbFaint if b.fainted?
       when PBWeather::ShadowSky

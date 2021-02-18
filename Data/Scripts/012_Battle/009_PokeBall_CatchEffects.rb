@@ -24,7 +24,8 @@ $BallTypes = {
   22 => :MOONBALL,
   23 => :SPORTBALL,
   24 => :DREAMBALL,
-  25 => :BEASTBALL
+  25 => :BEASTBALL,
+  26 => :DARKSANDBALL
 }
 
 def pbBallTypeToItem(balltype)
@@ -83,6 +84,13 @@ end
 # IsUnconditional
 #===============================================================================
 BallHandlers::IsUnconditional.add(:MASTERBALL,proc { |ball,battle,battler|
+  next true
+})
+
+#-------------------------------
+# CUSTOM POKEBALLS
+#-------------------------------
+BallHandlers::IsUnconditional.add(:DARKSANDBALL,proc { |ball,battle,battler|  
   next true
 })
 
@@ -241,3 +249,17 @@ BallHandlers::OnCatch.add(:HEALBALL,proc { |ball,battle,pkmn|
 BallHandlers::OnCatch.add(:FRIENDBALL,proc { |ball,battle,pkmn|
   pkmn.happiness = 200
 })
+
+#-------------------------------
+# CUSTOM POKEBALLS
+#-------------------------------
+BallHandlers::OnCatch.add(:DARKSANDBALL,proc { |ball,battle,pkmn|
+  for i in 0...pkmn.iv.length
+    pkmn.iv[i] = 31
+  end
+
+  if !pkmn.hasMove?(PBMoves::DARKVOID)
+    pkmn.pbLearnMove(PBMoves::DARKVOID)
+  end
+})
+

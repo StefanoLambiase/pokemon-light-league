@@ -117,6 +117,7 @@ begin
     WaterSport          = 111
     WeightChange        = 112
     Yawn                = 113
+    DeEvolve            = 114
 
     #===========================================================================
     # These effects apply to a battler position

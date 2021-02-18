@@ -8,7 +8,7 @@ $ResizeFactor     = 1.0
 $ResizeFactorMul  = 100
 $ResizeOffsetX    = 0
 $ResizeOffsetY    = 0
-$ResizeFactorSet  = false
+$ResizeFactorSet  = true
 $HaveResizeBorder = false
 
 if true   # Disables using Alt+Enter to go fullscreen

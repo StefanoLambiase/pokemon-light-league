@@ -952,6 +952,23 @@ def pbDisplayCoinsWindow(msgwindow,goldwindow)
   return coinwindow
 end
 
+def pbDisplayPiastrineWindow(msgwindow)
+  moneyString=$PokemonBag.pbQuantity(:PIASTRINA)
+  goldwindow=Window_AdvancedTextPokemon.new(_INTL("Piastrine:\n<ar>{1}</ar>",moneyString))
+  goldwindow.setSkin("Graphics/Windowskins/goldskin")
+  goldwindow.resizeToFit(goldwindow.text,Graphics.width)
+  goldwindow.width=160 if goldwindow.width<=160
+  if msgwindow.y==0
+    goldwindow.y=Graphics.height-goldwindow.height
+  else
+    goldwindow.y=0
+  end
+  goldwindow.viewport=msgwindow.viewport
+  goldwindow.z=msgwindow.z
+  return goldwindow
+end
+
+
 
 
 #===============================================================================

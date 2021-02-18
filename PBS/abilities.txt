@@ -233,3 +233,9 @@
 231,SHADOWSHIELD,Shadow Shield,"Resists damage while its HP is full."
 232,PRISMARMOR,Prism Armor,"Reduces damage from super-effective attacks."
 233,NEUROFORCE,Neuroforce,"Powers up moves that are super-effective."
+#-------------------------------
+# Custom abilties
+#-------------------------------
+234,SKYFALL,Skyfall,"Genera una pioggia di bombe d'acqua."
+235,OVERCLOCK,Overclock,"Surriscalda la CPU ma aumenta la velocità"
+236,FLAMESWORD,Flame Sword,"Rispedisce indietro le mosse tipo Fuoco."

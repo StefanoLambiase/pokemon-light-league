@@ -169,7 +169,8 @@ class PokeBattle_Battle
             idxPartyForName = idxPartyNew
             enemyParty = pbParty(idxBattler)
             if isConst?(enemyParty[idxPartyNew].ability,PBAbilities,:ILLUSION)
-              idxPartyForName = pbLastInTeam(idxBattler)
+              new_index = pbLastInTeam(idxBattler)
+              idxPartyForName = new_index if new_index >= 0
             end
             if pbDisplayConfirm(_INTL("{1} is about to send in {2}. Will you switch your Pokémon?",
                opponent.fullname,enemyParty[idxPartyForName].name))
@@ -226,6 +227,15 @@ class PokeBattle_Battle
   def pbRecallAndReplace(idxBattler,idxParty,randomReplacement=false,batonPass=false)
     @scene.pbRecall(idxBattler) if !@battlers[idxBattler].fainted?
     @battlers[idxBattler].pbAbilitiesOnSwitchOut   # Inc. primordial weather check
+    # Checks if it's de-evolved
+    battler = @battlers[idxBattler]
+    if battler.effects[PBEffects::DeEvolve]
+      oldHP = battler.pokemon.hp
+      pkmn = battler.effects[PBEffects::DeEvolve]
+      battler.pbInitPokemon(pkmn,idxParty)
+      pkmn.hp = oldHP
+      battler.effects[PBEffects::DeEvolve] = nil
+    end
     @scene.pbShowPartyLineup(idxBattler&1) if pbSideSize(idxBattler)==1
     pbMessagesOnReplace(idxBattler,idxParty) if !randomReplacement
     pbReplace(idxBattler,idxParty,batonPass)
@@ -255,7 +265,8 @@ class PokeBattle_Battle
     party = pbParty(idxBattler)
     newPkmnName = party[idxParty].name
     if isConst?(party[idxParty].ability,PBAbilities,:ILLUSION)
-      newPkmnName = party[pbLastInTeam(idxBattler)].name
+      new_index = pbLastInTeam(idxBattler)
+      newPkmnName = party[new_index].name if new_index >= 0
     end
     if pbOwnedByPlayer?(idxBattler)
       opposing = @battlers[idxBattler].pbDirectOpposing

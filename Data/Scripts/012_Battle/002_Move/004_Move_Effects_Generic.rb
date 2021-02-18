@@ -609,6 +609,13 @@ class PokeBattle_WeatherMove < PokeBattle_Move
     when PBWeather::StrongWinds
       @battle.pbDisplay(_INTL("The mysterious air current blows on regardless!"))
       return true
+    when PBWeather::GreatFlood      
+      @battle.pbDisplay(_INTL("{1} is trying to change the weather.",user.pbThis))
+      @battle.pbAnimation(getConst(PBMoves,:THUNDER),user,user)
+      @battle.pbDisplay(_INTL("A lightning struck {1}",user.pbThis))
+      user.pbParalyze(user) if user.pbCanParalyze?(user,false,self)
+      @battle.pbDisplay(_INTL("There's no way to stop the end of the world!"))
+      return true
     when @weatherType
       @battle.pbDisplay(_INTL("But it failed!"))
       return true

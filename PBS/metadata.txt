@@ -160,6 +160,13 @@ MapPosition = 0,14,6
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[033]
+# Gangur Town
+Bicycle=true
+Outdoor=true
+BicycleAlways=false
+ShowArea=true
+#-------------------------------
 [034]
 # Ice Cave
 BattleBack = cave1
@@ -210,6 +217,18 @@ Outdoor = true
 BicycleAlways = true
 ShowArea = true
 #-------------------------------
+[042]
+# Casa1
+Bicycle=false
+Outdoor=false
+ShowArea=false
+#-------------------------------
+[043]
+# Casa2
+Bicycle=false
+Outdoor=false
+ShowArea=false
+#-------------------------------
 [044]
 # Route 6
 MapSize = 2,11
@@ -239,6 +258,12 @@ MapPosition = 0,15,10
 Outdoor = true
 Environment = Rock
 ShowArea = true
+#-------------------------------
+[048]
+# Casa3
+Bicycle=false
+Outdoor=false
+ShowArea=false
 #-------------------------------
 [049]
 # Rock Cave
@@ -390,3 +415,53 @@ MapPosition = 0,12,10
 BattleBack = city
 MapPosition = 1,13,16
 Outdoor = true
+#-------------------------------
+[076]
+# Laboratorio prof. Taiani
+Bicycle=false
+Outdoor=false
+ShowArea=true
+#-------------------------------
+[077]
+# Percorso 1
+Bicycle=true
+Outdoor=true
+BicycleAlways=false
+ShowArea=true
+#-------------------------------
+[078]
+# Sottobosco del percorso 1
+BattleBack=Forest
+Bicycle=true
+Outdoor=true
+BicycleAlways=false
+ShowArea=true
+#-------------------------------
+[079]
+# Odeya City
+MapPosition=1,12,8
+Bicycle=true
+Outdoor=true
+ShowArea=true
+#-------------------------------
+[095]
+# Camera d'Albergo
+#-------------------------------
+[096]
+# Percorso 2
+BattleBack=
+Bicycle=true
+Outdoor=true
+ShowArea=true
+#-------------------------------
+[097]
+# Percorso 3
+Bicycle=true
+Outdoor=true
+ShowArea=true
+#-------------------------------
+[098]
+# Pisik Town
+Bicycle=true
+Outdoor=true
+ShowArea=true
