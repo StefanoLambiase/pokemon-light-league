@@ -125,10 +125,14 @@ Pokemon = BLASTOISE,63
 #
 #-------------------------------
 [ENGINEER,Johnny Debugger]
+Pokemon = DIALGA,50
+    Ability = 1
+    Nature = MODEST
+    Moves = ROAROFTIME,,,
 Pokemon = PALKIA,50
     Ability = 1
     Nature = MODEST
-    Moves = BUGBITE,,,
+    Moves = SPACIALREND,,,
 #-------------------------------
 #
 # Percorso 1 ------------------------------------------------------

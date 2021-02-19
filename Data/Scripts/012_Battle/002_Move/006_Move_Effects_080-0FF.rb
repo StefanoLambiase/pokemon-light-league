@@ -3818,6 +3818,8 @@ class PokeBattle_Move_FFF < PokeBattle_Move
 
   def pbEffectAgainstTarget(user,target)      
     prevForm = PBEvolution.pbGetPreviousForm(target.species)
+
+    prevForm = getID(PBSpecies,:EGG) if prevForm == target.species
     
     newPkmn = pbNewPkmn(prevForm,target.level)
     oldPkmn = target.pokemon
@@ -3849,17 +3851,6 @@ class PokeBattle_Move_FFF < PokeBattle_Move
       @battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
     end
 
-  end
-  
-  def pbShowAnimation(id,user,targets,hitNum=0,showAnimation=true)
-    super
-    #name = targets[0].pbThis
-    #@battle.pbDisplay(_INTL("Che succede a {1}?",name))
-    #@battle.scene.pbAnimation(getConst(PBMoves,:CHARGE),targets[0],user)
-    #prevForm = PBEvolution.pbGetPreviousForm(targets[0].species)
-    #newPkmn = pbNewPkmn(prevForm,targets[0].level)
-    #@battle.scene.pbChangePokemon(targets[0],newPkmn)
-    #@battle.pbDisplay(_INTL("Sembra che {1} sia ritornato indietro nel tempo!",name))
   end
 
 end
