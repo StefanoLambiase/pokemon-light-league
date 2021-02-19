@@ -139,7 +139,7 @@ Pokemon = PALKIA,50
 #
 #-------------------------------
 [PROFTAIANI,Taiani]
-Pokemon = NIDORANmA,5
+Pokemon = NIDORANmA,4
     Ability = 1
     Nature = MODEST
 #-------------------------------
