@@ -424,6 +424,7 @@ ShowArea=true
 #-------------------------------
 [077]
 # Percorso 1
+MapPosition=0,13,11
 Bicycle=true
 Outdoor=true
 BicycleAlways=false
@@ -431,6 +432,7 @@ ShowArea=true
 #-------------------------------
 [078]
 # Sottobosco del percorso 1
+MapPosition=0,13,11
 BattleBack=Forest
 Bicycle=true
 Outdoor=true
@@ -439,7 +441,7 @@ ShowArea=true
 #-------------------------------
 [079]
 # Odeya City
-MapPosition=1,12,8
+MapPosition=0,12,8
 Bicycle=true
 Outdoor=true
 ShowArea=true
@@ -450,6 +452,7 @@ ShowArea=true
 [096]
 # Percorso 2
 BattleBack=
+MapPosition=0,15,9
 Bicycle=true
 Outdoor=true
 ShowArea=true
@@ -462,6 +465,7 @@ ShowArea=true
 #-------------------------------
 [098]
 # Pisik Town
+MapPosition=0,17,8
 Bicycle=true
 Outdoor=true
 ShowArea=true
