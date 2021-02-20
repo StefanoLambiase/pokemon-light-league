@@ -162,10 +162,10 @@ ShowArea = true
 #-------------------------------
 [033]
 # Gangur Town
-Bicycle=true
-Outdoor=true
-BicycleAlways=false
-ShowArea=true
+Bicycle = true
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
 #-------------------------------
 [034]
 # Ice Cave
@@ -219,15 +219,15 @@ ShowArea = true
 #-------------------------------
 [042]
 # Casa1
-Bicycle=false
-Outdoor=false
-ShowArea=false
+Bicycle = false
+Outdoor = false
+ShowArea = false
 #-------------------------------
 [043]
 # Casa2
-Bicycle=false
-Outdoor=false
-ShowArea=false
+Bicycle = false
+Outdoor = false
+ShowArea = false
 #-------------------------------
 [044]
 # Route 6
@@ -261,9 +261,9 @@ ShowArea = true
 #-------------------------------
 [048]
 # Casa3
-Bicycle=false
-Outdoor=false
-ShowArea=false
+Bicycle = false
+Outdoor = false
+ShowArea = false
 #-------------------------------
 [049]
 # Rock Cave
@@ -418,54 +418,60 @@ Outdoor = true
 #-------------------------------
 [076]
 # Laboratorio prof. Taiani
-Bicycle=false
-Outdoor=false
-ShowArea=true
+Bicycle = false
+Outdoor = false
+ShowArea = true
 #-------------------------------
 [077]
 # Percorso 1
-MapPosition=0,13,11
-Bicycle=true
-Outdoor=true
-BicycleAlways=false
-ShowArea=true
+Bicycle = true
+MapPosition = 0,13,11
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
 #-------------------------------
 [078]
 # Sottobosco del percorso 1
-MapPosition=0,13,11
-BattleBack=Forest
-Bicycle=true
-Outdoor=true
-BicycleAlways=false
-ShowArea=true
+BattleBack = Forest
+Bicycle = true
+MapPosition = 0,13,11
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
 #-------------------------------
 [079]
 # Odeya City
-MapPosition=0,12,8
-Bicycle=true
-Outdoor=true
-ShowArea=true
+Bicycle = true
+MapPosition = 0,12,8
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [095]
 # Camera d'Albergo
 #-------------------------------
 [096]
 # Percorso 2
-BattleBack=
-MapPosition=0,15,9
-Bicycle=true
-Outdoor=true
-ShowArea=true
+BattleBack = 
+Bicycle = true
+MapPosition = 0,15,9
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [097]
 # Percorso 3
-Bicycle=true
-Outdoor=true
-ShowArea=true
+Bicycle = true
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [098]
 # Pisik Town
-MapPosition=0,17,8
-Bicycle=true
-Outdoor=true
-ShowArea=true
+Bicycle = true
+MapPosition = 0,17,8
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[103]
+# Percorso 4
+Bicycle = true
+Outdoor = true
+ShowArea = true
