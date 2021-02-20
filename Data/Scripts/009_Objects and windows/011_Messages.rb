@@ -1097,7 +1097,7 @@ def pbMessageDisplay(msgwindow,message,letterbyletter=true,commandProc=nil)
   ### Controls
   textchunks=[]
   controls=[]
-  while text[/(?:\\(f|ff|ts|cl|me|se|wt|wtnp|ch)\[([^\]]*)\]|\\(g|cn|wd|wm|op|cl|wu|\.|\||\!|\^))/i]
+  while text[/(?:\\(f|ff|ts|cl|me|se|wt|wtnp|ch)\[([^\]]*)\]|\\(g|cn|wd|wm|op|cl|wu|j|\.|\||\!|\^))/i]
     textchunks.push($~.pre_match)
     if $~[1]
       controls.push([$~[1].downcase,$~[2],-1])
@@ -1251,6 +1251,9 @@ def pbMessageDisplay(msgwindow,message,letterbyletter=true,commandProc=nil)
         pbSEPlay(pbStringToAudioFile(param))
       when "me"     # Play ME
         pbMEPlay(pbStringToAudioFile(param))
+      when "j"      # Piastrine
+        coinwindow.dispose if coinwindow
+        coinwindow = pbDisplayPiastrineWindow(msgwindow)
       end
       controls[i] = nil
     end
