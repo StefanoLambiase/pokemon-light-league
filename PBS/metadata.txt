@@ -475,3 +475,10 @@ ShowArea = true
 Bicycle = true
 Outdoor = true
 ShowArea = true
+#-------------------------------
+[105]
+# Grande Giardino
+Bicycle = false
+Outdoor = true
+Environment = None
+ShowArea = true
