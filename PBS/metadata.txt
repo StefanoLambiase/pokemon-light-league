@@ -482,3 +482,8 @@ Bicycle = false
 Outdoor = true
 Environment = None
 ShowArea = true
+#-------------------------------
+[108]
+# Rajedi Town
+Outdoor = true
+ShowArea = true
