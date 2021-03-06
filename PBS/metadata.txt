@@ -113,6 +113,10 @@ MapPosition = 0,14,8
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[022]
+# test
+Outdoor = true
+#-------------------------------
 [023]
 # Lerucean Town
 MapPosition = 0,15,8
