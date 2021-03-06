@@ -40,5 +40,7 @@
 21,East,77,47,West,0
 # Gangur Town (33) - Percorso 1 (77)
 33,North,0,77,South,0
+# Percorso 3 (97) - Percorso 2 (96)
+97,South,0,96,North,49
 # Percorso 4 (103) - Percorso 2 (96)
 103,West,0,96,East,1
