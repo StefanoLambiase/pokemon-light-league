@@ -674,3 +674,5 @@
 #--------------------------------
 652,STRANAPIETRA,Strana Pietra,Strana Pietra,8,0,"Una strana pietra caduta dal cielo. Emana una aura misteriosa.",0,0,0,
 653,ADAMASFERA,Adamasfera,Adamasfera,8,0,"L'adamasfera di Dialga persa dal campione. Rievoca momenti del passato",0,0,0,
+654,EXPALL,Condividi Esperienza,Condividi Esperienza,8,0,"Permette di condividere l'esperienza in tutta la squadra.",2,6,0,
+655,EXPALLOFF,Condividi Esperienza,Condividi Esperienza,8,0,"Permette di condividere l'esperienza in tutta la squadra.",2,6,0,

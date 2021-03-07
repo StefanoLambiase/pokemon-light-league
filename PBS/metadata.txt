@@ -428,6 +428,7 @@ ShowArea = true
 #-------------------------------
 [077]
 # Percorso 1
+BattleBack = grass
 Bicycle = true
 MapPosition = 0,13,11
 Outdoor = true
@@ -445,6 +446,7 @@ ShowArea = true
 #-------------------------------
 [079]
 # Odeya City
+BattleBack = city
 Bicycle = true
 MapPosition = 0,12,8
 Outdoor = true
@@ -455,7 +457,7 @@ ShowArea = true
 #-------------------------------
 [096]
 # Percorso 2
-BattleBack = 
+BattleBack = field
 Bicycle = true
 MapPosition = 0,15,9
 Outdoor = true
@@ -463,12 +465,14 @@ ShowArea = true
 #-------------------------------
 [097]
 # Percorso 3
+BattleBack = field
 Bicycle = true
 Outdoor = true
 ShowArea = true
 #-------------------------------
 [098]
 # Pisik Town
+BattleBack = field
 Bicycle = true
 MapPosition = 0,17,8
 Outdoor = true
@@ -476,6 +480,7 @@ ShowArea = true
 #-------------------------------
 [103]
 # Percorso 4
+BattleBack = field
 Bicycle = true
 Outdoor = true
 ShowArea = true
@@ -491,3 +496,7 @@ ShowArea = true
 # Rajedi Town
 Outdoor = true
 ShowArea = true
+#-------------------------------
+[113]
+# Percorso 5
+BattleBack = grass
