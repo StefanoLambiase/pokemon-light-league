@@ -282,10 +282,83 @@ Pokemon = STEELIX,14
 # Percorso 4 -------------------------------------------------------
 #
 #-------------------------------
-[BIRDKEEPER,Solario]
+[CANDIDATO1_M,Solario]
+Pokemon = CRANIDOS,18
+    Moves = HEADBUTT,PURSUIT,LEER,FOCUSENERGY
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = JOLLY
+    IV = 0,0,0,0,0,0
+    EV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = SHIELDON,18
+    Moves = TAUNT,IRONDEFENSE,ANCIENTPOWER,TAKEDOWN
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = BOLD
+    IV = 0,0,10,0,0,10
+    EV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[CANDIDATO2_F,SOLARIA]
+Items = POTION
+Pokemon = TOGEPI,19
+    Moves = FORESIGHT,METRONOME,ENCORE,ANCIENTPOWER
+    Ability = 2
+    Gender = female
+    Shiny = no
+    Nature = MODEST
+    IV = 13,0,0,0,0,0
+    EV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = XATU,19
+    Moves = PECK,TAILWIND,AIRSLASH,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = MODEST
+    IV = 0,0,0,20,10,0
+    EV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[CANDIDATO2_M,Franco]
+Pokemon = JANGMOO,21
+    Moves = PROTECT,DRAGONTAIL,WORKUP,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = BOLD
+    IV = 20,10,10,5,0,0
+    EV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = LARVITAR,20
+    Moves = SANDSTORM,BITE,DRAGONDANCE,
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,5,5,15,0,0
+    EV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0    
+#-------------------------------
+[EMANUELE,Emanuele]
 Items = POTION,POTION
-LoseText = "Maledetto, hai oscurato la mia immensa lucentezza!"
-Pokemon = NUMEL,18
+LoseText = "MLMLMLMLMLML BANK ACCOUNT!!!"
+Pokemon = NUMEL,21
     Moves = FLAMEBURST,EARTHPOWER,SUNNYDAY,AMNESIA
     Ability = 1
     Gender = male
@@ -294,11 +367,7 @@ Pokemon = NUMEL,18
     Happiness = 255
     Shadow = no
     Ball = 0
-#-------------------------------
-[AROMALADY,Solaria]
-Items = POTION
-LoseText = "Devo diventare più splendente per soddisfare il boss Petraglia!"
-Pokemon = IVYSAUR,18
+Pokemon = IVYSAUR,21
     Moves = GROWL,LEECHSEED,SOLARBEAM,
     Ability = 1
     Gender = male
