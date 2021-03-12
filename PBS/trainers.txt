@@ -277,3 +277,36 @@ Pokemon = STEELIX,14
     IV = 3
     EV = 4
     Moves = DOUBLEEDGE,DRAGONBREATH,,
+#-------------------------------
+#
+# Percorso 4 -------------------------------------------------------
+#
+#-------------------------------
+[BIRDKEEPER,Solario]
+Items = POTION,POTION
+LoseText = "Maledetto, hai oscurato la mia immensa lucentezza!"
+Pokemon = NUMEL,18
+    Moves = FLAMEBURST,EARTHPOWER,SUNNYDAY,AMNESIA
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = MODEST
+    IV = ,,,,,
+    EV = ,,,,,
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[AROMALADY,Solaria]
+Items = POTION
+LoseText = "Devo diventare più splendente per soddisfare il boss Petraglia!"
+Pokemon = IVYSAUR,18
+    Moves = GROWL,LEECHSEED,SOLARBEAM,
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = TIMID
+    IV = ,,,,,
+    EV = ,,,,,
+    Shadow = no
+    Ball = 0

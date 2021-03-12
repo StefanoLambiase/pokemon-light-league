@@ -72,6 +72,11 @@
 69,ELITEFOUR_Agatha,Elite Four,100,Battle Elite,Battle victory leader,,Female,,
 70,ELITEFOUR_Lance,Elite Four,100,Battle Elite,Battle victory leader,,Male,,
 71,CHAMPION,Champion,100,Battle Elite,Battle victory leader,,Male,,
+#-------------------------------
+#-------------------------------------------------------------------
+#--------------------- Pokemon-Light-League ------------------------
+#-------------------------------------------------------------------
+#-------------------------------
 72,PROFTAIANI,Competitivologo prof.,16,,,,Male,255,
 73,CANDIDATO1_M,Candidato,77,_CandidatoBattle,,_CandidatoIntro,Male,255,
 74,CANDIDATO1_F,Candidata,77,_CandidatoBattle,,_CandidatoIntro,Male,255,
