@@ -470,6 +470,10 @@ Land
     CUBONE,11,14
     CUBONE,11,14
 #-------------------------------
+#-------------------------------------------------------------------
+#--------------------- Pokemon-Light-League ------------------------
+#-------------------------------------------------------------------
+#-------------------------------
 096 # Percorso 2
 25,10,10
 Land
@@ -507,3 +511,25 @@ Land
     SHINX,7,10
     RALTS,10,15
     RALTS,10,15
+#-------------------------------
+103 # Percorso 4 - Pensione Pokémon
+25,10,10
+Land # 12
+    VULPIX,13,15
+    VULPIX,13,15
+    KARRABLAST,15,18
+    KARRABLAST,15,18
+    BUNEARY,15,18
+    BUNEARY,15,18
+    NUMEL,15,18
+    NUMEL,15,18
+    CARNIVINE,15,18
+    CARNIVINE,15,18
+    CHANSEY,15,20
+    CHANSEY,15,20
+Water # 5
+    WISHIWASHI,20,23
+    DEWPIDER,20,23
+    SEAKING,20,23
+    FRILLISH,20,23
+    GYARADOS,20,23
