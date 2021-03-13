@@ -332,13 +332,13 @@ Pokemon = XATU,19
     Ball = 0
 #-------------------------------
 [CANDIDATO2_M,Franco]
-Pokemon = JANGMOO,21
+Pokemon = JANGMOO,22
     Moves = PROTECT,DRAGONTAIL,WORKUP,
     Ability = 2
     Gender = male
     Shiny = no
     Nature = BOLD
-    IV = 20,10,10,5,0,0
+    IV = 20,10,20,5,0,0
     EV = 0,0,0,0,0,0
     Happiness = 255
     Shadow = no
@@ -370,7 +370,7 @@ Pokemon = NUMEL,21
     Shadow = no
     Ball = 0
 Pokemon = IVYSAUR,21
-    Moves = GROWL,LEECHSEED,SOLARBEAM,
+    Moves = GROWL,LEECHSEED,SOLARBEAM,RAZORLEAF
     Ability = 1
     Gender = male
     Shiny = no
