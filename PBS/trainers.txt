@@ -306,7 +306,7 @@ Pokemon = SHIELDON,18
     Shadow = no
     Ball = 0
 #-------------------------------
-[CANDIDATO2_F,SOLARIA]
+[CANDIDATO2_F,Solaria]
 Items = POTION
 Pokemon = TOGEPI,19
     Moves = FORESIGHT,METRONOME,ENCORE,ANCIENTPOWER
@@ -355,7 +355,7 @@ Pokemon = LARVITAR,20
     Shadow = no
     Ball = 0    
 #-------------------------------
-[EMANUELE,Emanuele]
+[EMANUELE,Manu]
 Items = POTION,POTION
 LoseText = "MLMLMLMLMLML BANK ACCOUNT!!!"
 Pokemon = NUMEL,21
