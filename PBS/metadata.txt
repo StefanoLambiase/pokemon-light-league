@@ -492,6 +492,10 @@ Outdoor = true
 Environment = None
 ShowArea = true
 #-------------------------------
+[106]
+# Scogliera del nord
+Outdoor = true
+#-------------------------------
 [108]
 # Rajedi Town
 Outdoor = true
