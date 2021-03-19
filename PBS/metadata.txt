@@ -504,3 +504,8 @@ ShowArea = true
 [113]
 # Percorso 5
 BattleBack = grass
+#-------------------------------
+[115]
+# Percorso 6
+Outdoor = true
+ShowArea = true
