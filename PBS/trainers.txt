@@ -384,3 +384,120 @@ Pokemon = IVYSAUR,21
 # Percorso 5 -------------------------------------------------------
 #
 #-------------------------------
+#-------------------------------
+#
+# Percorso 6 -------------------------------------------------------
+#
+#-------------------------------
+#-------------------------------
+[SAMURANJA,Nobunaga]
+Items = SUPERPOTION
+Pokemon = ARCANINE,23
+    Moves = FLAMETHROWER,BURNUP,ROAR,PLAYROUGH
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = JOLLY
+    IV = 5,5,7,10,5,7
+    Happiness = 255
+    Name = Hyobishin
+    Shadow = no
+    Ball = 0
+Pokemon = ALTARIA,24
+    Moves = ICEBEAM,DRAGON PULSE,SAFEGUARD,MOONBLAST
+    Ability = 0
+    Gender = female
+    Shiny = no
+    Nature = MODEST
+    IV = 7,7,7,10,10,15
+    Happiness = 255
+    Name = Tengen Kujaku
+    Shadow = no
+    Ball = 0
+Pokemon = SAMURADA,24
+    Moves = SWORDANCE,XSCISSOR,SLASH,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,10,15,10,5,5
+    Happiness = 255
+    Name = Oda
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[SMURANJA,Hideyoshi]
+Pokemon = SAMURADA,23
+    Moves = NIGHTSLASH,LEECHLIFE,METALCLAW,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,10,10,10,10,10
+    Happiness = 255
+    Name = Toyotomi
+    Shadow = no
+    Ball = 0
+Pokemon = PRIMEAPE,25
+    Moves = ASSURANCE,KARATECHOP,,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = JOLLY
+    IV = 10,10,10,10,10,10
+    Happiness = 255
+    Name = Masaru
+    Shadow = no
+    Ball = 0
+Pokemon = DONPHAN,25
+    Moves = SANDSTORM,STONEEDGE,SLAM,
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,10,10,5,5,5
+    Happiness = 255
+    Name = Yumehami
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[SAMURANJA,Leyasu]
+Items = SUPERPOTION
+Pokemon = SAMURADA,25
+    Moves = LEECHLIFE,SWORDSDANCE,METALCLAW,FURYSWIPES
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = JOLLY
+    IV = 10,10,10,20,0,0
+    Happiness = 255
+    Name = Tokugawa
+    Shadow = no
+    Ball = 0
+Pokemon = DRUDDIGON,25
+    Moves = DRAGONCLAW,CRUNCH,FIREFANG,THUNDERFUNG
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,10,10,0,0,0
+    Happiness = 255
+    Name = Masamune
+    Shadow = no
+    Ball = 0
+Pokemon = PURUGLY,27
+    Moves = CHARM,HYPNOSIS,THUNDER,SLASH
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 20,20,20,0,0,0
+    Happiness = 255
+    Name = Nekomata
+    Shadow = no
+    Ball = 0
+#-------------------------------
+#
+# Percorso 7 -------------------------------------------------------
+#
+#-------------------------------
