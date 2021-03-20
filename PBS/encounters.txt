@@ -495,6 +495,19 @@ Water
     MARILL,16,20
     MARILL,16,20
     MARILL,16,20
+OldRod # 2
+    MARILL,16,20
+    SQUIRTLE,14,15
+GoodRod # 3
+    WARTORTLE,30,34
+    WARTORTLE,30,34
+    BLASTOISE,36,37
+SuperRod # 5
+    LAPRAS,40,45
+    BLASTOISE,40,45
+    BLASTOISE,40,45
+    VAPOREON,50,51
+    VAPOREON,50,51
 #-------------------------------
 097 # Percorso 3
 25,10,10
@@ -533,6 +546,41 @@ Water # 5
     SEAKING,20,23
     FRILLISH,20,23
     GYARADOS,20,23
+OldRod # 2
+    WISHIWASHI,25,27
+    WISHIWASHI,25,27
+GoodRod # 3
+    GYARADOS,30,33
+    GYARADOS,30,33
+    BLASTOISE,36,37
+SuperRod # 5
+    WHISCASH,40,45
+    WHISCASH,40,45
+    WHISCASH,40,45
+    WAILORD,50,51
+    WAILORD,50,51
+#-------------------------------
+108 # Rajedi
+25,10,10
+Water # 5
+    WISHIWASHI,20,23
+    DEWPIDER,20,23
+    SEAKING,20,23
+    PIPLUP,14,15
+    PIPLUP,14,15
+OldRod # 2
+    FROAKIE,25,27
+    FROAKIE,25,27
+GoodRod # 3
+    FROGADIER,30,33
+    FROGADIER,30,33
+    PRINPLUP,30,34
+SuperRod # 5
+    LUMINEON,40,45
+    LUMINEON,40,45
+    GRENINJA,40,45
+    GRENINJA,50,51
+    GRENINJA,50,51
 #-------------------------------
 111 # Percorso 5
 25,10,10
@@ -555,6 +603,19 @@ Water # 5
     DEWGONG,20,25
     QUAGSIRE,20,25
     GYARADOS,20,25
+OldRod # 2
+    GOOMY,25,27
+    GOOMY,25,27
+GoodRod # 3
+    CLAUNCHER,30,33
+    CLAUNCHER,30,33
+    SLIGGOO,36,37
+SuperRod # 5
+    QUAGSIRE,40,45
+    QUAGSIRE,40,45
+    CLAUNCHER,40,45
+    GOODRA,50,51
+    GOODRA,50,51
 #-------------------------------
 115 # Percorso 6 - Arcipelago della setta degli Shedinja
 25,10,10
@@ -590,6 +651,19 @@ Water # 5
     CARVANHA,23,27
     MANTINE,25,29
     LAPRAS,25,29
+OldRod # 2
+    SKRELP,25,27
+    SKRELP,25,27
+GoodRod # 3
+    SLIGGOO,30,33
+    FRILLISH,30,33
+    FRILLISH,36,37
+SuperRod # 5
+    JELLICENT,40,45
+    JELLICENT,40,45
+    DRAGALGE,40,45
+    DRAGALGE,50,51
+    DRAGALGE,50,51
 #-------------------------------
 118 # Percorso 7
 25,10,10
