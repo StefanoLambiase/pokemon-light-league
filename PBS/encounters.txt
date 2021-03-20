@@ -562,13 +562,19 @@ SuperRod # 5
 #-------------------------------
 108 # Rajedi
 25,10,10
+Water # 5
+    WISHIWASHI,20,23
+    DEWPIDER,20,23
+    SEAKING,20,23
+    PIPLUP,14,15
+    PIPLUP,14,15
 OldRod # 2
     FROAKIE,25,27
     FROAKIE,25,27
 GoodRod # 3
     FROGADIER,30,33
     FROGADIER,30,33
-    FROGADIER,36,37
+    PRINPLUP,30,34
 SuperRod # 5
     LUMINEON,40,45
     LUMINEON,40,45
