@@ -410,11 +410,11 @@ Pokemon = ALTARIA,24
     Nature = MODEST
     IV = 7,7,7,10,10,15
     Happiness = 255
-    Name = Tengen Kujaku
+    Name = Kujaku
     Shadow = no
     Ball = 0
 Pokemon = SAMURADA,24
-    Moves = SWORDANCE,XSCISSOR,SLASH,
+    Moves = SWORDSDANCE,XSCISSOR,SLASH,
     Ability = 0
     Gender = male
     Shiny = no
@@ -425,7 +425,7 @@ Pokemon = SAMURADA,24
     Shadow = no
     Ball = 0
 #-------------------------------
-[SMURANJA,Hideyoshi]
+[SAMURANJA,Hideyoshi]
 Pokemon = SAMURADA,23
     Moves = NIGHTSLASH,LEECHLIFE,METALCLAW,
     Ability = 0
@@ -561,7 +561,7 @@ Pokemon = GOLURK,27
 [SHENINJA,Goemon]
 Pokemon = NINJASK,30
     Item = EXPERTBELT
-    Moves = SWORDDANCE,XSCISSOR,ACROBATICS,PROTECT
+    Moves = SWORDSDANCE,XSCISSOR,ACROBATICS,PROTECT
     Ability = 0
     Gender = male
     Shiny = no
