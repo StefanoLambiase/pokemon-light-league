@@ -496,6 +496,51 @@ Pokemon = PURUGLY,27
     Shadow = no
     Ball = 0
 #-------------------------------
+[TOKENITZU,Tokenitzu]
+Items = SUPERPOTION
+Pokemon = SHOGUNADA,28
+    Moves = DRAGONDANCE,BULLETPUNCH,SECRETSWORD,XSCISSOR
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 30,20,20,10,0,20
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = SAMURADA,26
+    Moves = SWORDDANCE,XSCISSOR,BATONPASS,
+    Ability = 0
+    Gender = female
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,10,10,10,10,10
+    Happiness = 255
+    Name = Nezusuke
+    Shadow = no
+    Ball = 0
+Pokemon = GOLDUCK,27
+    Moves = RAINDANCE,SCALD,ICEBEAM,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = MODEST
+    IV = 5,5,5,10,5,5
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = SAMURADA,27
+    Moves = SANDATTACK,BULLETPUNCH,XSCISSOR,SECRETSWORD
+    Ability = 0
+    Gender = female
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,10,10,10,10,10
+    Happiness = 255
+    Name = Nezusuke
+    Shadow = no
+    Ball = 0
+#-------------------------------
 #
 # Percorso 7 -------------------------------------------------------
 # Settinja
