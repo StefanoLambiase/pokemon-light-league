@@ -387,8 +387,7 @@ Pokemon = IVYSAUR,21
 #-------------------------------
 #
 # Percorso 6 -------------------------------------------------------
-#
-#-------------------------------
+# Settinja
 #-------------------------------
 [SAMURANJA,Nobunaga]
 Items = SUPERPOTION
@@ -499,5 +498,87 @@ Pokemon = PURUGLY,27
 #-------------------------------
 #
 # Percorso 7 -------------------------------------------------------
-#
+# Settinja
 #-------------------------------
+[SHENINJA,Hattori]
+Items = POTION
+Pokemon = NINJASK,28
+    Moves = XSCISSOR,AERIALACE,UTURN,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 20,20,20,30,10,10
+    Happiness = 255
+    Name = Hanzo
+    Shadow = no
+    Ball = 0
+Pokemon = WAILORD,28
+    Moves = WATERPULSE,ICEBEAM,,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = MODEST
+    IV = 20,10,10,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = BRONZONG,28
+    Moves = EXTRASENSORY,HEAVYSLAM,CONFUSERAY,
+    Ability = 1
+    Gender = female
+    Shiny = no
+    Nature = MODEST
+    IV = 0,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[SHENINJA,Kotaro]
+Pokemon = NINJASK,29
+    Moves = UTURN,ACROBATICS,XSCISSOR,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 30,0,0,0,0,0
+    Happiness = 255
+    Name = Fuma
+    Shadow = no
+    Ball = 0
+Pokemon = GOLURK,27
+    Item = EXPERTBELT
+    Moves = SHADOWPUNCH,ICEPUNCH,THUNDERPUNCH,FIREPUNCH
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 10,0,0,0,0,20
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[SHENINJA,Goemon]
+Pokemon = NINJASK,30
+    Item = EXPERTBELT
+    Moves = SWORDDANCE,XSCISSOR,ACROBATICS,PROTECT
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 30,10,20,0,0,10
+    Happiness = 255
+    Name = Ishikawa
+    Shadow = no
+    Ball = 0
+Pokemon = ARAQUANID,28
+    Item = LEFTOVERS
+    Moves = LIQUIDATION,LEECHLIFE,,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 20,0,10,0,0,10
+    Happiness = 255
+    Shadow = no
+    Ball = 0
