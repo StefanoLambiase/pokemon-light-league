@@ -420,6 +420,29 @@ Pokemon = KLINKLANG,24
 # Percorso 6 -------------------------------------------------------
 # Settinja
 #-------------------------------
+#------------ Friend Trainer -------------------
+[RIVALEAMICO,Andrea]
+Pokemon = SNEASEL,23
+    Moves = AVALANCHE,FOULPLAY,RAINDANCE,
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = LONELY
+    IV = 20,20,0,20,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = BUTITIV,24
+    Moves = EXPLOSION,ROLLOUT,DRAGONBREATH,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = SERIOUS
+    IV = 10,15,15,15,0,15
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#------------ Enemy Trainer -------------------
 [SAMURANJA,Nobunaga]
 Items = SUPERPOTION
 Pokemon = ARCANINE,23
@@ -569,6 +592,40 @@ Pokemon = SAMURADA,27
     IV = 10,10,10,10,10,10
     Happiness = 255
     Name = Nezusuke
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[RIVALE3,Andrea]
+Items = SUPERPOTION
+Pokemon = SNEASEL,25
+    Moves = AVALANCHE,FOULPLAY,RAINDANCE,
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = LONELY
+    IV = 20,20,0,20,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = BUTITIV,26
+    Moves = EXPLOSION,ROLLOUT,DRAGONBREATH,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = SERIOUS
+    IV = 10,15,15,15,0,15
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = TOGETIC,26
+    Moves = FAIRYWIND,YAWN,WISH,
+    Ability = 2
+    Gender = female
+    Shiny = no
+    Nature = MODEST
+    IV = 20,0,0,15,15,15
+    Happiness = 255
+    Name = Sorpresa
     Shadow = no
     Ball = 0
 #-------------------------------
