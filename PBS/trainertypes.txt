@@ -96,6 +96,6 @@
 88,RECLUTAMETRO,Recluta Metro,49,,,,Male,255,
 89,VICE,Vice,56,,,,Male,255,
 90,EMANUELE,Candidato Prodigio,77,_CandidatoBattle,,_CandidatoIntro,Male,255,
-91,TOKENITZU,Leader Setta,77,,,,Male,255,
+91,TOKENITZU,Shogun,77,,,,Male,255,
 92,SAMURANJA,Samuranja,80,,,,Male,255,
 93,SHENINJA,Sheninja,88,,,,Male,255,

@@ -460,7 +460,7 @@ Pokemon = DONPHAN,25
     Shadow = no
     Ball = 0
 #-------------------------------
-[SAMURANJA,Leyasu]
+[SAMURANJA,Ieyasu]
 Items = SUPERPOTION
 Pokemon = SAMURADA,25
     Moves = LEECHLIFE,SWORDSDANCE,METALCLAW,FURYSWIPES
