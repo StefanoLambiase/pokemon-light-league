@@ -99,3 +99,4 @@
 91,TOKENITZU,Shogun,77,,,,Male,255,
 92,SAMURANJA,Samuranja,80,,,,Male,255,
 93,SHENINJA,Sheninja,88,,,,Male,255,
+94,ZOROARKTRAINER,Allenatore di pokémon,90,,,,Male,255,

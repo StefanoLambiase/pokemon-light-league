@@ -384,6 +384,37 @@ Pokemon = IVYSAUR,21
 # Percorso 5 -------------------------------------------------------
 #
 #-------------------------------
+[ZOROARKTRAINER,Zoroark]
+Pokemon = CARRACOSTA,22
+    Moves = AQUATAIL,ROCKSLIDE,CRUNCH,
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = IMPISH
+    IV = 10,10,20,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = VANILLUXE,23
+    Moves = ICEBEAM,FLASHCANNON,UPROAR,
+    Ability = 1
+    Gender = female
+    Shiny = no
+    Nature = MODEST
+    IV = 10,0,0,20,10,10
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = KLINKLANG,24
+    Moves = WILDCHARGE,GEARGRIND,,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = IMPISH
+    IV = 30,10,10,20,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
 #-------------------------------
 #
 # Percorso 6 -------------------------------------------------------
