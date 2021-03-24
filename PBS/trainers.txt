@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [CAMPER,Liam]
 LoseText = "A very good battle, indeed!"
@@ -395,8 +395,8 @@ Pokemon = CARRACOSTA,20
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = VANILLUXE,21
-    Moves = ICEBEAM,FLASHCANNON,UPROAR,
+Pokemon = VANILLISH,22
+    Moves = ICEBEAM,FLASHCANNON,UPROAR,HAIL
     Ability = 1
     Gender = female
     Shiny = no
