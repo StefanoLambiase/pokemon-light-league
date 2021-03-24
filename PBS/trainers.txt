@@ -385,17 +385,17 @@ Pokemon = IVYSAUR,21
 #
 #-------------------------------
 [ZOROARKTRAINER,Zoroark]
-Pokemon = CARRACOSTA,22
+Pokemon = CARRACOSTA,20
     Moves = AQUATAIL,ROCKSLIDE,CRUNCH,
     Ability = 0
     Gender = male
     Shiny = no
     Nature = IMPISH
-    IV = 10,10,20,0,0,0
+    IV = 10,10,10,0,0,0
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = VANILLUXE,23
+Pokemon = VANILLUXE,21
     Moves = ICEBEAM,FLASHCANNON,UPROAR,
     Ability = 1
     Gender = female
@@ -405,7 +405,7 @@ Pokemon = VANILLUXE,23
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = KLINKLANG,24
+Pokemon = KLINKLANG,22
     Moves = WILDCHARGE,GEARGRIND,,
     Ability = 2
     Gender = male
@@ -446,7 +446,7 @@ Pokemon = BUTITIV,25
 #------------ Enemy Trainer -------------------
 [SAMURANJA,Nobunaga]
 Items = SUPERPOTION
-Pokemon = ARCANINE,23
+Pokemon = ARCANINE,22
     Moves = FLAMETHROWER,BURNUP,ROAR,PLAYROUGH
     Ability = 0
     Gender = male
@@ -457,7 +457,7 @@ Pokemon = ARCANINE,23
     Name = Hyobishin
     Shadow = no
     Ball = 0
-Pokemon = SWABLU,24
+Pokemon = SWABLU,23
     Moves = ICEBEAM,DRAGON PULSE,SAFEGUARD,MOONBLAST
     Ability = 0
     Gender = female
@@ -468,7 +468,7 @@ Pokemon = SWABLU,24
     Name = Kujaku
     Shadow = no
     Ball = 0
-Pokemon = SAMURADA,24
+Pokemon = SAMURADA,22
     Moves = SWORDSDANCE,XSCISSOR,SLASH,
     Ability = 0
     Gender = male
