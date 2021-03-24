@@ -43,7 +43,7 @@
 41,PEARL,Pearl,Pearls,1,2000,"A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops.",0,0,0,
 42,BIGPEARL,Big Pearl,Big Pearls,1,8000,"A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops.",0,0,0,
 43,PEARLSTRING,Pearl String,Pearl Strings,1,30000,"Very large pearls that sparkle in a pretty silver color. A maniac will buy them for a high price.",0,0,0,
-44,STARDUST,Stardust,Stardusts,1,3000,"Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops.",0,0,0,
+44,STARDUST,Polvere di stelle,Polveri di stelle,1,60000,"Rarissimo residuo stellare. Si dice possa mutare la natura di un pokémon.",0,0,0,
 45,STARPIECE,Star Piece,Star Pieces,1,12000,"A shard of a pretty gem that sparkles in a red color. It can be sold at a high price to shops.",0,0,0,
 46,COMETSHARD,Comet Shard,Comet Shards,1,60000,"A shard which fell to the ground when a comet approached. A maniac will buy it for a high price.",0,0,0,
 47,NUGGET,Nugget,Nuggets,1,10000,"A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops.",0,0,0,
