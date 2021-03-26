@@ -26060,7 +26060,7 @@ Habitat=Forest
 Kind=Samurai
 Pokedex=Quando un Nincada ottiene il braccio del suo arcinemico, inizia ad usarlo come una spada. Questi pokémon combattono con onore tutta la vita, servendo cecamente il loro signore.
 BattlerPlayerY=0
-BattlerEnemyY=30
+BattlerEnemyY=10
 BattlerAltitude=0
 Evolutions=
 #------------------
