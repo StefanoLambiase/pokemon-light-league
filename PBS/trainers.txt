@@ -182,7 +182,7 @@ Pokemon = MACHOP,4
 #-------------------------------
 #
 # Percorso 3 -------------------------------------------------------
-#
+# Consiglio = 'Ah si, il percorso 3, quel covo di matti! C'è anche un mio vecchio amico, uno strano, uno zimbello. Comunque! In quel percorso ci sono molti tipi diversi tra di loro. I più pericolosi sono vuolnerabili a mosse di tipo Roccia e di tipo Buio! Buona fortuna!'
 #-------------------------------
 [CANDIDATO1_M,Giulio]
 Pokemon = BIDOOF,8
@@ -280,7 +280,7 @@ Pokemon = STEELIX,14
 #-------------------------------
 #
 # Percorso 4 -------------------------------------------------------
-#
+# Consiglio: 'Sisi, il percorso 4, dov'è la pensione, luogo preferito da noi competitivologi. Non divaghiamo, da quello che so il primo tizio è fissato coi fossili, quelli di tipo roccia. A seguire vi è uno con pokémon di un tipo uscito fuori da poco, seguito da uno che ha pokémon deboli a questo tipo.'
 #-------------------------------
 [CANDIDATO1_M,Solario]
 Pokemon = CRANIDOS,18
@@ -417,8 +417,8 @@ Pokemon = KLANG,22
     Ball = 0
 #-------------------------------
 #
-# Percorso 6 -------------------------------------------------------
-# Settinja
+# Percorso 6 - Settinja -------------------------------------------------------
+# Consiglio: 'Ah, sei arrivato al percorso 6. Quel luogo è abitato da strani tipi fissati col tipo coleottero e il tipo acciao. Fossi in te mi porterei un solido tipo fuoco, anche se quelli non sono sprovveduti, servirebbe un piano B.'
 #-------------------------------
 #------------ Friend Trainer -------------------
 [RIVALEAMICO,Andrea]
@@ -631,8 +631,8 @@ Pokemon = TOGETIC,26
     Ball = 0
 #-------------------------------
 #
-# Percorso 7 -------------------------------------------------------
-# Settinja
+# Percorso 7 - Settinja -------------------------------------------------------
+# Consiglio: 'Hai fatto subito! Non c'è molto da dire su questo percorso, dovrebbero essere amici di quelli fissati coi tipi coleotteoro. Fai te che pockémon potrebbero avere!'
 #-------------------------------
 [SHENINJA,Hattori]
 Items = POTION
