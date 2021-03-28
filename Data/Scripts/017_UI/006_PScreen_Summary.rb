@@ -320,6 +320,7 @@ class PokemonSummary_Scene
     pagename = [_INTL("INFO"),
                 _INTL("TRAINER MEMO"),
                 _INTL("SKILLS"),
+                _INTL("EVs/IVs"),
                 _INTL("MOVES"),
                 _INTL("RIBBONS")][page-1]
     textpos = [
@@ -349,8 +350,9 @@ class PokemonSummary_Scene
     when 1; drawPageOne
     when 2; drawPageTwo
     when 3; drawPageThree
-    when 4; drawPageFour
-    when 5; drawPageFive
+    when 4; drawPageSix
+    when 5; drawPageFour
+    when 6; drawPageFive
     end
   end
 
@@ -634,6 +636,56 @@ class PokemonSummary_Scene
        [sprintf("%d",@pokemon.spdef),456,216,1,Color.new(64,64,64),Color.new(176,176,176)],
        [_INTL("Speed"),248,248,0,base,statshadows[PBStats::SPEED]],
        [sprintf("%d",@pokemon.speed),456,248,1,Color.new(64,64,64),Color.new(176,176,176)],
+       [_INTL("Ability"),224,284,0,base,shadow],
+       [PBAbilities.getName(@pokemon.ability),362,284,0,Color.new(64,64,64),Color.new(176,176,176)],
+    ]
+    # Draw all text
+    pbDrawTextPositions(overlay,textpos)
+    # Draw ability description
+    abilitydesc = pbGetMessage(MessageTypes::AbilityDescs,@pokemon.ability)
+    drawTextEx(overlay,224,316,282,2,abilitydesc,Color.new(64,64,64),Color.new(176,176,176))
+    # Draw HP bar
+    if @pokemon.hp>0
+      w = @pokemon.hp*96*1.0/@pokemon.totalhp
+      w = 1 if w<1
+      w = ((w/2).round)*2
+      hpzone = 0
+      hpzone = 1 if @pokemon.hp<=(@pokemon.totalhp/2).floor
+      hpzone = 2 if @pokemon.hp<=(@pokemon.totalhp/4).floor
+      imagepos = [
+         ["Graphics/Pictures/Summary/overlay_hp",360,110,0,hpzone*6,w,6]
+      ]
+      pbDrawImagePositions(overlay,imagepos)
+    end
+  end
+
+  def drawPageSix
+    overlay = @sprites["overlay"].bitmap
+    base   = Color.new(248,248,248)
+    shadow = Color.new(104,104,104)
+    # Determine which stats are boosted and lowered by the Pokémon's nature
+    statshadows = []
+    PBStats.eachStat { |s| statshadows[s] = shadow }
+    if !@pokemon.shadowPokemon? || @pokemon.heartStage>3
+      natup = PBNatures.getStatRaised(@pokemon.calcNature)
+      natdn = PBNatures.getStatLowered(@pokemon.calcNature)
+      statshadows[natup] = Color.new(136,96,72) if natup!=natdn
+      statshadows[natdn] = Color.new(64,120,152) if natup!=natdn
+    end
+    # Write various bits of text
+    textpos = [
+       [_INTL("HP"),292,76,2,base,statshadows[PBStats::HP]],
+       [sprintf("%d / %d",@pokemon.ev[0],@pokemon.iv[0]),462,76,1,Color.new(250,250,250),Color.new(30,30,30)],
+       [_INTL("Attack"),248,120,0,base,statshadows[PBStats::ATTACK]],
+       [sprintf("%d / %d",@pokemon.ev[1],@pokemon.iv[1]),456,120,1,Color.new(250,250,250),Color.new(30,30,30)],
+       [_INTL("Defense"),248,152,0,base,statshadows[PBStats::DEFENSE]],
+       [sprintf("%d / %d",@pokemon.ev[2],@pokemon.iv[2]),456,152,1,Color.new(250,250,250),Color.new(30,30,30)],
+       [_INTL("Sp. Atk"),248,184,0,base,statshadows[PBStats::SPATK]],
+       [sprintf("%d / %d",@pokemon.ev[3],@pokemon.iv[3]),456,184,1,Color.new(250,250,250),Color.new(30,30,30)],
+       [_INTL("Sp. Def"),248,216,0,base,statshadows[PBStats::SPDEF]],
+       [sprintf("%d / %d",@pokemon.ev[4],@pokemon.iv[4]),456,216,1,Color.new(250,250,250),Color.new(30,30,30)],
+       [_INTL("Speed"),248,248,0,base,statshadows[PBStats::SPEED]],
+       [sprintf("%d / %d",@pokemon.ev[5],@pokemon.iv[5]),456,248,1,Color.new(250,250,250),Color.new(30,30,30)],
        [_INTL("Ability"),224,284,0,base,shadow],
        [PBAbilities.getName(@pokemon.ability),362,284,0,Color.new(64,64,64),Color.new(176,176,176)],
     ]
@@ -1275,7 +1327,7 @@ class PokemonSummary_Scene
         oldpage = @page
         @page -= 1
         @page = 1 if @page<1
-        @page = 5 if @page>5
+        @page = 6 if @page>6
         if @page!=oldpage   # Move to next page
           pbSEPlay("GUI summary change page")
           @ribbonOffset = 0
@@ -1285,7 +1337,7 @@ class PokemonSummary_Scene
         oldpage = @page
         @page += 1
         @page = 1 if @page<1
-        @page = 5 if @page>5
+        @page = 6 if @page>6
         if @page!=oldpage   # Move to next page
           pbSEPlay("GUI summary change page")
           @ribbonOffset = 0
