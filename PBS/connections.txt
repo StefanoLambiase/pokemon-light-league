@@ -44,3 +44,5 @@
 97,South,0,96,North,49
 # Percorso 4 (103) - Percorso 2 (96)
 103,West,0,96,East,1
+# Cimitero (120) - Fundi Village (119)
+120,0,58,119,0,0

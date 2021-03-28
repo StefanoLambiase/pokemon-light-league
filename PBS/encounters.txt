@@ -470,10 +470,6 @@ Land
     CUBONE,11,14
     CUBONE,11,14
 #-------------------------------
-#-------------------------------------------------------------------
-#--------------------- Pokemon-Light-League ------------------------
-#-------------------------------------------------------------------
-#-------------------------------
 096 # Percorso 2
 25,10,10
 Land
@@ -495,14 +491,14 @@ Water
     MARILL,16,20
     MARILL,16,20
     MARILL,16,20
-OldRod # 2
+OldRod
     MARILL,16,20
     SQUIRTLE,14,15
-GoodRod # 3
+GoodRod
     MARILL,16,20
     SQUIRTLE,14,15
     SQUIRTLE,14,15
-SuperRod # 5
+SuperRod
     WALREIN,40,45
     BLASTOISE,40,45
     BLASTOISE,40,45
@@ -525,9 +521,9 @@ Land
     RALTS,10,15
     RALTS,10,15
 #-------------------------------
-103 # Percorso 4 - Pensione Pokémon
+103 # Percorso 4
 25,10,10
-Land # 12
+Land
     VULPIX,13,15
     SOLOSIS,15,18
     VULPIX,13,15
@@ -540,51 +536,51 @@ Land # 12
     CARNIVINE,15,18
     SANDILE,15,20
     SANDILE,15,20
-Water # 5
+Water
     WISHIWASHI,20,23
     DEWPIDER,20,23
     SEAKING,20,23
     FRILLISH,20,23
     GYARADOS,20,23
-OldRod # 2
+OldRod
     WISHIWASHI,20,21
     WISHIWASHI,20,21
-GoodRod # 3
+GoodRod
     WISHIWASHI,20,21
     WISHIWASHI,20,21
     GYARADOS,22,23
-SuperRod # 5
+SuperRod
     WHISCASH,40,45
     WHISCASH,40,45
     WHISCASH,40,45
     WAILORD,50,51
     WAILORD,50,51
 #-------------------------------
-108 # Rajedi
+108 # Rajedi Town
 25,10,10
-Water # 5
+Water
     WISHIWASHI,20,23
     DEWPIDER,20,23
     SEAKING,20,23
     PIPLUP,14,15
     PIPLUP,14,15
-OldRod # 2
+OldRod
     FROAKIE,25,27
     FROAKIE,25,27
-GoodRod # 3
+GoodRod
     SEAKING,20,23
     SEAKING,20,23
     PRINPLUP,20,21
-SuperRod # 5
+SuperRod
     LUMINEON,40,45
     LUMINEON,40,45
     GRENINJA,40,45
     GRENINJA,50,51
     GRENINJA,50,51
 #-------------------------------
-111 # Percorso 5
+111 # Erboristeria
 25,10,10
-Land # 12
+Land
     SNUBBULL,20,23
     NOIBAT,20,23
     SNUBBULL,20,23
@@ -597,29 +593,48 @@ Land # 12
     MANECTRIC,22,27
     DIGGERSBY,20,25
     DIGGERSBY,20,25
-Water # 5
+Water
     WAILMER,20,23
     SLOWPOKE,20,23
     DEWGONG,20,25
     QUAGSIRE,20,25
     GYARADOS,20,25
-OldRod # 2
+OldRod
     LOTAD,15,16
     LOTAD,15,16
-GoodRod # 3
+GoodRod
     LOMBRE,20,22
     LOMBRE,20,22
     LOMBRE,20,22
-SuperRod # 5
+SuperRod
     QUAGSIRE,40,45
     QUAGSIRE,40,45
     MANTINE,40,45
     LUDICOLO,50,51
     LUDICOLO,50,51
 #-------------------------------
-115 # Percorso 6 - Arcipelago della setta degli Shedinja
+115 # Percorso 6
 25,10,10
-LandDay # 12
+Water
+    WAILMER,20,23
+    BARBOACH,20,23
+    CARVANHA,20,23
+    MANTINE,20,23
+    SEALEO,20,23
+OldRod
+    WINGULL,20,23
+    WINGULL,20,23
+GoodRod
+    WINGULL,20,23
+    WINGULL,20,23
+    FRILLISH,20,23
+SuperRod
+    JELLICENT,40,45
+    JELLICENT,40,45
+    PELIPPER,40,45
+    PELIPPER,50,51
+    PELIPPER,50,51
+LandDay
     CHARJABUG,23,25
     NINCADA,23,25
     KRICKETUNE,23,25
@@ -632,7 +647,7 @@ LandDay # 12
     KRICKETUNE,23,25
     LOUDRED,23,25
     LOUDRED,23,25
-LandNight # 12
+LandNight
     NINCADA,23,25
     POLIWAG,23,25
     NINCADA,23,25
@@ -645,29 +660,10 @@ LandNight # 12
     KRICKETUNE,23,25
     LOUDRED,23,25
     LOUDRED,23,25
-Water # 5
-    WAILMER,20,23
-    BARBOACH,20,23
-    CARVANHA,20,23
-    MANTINE,20,23
-    SEALEO,20,23
-OldRod # 2
-    WINGULL,20,23
-    WINGULL,20,23
-GoodRod # 3
-    WINGULL,20,23
-    WINGULL,20,23
-    FRILLISH,20,23
-SuperRod # 5
-    JELLICENT,40,45
-    JELLICENT,40,45
-    PELIPPER,40,45
-    PELIPPER,50,51
-    PELIPPER,50,51
 #-------------------------------
 118 # Percorso 7
 25,10,10
-LandDay # 12
+LandDay
     EEVEE,23,26
     NINCADA,23,26
     KRICKETUNE,23,26
@@ -680,7 +676,7 @@ LandDay # 12
     ABSOL,23,26
     ZEBSTRIKA,23,26
     ZEBSTRIKA,23,26
-LandNight # 12
+LandNight
     EEVEE,23,26
     POLIWHIRL,23,26
     NINCADA,23,26

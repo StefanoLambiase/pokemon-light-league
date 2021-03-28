@@ -504,8 +504,30 @@ ShowArea = true
 [113]
 # Percorso 5
 BattleBack = grass
+Outdoor = true
+ShowArea = true
 #-------------------------------
 [115]
 # Percorso 6
 Outdoor = true
 ShowArea = true
+#-------------------------------
+[119]
+# Fundi Village
+Weather = Rain,100
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[120]
+# Cimitero
+Weather = Rain,100
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[127]
+# Rovine Orientali
+DiveMap = 128
+ShowArea = true
+#-------------------------------
+[129]
+DiveMap = 128
