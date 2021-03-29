@@ -554,7 +554,7 @@ Pokemon = PURUGLY,27
     Shadow = no
     Ball = 0
 #-------------------------------
-[TOKENITZU,Tokenitzu]
+[TOKENITSU,Tokenitsu]
 Items = SUPERPOTION
 Pokemon = SHOGUNADA,28
     Moves = DRAGONDANCE,BULLETPUNCH,SECRETSWORD,XSCISSOR
