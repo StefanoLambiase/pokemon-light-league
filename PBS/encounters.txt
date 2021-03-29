@@ -578,7 +578,7 @@ SuperRod
     GRENINJA,50,51
     GRENINJA,50,51
 #-------------------------------
-111 # Erboristeria
+113 # Percorso 5
 25,10,10
 Land
     SNUBBULL,20,23
