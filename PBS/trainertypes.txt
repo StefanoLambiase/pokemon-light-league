@@ -96,7 +96,7 @@
 88,RECLUTAMETRO,Recluta Metro,49,,,,Male,255,
 89,VICE,Vice,56,,,,Male,255,
 90,EMANUELE,Candidato Prodigio,170,_CandidatoBattle,,_CandidatoIntro,Male,255,
-91,TOKENITZU,Shogun,170,,,,Male,255,
+91,TOKENITSU,Shogun,170,,,,Male,255,
 92,SAMURANJA,Samuranja,170,,,,Male,255,
 93,SHENINJA,Sheninja,170,,,,Male,255,
 94,ZOROARKTRAINER,Allenatore di pokémon,170,,,,Male,255,
