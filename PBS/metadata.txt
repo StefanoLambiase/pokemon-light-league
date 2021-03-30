@@ -509,7 +509,9 @@ ShowArea = true
 #-------------------------------
 [115]
 # Percorso 6
+BattleBack = autumn
 Outdoor = true
+Environment = None
 ShowArea = true
 #-------------------------------
 [119]
