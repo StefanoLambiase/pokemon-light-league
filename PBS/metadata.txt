@@ -503,7 +503,7 @@ ShowArea = true
 #-------------------------------
 [113]
 # Percorso 5
-BattleBack = grass
+BattleBack = field
 Outdoor = true
 ShowArea = true
 #-------------------------------
