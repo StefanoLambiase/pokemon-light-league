@@ -514,6 +514,13 @@ Outdoor = true
 Environment = None
 ShowArea = true
 #-------------------------------
+[118]
+# Percorso 7
+BattleBack = autumn
+Weather = Rain,100
+Outdoor = true
+ShowArea = true
+#-------------------------------
 [119]
 # Fundi Village
 Weather = Rain,100
