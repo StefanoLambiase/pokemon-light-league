@@ -529,6 +529,7 @@ ShowArea = true
 #-------------------------------
 [120]
 # Cimitero
+BattleBack = autumn
 Weather = Rain,100
 Outdoor = true
 ShowArea = true
@@ -540,3 +541,8 @@ ShowArea = true
 #-------------------------------
 [129]
 DiveMap = 128
+#-------------------------------
+[130]
+# Cascate della rinascita
+Outdoor = true
+ShowArea = true

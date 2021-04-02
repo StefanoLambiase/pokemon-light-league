@@ -1195,3 +1195,31 @@ def pbRecordTrainer
   end
   return false
 end
+
+# ====================
+# CUSTOM SELECT
+# ====================
+
+def pbSamuradaChoose()
+  scene = PokemonParty_Scene.new
+  screen = PokemonPartyScreen.new(scene,$Trainer.party)
+  screen.pbStartScene(_INTL("Quale pokémon dovrebbe tagliare la lastra?"),false)
+  ret = false
+  chosen = screen.pbChoosePokemon
+  break if chosen<0
+  pokemon = $Trainer.party[chosen]
+  if pokemon.egg?
+    pbMessage(_INTL("Un uovo non è adatto.")) { screen.pbUpdate }
+  elsif pokemon.shadowPokemon?
+    pbMessage(_INTL("Un pokèmon ombra non è adatto.")) { screen.pbUpdate }
+  elsif !pokemon.isSpecies?(:SAMURADA)
+    pbMessage(_INTL("{1} non è abile nell'arte della spada.",pokemon.name)) { screen.pbUpdate }
+  elsif pokemon.level < 50
+    pbMessage(_INTL("{1} non è ancora sufficientemente allenato.",pokemon.name)) { screen.pbUpdate }
+  else
+    pbMessage(_INTL("{1} è pronto a tagliare la lastra.",pokemon.name))
+    ret = true
+  end
+  screen.pbEndScene
+  return ret   # Returns whether the pokèmon is a valid samurada
+end
