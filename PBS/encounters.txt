@@ -665,6 +665,28 @@ LandNight
     LOUDRED,23,25
     LOUDRED,23,25
 #-------------------------------
+130 # Cascate della rinascita
+25,10,10
+Water
+    WAILMER,38,39
+    SHARPEDO,38,39
+    AZUMARILL,38,39
+    AZUMARILL,20,23
+    WAILORD,40,42
+OldRod # Not present in the game.
+    WINGULL,20,23
+    WINGULL,20,23
+GoodRod
+    AZUMARILL,30,35
+    CROCONAW,30,35
+    CROCONAW,30,35
+SuperRod
+    FERALIGATR,40,45
+    FERALIGATR,40,45
+    WAILORD,40,45
+    WAILORD,40,45
+    WAILORD,40,45
+#-------------------------------
 118 # Percorso 7
 25,10,10
 LandDay
