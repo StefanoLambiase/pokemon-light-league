@@ -723,3 +723,19 @@ Pokemon = ARAQUANID,28
     Happiness = 255
     Shadow = no
     Ball = 0
+#-------------------------------
+#
+# Cimitero Fundi - Samuele -------------------------------------------------------
+#
+#-------------------------------
+[SAMUELEFUNDI,Samuele]
+Pokemon = DIOSHEDINJA,33
+    Moves = XSCISSOR,BUGBUZZ,WILLOWISP,HYPERBEAM
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = HARDY
+    IV = 28,28,28,28,28,28
+    Happiness = 255
+    Shadow = no
+    Ball = 0

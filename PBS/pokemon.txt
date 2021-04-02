@@ -26061,7 +26061,7 @@ Pokedex=Quando un Nincada ottiene il braccio del suo arcinemico, inizia ad usarl
 BattlerPlayerY=0
 BattlerEnemyY=10
 BattlerAltitude=0
-Evolutions=
+Evolutions=SHOGUNADA,Location,130
 #------------------
 [816]
 Name=Shogunada
@@ -26146,3 +26146,33 @@ BattlerPlayerY=0
 BattlerEnemyY=21
 BattlerAltitude=9
 Evolutions=
+#------------------
+[819]
+Name=Dio Shedinja
+InternalName=DIOSHEDINJA
+Type1=BUG
+BaseStats=189,112,84,84,112,84
+GenderRate=Genderless
+GrowthRate=Slow
+BaseEXP=170
+EffortPoints=0,0,0,0,3,0
+Rareness=42
+Happiness=35
+Abilities = WONDERGUARD
+Moves = 1,SCRATCH,1,HARDEN,1,ABSORB,1,SANDATTACK,5,ABSORB,9,SANDATTACK,13,FURYSWIPES,17,SPITE,21,SHADOWSNEAK,25,MINDREADER,29,CONFUSERAY,33,SHADOWBALL,37,GRUDGE,41,HEALBLOCK,45,PHANTOMFORCE
+Compatibility = Mineral
+StepsToHatch = 3840
+Height = 3
+Weight = 2
+Color = Purple
+Shape = 5
+Habitat = Forest
+Kind = Sogni Infranti
+Pokedex = Risultato del potere del pokémon leggendario Ho-oh usato per riportare in vita uno Shedinja. La creatura ha superato i limiti che aveva nella sua forma mortale, ottenendo un potere simile a quello di un Dio.
+BattlerPlayerX = 0
+BattlerPlayerY = 0
+BattlerEnemyX = 2
+BattlerEnemyY = 1
+BattlerShadowX = 0
+BattlerShadowSize = 2
+Evolutions = 
