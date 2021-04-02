@@ -26150,7 +26150,7 @@ Evolutions=
 [819]
 Name=Dio Shedinja
 InternalName=DIOSHEDINJA
-Type1=BUG
+Type1=GHOST
 BaseStats=189,112,84,84,112,84
 GenderRate=Genderless
 GrowthRate=Slow
