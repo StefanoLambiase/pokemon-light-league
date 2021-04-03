@@ -534,6 +534,10 @@ Weather = Rain,100
 Outdoor = true
 ShowArea = true
 #-------------------------------
+[126]
+# Grotta dell'eterno dolore
+BattleBack = cave2_ice
+#-------------------------------
 [127]
 # Rovine Orientali
 DiveMap = 128
