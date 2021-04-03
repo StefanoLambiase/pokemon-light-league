@@ -26148,10 +26148,10 @@ BattlerAltitude=9
 Evolutions=
 #------------------
 [819]
-Name=Dio Shedinja
+Name=God Shedinja
 InternalName=DIOSHEDINJA
 Type1=GHOST
-BaseStats=189,112,84,84,112,84
+BaseStats=280,112,84,84,112,84
 GenderRate=Genderless
 GrowthRate=Slow
 BaseEXP=170

@@ -730,12 +730,14 @@ Pokemon = ARAQUANID,26
 #-------------------------------
 [SAMUELEFUNDI,Samuele]
 Pokemon = DIOSHEDINJA,33
-    Moves = SHADOWBALL,BUGBUZZ,WILLOWISP,HYPERBEAM
+    Item = OCCABERRY
+    Moves = SHADOWBALL,BUGBUZZ,HYPERBEAM
     Ability = 0
     Gender = male
     Shiny = no
     Nature = HARDY
-    IV = 28,28,28,28,28,28
+    IV = 31,31,31,31,31,31
+    EV = 24,24,24,24,24,24
     Happiness = 255
     Shadow = no
     Ball = 0
