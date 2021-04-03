@@ -677,4 +677,5 @@
 654,EXPALL,Condividi Esperienza,Condividi Esperienza,8,0,"Permette di condividere l'esperienza in tutta la squadra.",2,6,0,
 655,EXPALLOFF,Condividi Esperienza,Condividi Esperienza,8,0,"Permette di condividere l'esperienza in tutta la squadra.",2,6,0,
 #--------------------------------
-656,ALASPENTA,Ala Spenta,Ala Spenta,8,0,"Un'ala appeartenuta al leggendario pokémon Ho-Oh. Ormai è priva del suo leggendario potere.",0,0,0,
+656,ALASPENTA,Ala Spenta,Ala Spenta,8,0,"Un'ala appeartenuta al leggendario pokémon Ho-Oh. Ormai è priva del suo leggendario potere.",0,0,6,
+657,CORONAALIENA,Corona Aliena,Corona Aliena,8,0,"Una corona appartenuta al signore degli alieni che un tempo cercò di invaedere la regione. Sembra sia capace di attirare gli spiriti dei pokémon servitori dalle loro prigioni.",0,0,6,
