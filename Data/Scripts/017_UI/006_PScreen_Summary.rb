@@ -1295,11 +1295,11 @@ class PokemonSummary_Scene
         pbPlayCloseMenuSE
         break
       elsif Input.trigger?(Input::C)
-        if @page==4
+        if @page==5
           pbPlayDecisionSE
           pbMoveSelection
           dorefresh = true
-        elsif @page==5
+        elsif @page==6
           pbPlayDecisionSE
           pbRibbonSelection
           dorefresh = true
