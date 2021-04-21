@@ -121,14 +121,14 @@ NUM_BADGES_BOOST_SPATK   = 7
 NUM_BADGES_BOOST_SPDEF   = 7
 NUM_BADGES_BOOST_SPEED   = 3
 FIELD_MOVES_COUNT_BADGES = true
-BADGE_FOR_CUT            = 1
-BADGE_FOR_FLASH          = 2
-BADGE_FOR_ROCKSMASH      = 3
-BADGE_FOR_SURF           = 4
-BADGE_FOR_FLY            = 5
-BADGE_FOR_STRENGTH       = 6
-BADGE_FOR_DIVE           = 7
-BADGE_FOR_WATERFALL      = 8
+BADGE_FOR_CUT            = 0
+BADGE_FOR_FLASH          = 0
+BADGE_FOR_ROCKSMASH      = 0
+BADGE_FOR_SURF           = 0
+BADGE_FOR_FLY            = 0
+BADGE_FOR_STRENGTH       = 0
+BADGE_FOR_DIVE           = 0
+BADGE_FOR_WATERFALL      = 0
 
 #===============================================================================
 # * Whether a move's physical/special category depends on the move itself as in
