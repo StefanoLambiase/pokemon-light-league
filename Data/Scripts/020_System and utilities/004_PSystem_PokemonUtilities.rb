@@ -272,6 +272,10 @@ def pbChooseNonEggPokemon(variableNumber,nameVarNumber)
   pbChoosePokemon(variableNumber,nameVarNumber,proc { |pkmn| !pkmn.egg? })
 end
 
+def pbChoose0EvsPokemon(variableNumber,nameVarNumber)
+  pbChoosePokemon(variableNumber,nameVarNumber,proc { |pkmn| pkmn.ev[0] + pkmn.ev[1] + pbGetPokemon(1).ev[2] + pkmn.ev[3] + pkmn.ev[4] + pkmn.ev[5] == 0 })
+end
+
 def pbChooseAblePokemon(variableNumber,nameVarNumber)
   pbChoosePokemon(variableNumber,nameVarNumber,proc { |pkmn| !pkmn.egg? && pkmn.hp>0 })
 end
