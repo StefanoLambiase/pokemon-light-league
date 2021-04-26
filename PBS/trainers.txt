@@ -730,8 +730,9 @@ Pokemon = ARAQUANID,26
 #-------------------------------
 [SAMUELEFUNDI,Samuele]
 Pokemon = DIOSHEDINJA,33
+    Name = GodShedinja 
     Item = OCCABERRY
-    Moves = SHADOWBALL,BUGBUZZ,HYPERBEAM
+    Moves = SHADOWBALL,BUGBUZZ,HYPERVOICE
     Ability = 0
     Gender = male
     Shiny = no
