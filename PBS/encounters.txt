@@ -618,7 +618,7 @@ SuperRod
     LUDICOLO,50,51
 #-------------------------------
 115 # Percorso 6
-25,10,10
+25,5,5
 Water
     WAILMER,18,20
     BARBOACH,18,20

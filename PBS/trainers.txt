@@ -729,8 +729,7 @@ Pokemon = ARAQUANID,26
 #
 #-------------------------------
 [SAMUELEFUNDI,Samuele]
-Pokemon = DIOSHEDINJA,33
-    Name = GodShedinja 
+Pokemon = DIOSHEDINJA,33 
     Item = OCCABERRY
     Moves = SHADOWBALL,BUGBUZZ,HYPERVOICE
     Ability = 0
