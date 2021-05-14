@@ -1648,3 +1648,56 @@ Color = Yellow
 FormName = Original Color
 Color = Red
 Pokedex = This gorgeous Magearna looks as it did at the time of its invention. Its luxurious decoration pleased the king's daughter.
+#-------------------------------
+#-------------------------------------------------------------
+# Pokèmon LightLeague Custom forms ---------------------------
+#-------------------------------------------------------------
+#-------------------------------
+[DUSKNOIR,1]
+FormName = Dark Dusknoir
+Type1 = DARK
+BaseStats = 45,100,135,45,65,135
+EffortPoints = 0,0,1,0,0,2
+Pokedex = Un Dusknoir corrotto dal potere delle tenebre e dell'oscurità. Alcuni uomini lo venerano come un essere bellissimo.
+#-------------------------------
+[GOLEM,2]
+FormName = Dark Golem
+Type1 = DARK
+BaseStats = 80,120,130,45,55,65
+EffortPoints = 0,0,3,0,0,0
+Pokedex = Un Golem corrotto dal potere delle tenebre e dell'oscurità. Quando rotola lascia dietro di se una melma orrenda.
+#-------------------------------
+[MACHAMP,1]
+FormName = Dark Machamp
+Type1 = DARK
+BaseStats = 90,130,80,55,65,85
+EffortPoints = 0,3,0,0,0,0
+Pokedex = Un Machamp corrotto dal potere delle tenebre e dell'oscurità. I suoi pugni riportano alla mente ricordi di un dolore passato.
+#-------------------------------
+[MAGNEZONE,1]
+FormName = Dark Magnezone
+Type1 = DARK
+BaseStats = 70,70,115,60,130,90
+EffortPoints = 0,0,0,0,3,0
+Pokedex = Un Magnezone corrotto dal potere delle tenebre e dell'oscurità. Risulta essere talmente intelligente da poter vincere a scacchi contro chiunque.
+#-------------------------------
+[PORYGONX,1]
+FormName = Dark Porygon X
+Type1 = DARK
+BaseStats=65,110,60,110,110,65
+EffortPoints=0,0,0,0,3,0
+Pokedex = Un Porygon X corrotto dal potere delle tenebre e dell'oscurità. Incarnazione del detto "oltre al danno la beffa".
+#-------------------------------
+[VESPIQUEN,1]
+FormName = Dark Vespiquen
+Type1 = DARK
+BaseStats = 70,80,102,40,80,102
+EffortPoints = 0,0,1,0,0,1
+Pokedex = Un Vespiquen corrotto dal potere delle tenebre e dell'oscurità. Sembra che mangiare il suo miele induca la trasformazione, ma non ditelo a Sandman.
+#-------------------------------
+[VOLTORB,1]
+FormName = Dark Voltorb
+Type1 = DARK
+BaseStats = 40,30,50,100,55,55
+EffortPoints = 0,0,0,1,0,0
+Pokedex = Un Voltorb corrotto dal potere delle tenebre e dell'oscurità. La sua capacità esplosiva è aumentata del 7%.
