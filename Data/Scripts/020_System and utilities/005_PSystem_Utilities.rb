@@ -715,6 +715,15 @@ def pbTrainerName(name=nil,outfit=0)
   $PokemonTemp.begunNewGame = true
 end
 
+def passCheck(password,helptext="Password:",minlength=0,maxlength=8,casesensitive=false)
+  code=pbEnterText(helptext,minlength,maxlength)
+  if code==password || (casesensitive==false && code.downcase==password.downcase)
+	return true
+  else
+	return false
+  end
+end
+
 def pbSuggestTrainerName(gender)
   userName = pbGetUserName()
   userName = userName.gsub(/\s+.*$/,"")
