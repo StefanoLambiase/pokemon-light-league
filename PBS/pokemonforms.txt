@@ -1695,9 +1695,9 @@ BaseStats = 70,80,102,40,80,102
 EffortPoints = 0,0,1,0,0,1
 Pokedex = Un Vespiquen corrotto dal potere delle tenebre e dell'oscurità. Sembra che mangiare il suo miele induca la trasformazione, ma non ditelo a Sandman.
 #-------------------------------
-[VOLTORB,1]
-FormName = Dark Voltorb
+[ELECTRODE,1]
+FormName = Dark Electrode
 Type1 = DARK
-BaseStats = 40,30,50,100,55,55
-EffortPoints = 0,0,0,1,0,0
-Pokedex = Un Voltorb corrotto dal potere delle tenebre e dell'oscurità. La sua capacità esplosiva è aumentata del 7%.
+BaseStats = 60,50,70,150,80,80
+EffortPoints = 0,0,0,3,0,0
+Pokedex = Un Electrode corrotto dal potere delle tenebre e dell'oscurità. La sua capacità esplosiva è aumentata del 7%.
