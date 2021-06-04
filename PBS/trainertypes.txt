@@ -104,3 +104,4 @@
 96,SAMUELEFUNDI,Signore degli Shedinja,200,_SamueleGodShedinja,,,Male,255,
 97,RECLUTAELITE,Metro Elite,100,,,,Male,255,
 98,MCROSE,Vice Metro,180,,,,Male,255,
+99,DARKGATTO,Assistente corrotto,180,,,,Male,255,
