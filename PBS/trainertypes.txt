@@ -102,3 +102,4 @@
 94,ZOROARKTRAINER,Allenatore di pokémon,170,,,,Male,255,
 95,RIVALEAMICO,Rivale,,,,,Male,12,
 96,SAMUELEFUNDI,Signore degli Shedinja,200,_SamueleGodShedinja,,,Male,255,
+97,RECLUTAELITE,Metro Elite,100,,,,Male,255,
