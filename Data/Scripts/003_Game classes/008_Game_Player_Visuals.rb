@@ -57,7 +57,7 @@ class Game_Player < Game_Character
       self.move_speed = 4     # Sliding on ice
     elsif !moving? && !@move_route_forcing && $PokemonGlobal
       if $PokemonGlobal.bicycle
-        self.move_speed = 5   # Cycling
+        self.move_speed = 6   # Cycling
       elsif pbCanRun? || $PokemonGlobal.surfing
         self.move_speed = 4   # Running, surfing
       else

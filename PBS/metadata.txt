@@ -544,9 +544,18 @@ DiveMap = 128
 ShowArea = true
 #-------------------------------
 [129]
+# Ospedale Bifallo
 DiveMap = 128
 #-------------------------------
 [130]
 # Cascate della rinascita
 Outdoor = true
+ShowArea = true
+#-------------------------------
+[150]
+# Universita
+BattleBack = city
+Bicycle = true
+Outdoor = true
+Environment = Grass
 ShowArea = true

@@ -470,10 +470,6 @@ Land
     CUBONE,11,14
     CUBONE,11,14
 #-------------------------------
-#-----------------------------------------------------------------------------------
-#------------------------------- Pokémon Light-League ------------------------------
-#-----------------------------------------------------------------------------------
-#-------------------------------
 096 # Percorso 2
 25,10,10
 Land
@@ -665,28 +661,6 @@ LandNight
     LOUDRED,19,21
     LOUDRED,19,21
 #-------------------------------
-130 # Cascate della rinascita
-25,10,10
-Water
-    WAILMER,38,39
-    SHARPEDO,38,39
-    AZUMARILL,38,39
-    AZUMARILL,18,20
-    WAILORD,40,42
-OldRod # Not present in the game.
-    WINGULL,18,20
-    WINGULL,18,20
-GoodRod
-    AZUMARILL,30,35
-    CROCONAW,30,35
-    CROCONAW,30,35
-SuperRod
-    FERALIGATR,40,45
-    FERALIGATR,40,45
-    WAILORD,40,45
-    WAILORD,40,45
-    WAILORD,40,45
-#-------------------------------
 118 # Percorso 7
 25,10,10
 LandDay
@@ -715,3 +689,25 @@ LandNight
     GLISCOR,21,24
     GLISCOR,21,24
     GLISCOR,21,24
+#-------------------------------
+130 # Cascate della rinascita
+25,10,10
+Water
+    WAILMER,38,39
+    SHARPEDO,38,39
+    AZUMARILL,38,39
+    AZUMARILL,18,20
+    WAILORD,40,42
+OldRod
+    WINGULL,18,20
+    WINGULL,18,20
+GoodRod
+    AZUMARILL,30,35
+    CROCONAW,30,35
+    CROCONAW,30,35
+SuperRod
+    FERALIGATR,40,45
+    FERALIGATR,40,45
+    WAILORD,40,45
+    WAILORD,40,45
+    WAILORD,40,45
