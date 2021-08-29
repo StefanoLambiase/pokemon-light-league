@@ -997,7 +997,7 @@ Pokemon = MAGNEZONE,40
 # Università Interno --------------------------------------------------------
 #
 #-------------------------------
-[CANDIDATO2_M,Franco]
+[COOLTRAINER_M,Franco]
 Pokemon = HIPPOWDON,40
     Moves = CRUNCH,THUNDERFANG,,
     Ability = 0
@@ -1036,7 +1036,7 @@ Pokemon = LUCARIO,44
     Shadow = no
     Ball = 0
 #-------------------------------
-[CANDIDATO3_F,Camillina]
+[LASS,Camillina]
 Pokemon = GABITE,42
     Item = LUCARIONITE
     Moves = DRAGONCLAW,EARTHQUAKE,IRONHEAD,REST
