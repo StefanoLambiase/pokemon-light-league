@@ -1022,7 +1022,7 @@ Pokemon = SANDSLASH,42
     Shadow = no
     Ball = 0
 #-------------------------------
-[CANDIDATO2_F,Giovanna]
+[CANDIDATO3_F,Giovanna]
 Pokemon = LUCARIO,44
     Item = LUCARIONITE
     Moves = EXTREMESPEED,METEORMASH,CLOSECOMBAT,
