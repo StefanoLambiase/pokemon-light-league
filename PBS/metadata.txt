@@ -553,7 +553,7 @@ Outdoor = true
 ShowArea = true
 #-------------------------------
 [150]
-# Universita
+# Università
 BattleBack = city
 Bicycle = true
 Outdoor = true

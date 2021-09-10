@@ -712,7 +712,7 @@ SuperRod
     WAILORD,40,45
     WAILORD,40,45
 #-------------------------------
-150 # Universita
+150 # Università
 25,10,10
 Land
     PIKACHU,25,28
