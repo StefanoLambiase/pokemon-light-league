@@ -559,3 +559,37 @@ Bicycle = true
 Outdoor = true
 Environment = Grass
 ShowArea = true
+#-------------------------------
+[168]
+# Percorso 8
+SnapEdges = false
+Bicycle = true
+MapPosition = 0,11,6
+Outdoor = true
+Environment = Grass
+ShowArea = true
+#-------------------------------
+[169]
+# Vano del Giardino
+Outdoor = false
+Environment = None
+ShowArea = false
+#-------------------------------
+[170]
+# Villa Germoglio
+Outdoor = false
+Environment = Graveyard
+ShowArea = true
+#-------------------------------
+[171]
+# Campo base
+Bicycle = true
+Outdoor = true
+Environment = Rock
+ShowArea = true
+#-------------------------------
+[172]
+# Centro Medico del campo base
+Outdoor = false
+HealingSpot = 171,24,8
+ShowArea = true
