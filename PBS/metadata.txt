@@ -582,7 +582,7 @@ Environment = Graveyard
 ShowArea = true
 #-------------------------------
 [171]
-# Campo base
+# Campo Base
 Bicycle = true
 Outdoor = true
 Environment = Rock
@@ -592,4 +592,22 @@ ShowArea = true
 # Centro Medico del campo base
 Outdoor = false
 HealingSpot = 171,24,8
+ShowArea = true
+#-------------------------------
+[181]
+# Monte Ani - Primo Pendio
+Weather = Snow,100
+Bicycle = true
+Outdoor = true
+Environment = Rock
+ShowArea = true
+#-------------------------------
+[182]
+# Monte Ani - Piano Intricato
+BattleBack = 
+Weather = Snow,100
+Bicycle = true
+Dungeon = false
+Outdoor = false
+Environment = Cave
 ShowArea = true
