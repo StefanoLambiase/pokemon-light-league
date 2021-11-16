@@ -594,9 +594,21 @@ Outdoor = false
 HealingSpot = 171,24,8
 ShowArea = true
 #-------------------------------
+[179]
+# Monte Ani - Piano Infranto
+BattleBack = cave1
+Bicycle = true
+Dungeon = false
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[180]
+# Monte Ani - Secondo Piano
+Bicycle = true
+Outdoor = false
+#-------------------------------
 [181]
 # Monte Ani - Primo Pendio
-Weather = Snow,100
 Bicycle = true
 Outdoor = true
 Environment = Rock
@@ -604,10 +616,50 @@ ShowArea = true
 #-------------------------------
 [182]
 # Monte Ani - Piano Intricato
-BattleBack = 
-Weather = Snow,100
+BattleBack = cave1
 Bicycle = true
 Dungeon = false
 Outdoor = false
 Environment = Cave
 ShowArea = true
+#-------------------------------
+[183]
+# Monte Ani - Terzo Piano
+Bicycle = true
+Outdoor = false
+#-------------------------------
+[184]
+# Monte Ani - Secondo pendio
+Weather = Snow,100
+Bicycle = true
+Outdoor = true
+ShowArea = false
+#-------------------------------
+[185]
+# Sala del Cuore
+BattleBack = cave1_ice
+Bicycle = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[186]
+# Monte Ani - Piano Ghiacciato
+BattleBack = cave1_ice
+Bicycle = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[187]
+# Monte Ani - Quarto Piano
+BattleBack = cave1_ice
+Bicycle = true
+Outdoor = false
+#-------------------------------
+[188]
+# Monte Ani - Terzo Pendio
+Weather = Blizzard,100
+Bicycle = true
+#-------------------------------
+[189]
+# Caverna Accogliente
+Outdoor = false
