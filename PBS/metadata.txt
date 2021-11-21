@@ -663,3 +663,10 @@ Bicycle = true
 [189]
 # Caverna Accogliente
 Outdoor = false
+#-------------------------------
+[190]
+# Vetta Brina
+BattleBack = snow
+Bicycle = false
+Outdoor = true
+ShowArea = true
