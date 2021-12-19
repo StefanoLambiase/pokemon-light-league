@@ -1138,3 +1138,64 @@ Pokemon = DRAGONITE,44
 # Sifda della montagna --------------------------------------------------------
 #
 #-------------------------------
+[CANDIDATO3_M,Gennaro]
+Pokemon = AERODACTYL,43
+    Moves = CRUNCH,STONEEDGE,WINGATTACK,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = ADAMANT
+    IV = 31,10,0,0,0,0
+    EV = 112,112,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = STEELIX,42
+    Moves = TWISTER,ROCKTOMB,IRONTAIL,CRUNCH
+    Ability = 2
+    Gender = female
+    Shiny = yes
+    Nature = ADAMANT
+    IV = 31,10,10,0,0,0
+    EV = 112,112,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[CANDIDATO3_F,Marianna]
+Pokemon = SWAMPERT,43
+    Moves = WATERFALL,TAKEDOWN,SUPERPOWER,
+    Ability = 1
+    Gender = female
+    Shiny = no
+    Nature = ADAMANT
+    IV = 31,10,0,0,0,0
+    EV = 112,112,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = FLYGON,43
+    Moves = EARTHPOWER,DRAGONPULSE,HEATWAVE,
+    Ability = 2
+    Gender = female
+    Shiny = yes
+    Nature = TIMID
+    IV = 31,0,10,31,10,0
+    EV = 112,0,0,252,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+[CANDIDATO3_F,Lola]
+Pokemon = BASTIODON,47
+    Item = LEFTOVERS
+    Moves = HEAVYSLAM,PROTECT,SUBSTITUTE,GIGAIMPACT
+    Ability = 1
+    Gender = male
+    Shiny = no
+    Nature = RELAXED
+    IV = 31,10,31,0,0,31
+    EV = 252,4,126,0,0,126
+    Happiness = 255
+    Shadow = no
+    Ball = 0
