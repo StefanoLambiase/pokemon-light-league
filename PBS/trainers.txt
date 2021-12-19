@@ -1084,3 +1084,57 @@ Pokemon = GARDEVOIR,42
     Happiness = 255
     Shadow = no
     Ball = 0
+#-------------------------------
+[ALFONSOPICCOLO,Alfonso]
+Items = FULLRESTORE
+Pokemon = TYPHLOSION,43
+    Moves = LAVAPLUME,FOCUSBLAST,SUBSTITUTE,REST
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = MODEST
+    IV = 31,0,31,15,15,31
+    EV = 0,0,0,0,112,252
+    Happiness = 255
+    Name = Feraligetr
+    Shadow = no
+    Ball = 0
+Pokemon = TORTERRA,41
+    Moves = MEGADRAIN,EARTHQUAKE,WOODHAMMER,
+    Ability = 2
+    Gender = male
+    Shiny = no
+    Nature = RELAXED
+    IV = 31,10,10,0,0,10
+    EV = 252,100,0,0,0,0
+    Happiness = 255
+    Name = The World
+    Shadow = no
+    Ball = 0
+Pokemon = GYARADOS,42
+    Moves = DRAGONDANCE,BITE,WATERFALL,ICEFANG
+    Ability = 0
+    Gender = male
+    Shiny = yes
+    Nature = JOLLY
+    IV = 31,31,31,31,0,31
+    EV = 252,100,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+Pokemon = DRAGONITE,44
+    Moves = FIREPUNCH,ICEPUNCH,THUNDERPUNCH,DRAGONCLAW
+    Ability = 0
+    Gender = male
+    Shiny = no
+    Nature = JOLLY
+    IV = 31,31,0,31,0,0
+    EV = 252,0,0,0,0,0
+    Happiness = 255
+    Shadow = no
+    Ball = 0
+#-------------------------------
+#
+# Sifda della montagna --------------------------------------------------------
+#
+#-------------------------------
