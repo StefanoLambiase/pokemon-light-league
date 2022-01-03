@@ -1138,7 +1138,7 @@ Pokemon = DRAGONITE,44
 # Sifda della montagna --------------------------------------------------------
 #
 #-------------------------------
-[CANDIDATO3_M,Gennaro]
+[CANDIDATO3_M,Parshendi]
 Pokemon = AERODACTYL,43
     Moves = CRUNCH,STONEEDGE,WINGATTACK,
     Ability = 2
@@ -1162,7 +1162,7 @@ Pokemon = STEELIX,42
     Shadow = no
     Ball = 0
 #-------------------------------
-[CANDIDATO3_F,Marianna]
+[CANDIDATO3_F,Parshendi]
 Pokemon = SWAMPERT,43
     Moves = WATERFALL,TAKEDOWN,SUPERPOWER,
     Ability = 1
@@ -1186,7 +1186,7 @@ Pokemon = FLYGON,43
     Shadow = no
     Ball = 0
 #-------------------------------
-[CANDIDATO3_F,Lola]
+[CANDIDATO2_F,Lola]
 Pokemon = BASTIODON,47
     Item = LEFTOVERS
     Moves = HEAVYSLAM,PROTECT,SUBSTITUTE,GIGAIMPACT
