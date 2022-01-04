@@ -105,5 +105,5 @@
 97,RECLUTAELITE,Metro Elite,100,,,,Male,255,
 98,MCROSE,Vice Metro,180,,,,Male,255,
 99,DARKGATTO,Assistente corrotto,180,,,,Male,255,
-100,ALFONSOPICCOLO,Terremoto,180,,,,Male,255,
-101,GAIASERGIO,La Rossa,180,,,,Female,255,
+100,ALFONSOPICCOLO,Terremoto,180,_alfonsoPiccoloBattle,,,Male,255,
+101,GAIASERGIO,La Rossa,180,_GaiaBattle,,,Female,255,
