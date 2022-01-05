@@ -1202,3 +1202,25 @@ ItemHandlers::UseOnPokemon.add(:CROMOCOMETA,proc { |item,pkmn,scene|
   pkmn.makeShiny
   next true
 })
+
+ItemHandlers::UseFromBag.add(:OCCHIALIINFRAROSSI,proc{|item|
+  darkness = $PokemonTemp.darknessSprite
+  next false if !darkness || darkness.disposed?
+     next 2
+  })
+
+ItemHandlers::UseInField.add(:OCCHIALIINFRAROSSI,proc{|item|
+  darkness = $PokemonTemp.darknessSprite
+  next false if !darkness || darkness.disposed?
+  pbMessage(_INTL("Hai indossato gli occhiali infrarossi!"))
+  $PokemonGlobal.flashUsed = true
+  radiusDiff = 8*20/Graphics.frame_rate
+  while darkness.radius<darkness.radiusMax
+    Graphics.update
+    Input.update
+    pbUpdateSceneMap
+    darkness.radius += radiusDiff
+    darkness.radius = darkness.radiusMax if darkness.radius>darkness.radiusMax
+  end
+  next true
+  })

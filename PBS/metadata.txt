@@ -619,6 +619,7 @@ ShowArea = true
 BattleBack = cave1
 Bicycle = true
 Dungeon = false
+DarkMap = true
 Outdoor = false
 Environment = Cave
 ShowArea = true
@@ -665,7 +666,7 @@ Bicycle = true
 Outdoor = false
 #-------------------------------
 [190]
-# Vetta Brina
+# Folgo Vetta
 BattleBack = snow
 Bicycle = false
 Outdoor = true

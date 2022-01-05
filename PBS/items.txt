@@ -680,3 +680,4 @@
 656,ALASPENTA,Ala Spenta,Ala Spenta,8,0,"Un'ala appeartenuta al leggendario pokémon Ho-Oh. Ormai è priva del suo leggendario potere.",0,0,6,
 657,CORONAALIENA,Corona Aliena,Corona Aliena,8,0,"Una corona appartenuta al signore degli alieni che un tempo cercò di invaedere la regione. Sembra sia capace di attirare gli spiriti dei pokémon servitori dalle loro prigioni.",0,0,6,
 658,KITDASCALATORE,Kit da scalatore,Kit da scalatore,8,0,"Praticissimo kit per la costruzione di ponti e le scalate",0,0,0,
+659,OCCHIALIINFRAROSSI,Occhiali infrarossi,Occhiali infrarossi,8,0,"Consente di vedere al buio senza bisogno di accecarsi con Flash.",2,0,6,
