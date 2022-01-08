@@ -656,9 +656,9 @@
 637,PIASTRINAGOLD,Piastrina Gold,Piastrine Gold,8,0,"Simboleggia il raggiungimento di un grande obiettivo. 7 concedono l'accesso alla Lega.",0,0,0,
 #--------------------------------
 638,CROMOCOMETA,Cromocometa,Cromocomete,1,100000,"Frammento di una rarissima cometa. Usandola su un pokémon, questo diventa cromatico",1,0,0,
-639,TESSERACOMPETIZIONE,Tessera Competizione, Tessera Competizione,8,0,"È una documento di riconoscimento per tutti i partecipanti alla competizione della Lega.",0,0,0,
+639,TESSERACOMPETIZIONE,Tessera Competizione, Tessera Competizione,8,0,"È una documento di riconoscimento per tutti i partecipanti alla competizione.",0,0,0,
 640,INVITOLEGA,Invito della Lega,Invito della Lega,8,0,"Solo gli allenatori più potenti del mondo ricevono questo invito.",0,0,0,
-641,MALWARESANDMAN,Malware Sandman,Malware Sandman,1,0,"Un malware programmato da Gatto. Manda in overclock un certo pokémon al costo della sua stabilità. È molto pericoloso.",1,0,7,
+641,MALWARESANDMAN,Malware Sandman,Malware Sandman,1,0,"Un malware programmato da Gatto. Manda in overclock un certo pokémon al costo della sua stabilità.",1,0,7,
 642,ZAMPADIKRICKETUNE,Zampa di Kricketune,Zampe di Kricketune,1,250,"Brandita dal pokémon giusto, lo evolve e diventa un'arma letale.",1,0,7,
 #--------------------------------
 643,SUPERCALCIO,Super-calcio,Super-calcio,2,100000,"Fornisce il massimo aumento dell'attacco speciale di un pokémon.",1,0,0,
@@ -678,6 +678,6 @@
 655,EXPALLOFF,Condividi Esperienza,Condividi Esperienza,8,0,"Permette di condividere l'esperienza in tutta la squadra.",2,6,0,
 #--------------------------------
 656,ALASPENTA,Ala Spenta,Ala Spenta,8,0,"Un'ala appeartenuta al leggendario pokémon Ho-Oh. Ormai è priva del suo leggendario potere.",0,0,6,
-657,CORONAALIENA,Corona Aliena,Corona Aliena,8,0,"Una corona appartenuta al signore degli alieni che un tempo cercò di invaedere la regione. Sembra sia capace di attirare gli spiriti dei pokémon servitori dalle loro prigioni.",0,0,6,
+657,CORONAALIENA,Corona Aliena,Corona Aliena,8,0,"Una corona del signore degli alieni che un tempo cercò di invedere la regione. Attira degli spiriti.",0,0,6,
 658,KITDASCALATORE,Kit da scalatore,Kit da scalatore,8,0,"Praticissimo kit per la costruzione di ponti e le scalate",0,0,0,
 659,OCCHIALIINFRAROSSI,Occhiali infrarossi,Occhiali infrarossi,8,0,"Consente di vedere al buio senza bisogno di accecarsi con Flash.",2,0,6,
