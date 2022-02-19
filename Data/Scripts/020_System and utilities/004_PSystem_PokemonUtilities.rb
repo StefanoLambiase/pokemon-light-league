@@ -507,3 +507,483 @@ def pbHasEgg?(species)
   return true if species==baby   # Is an egg species without incense
   return false
 end
+
+#===============================================================================
+# Rental Team Utilities
+#===============================================================================
+#Saves the team for rental
+def pbSaveTeam
+  $game_variables[99]= $Trainer.party
+  $Trainer.party = []
+end
+
+#Choose from list
+def pbChooseSpeciesOrdered(default=1, rarity=1)
+  rarity_1 = [
+    getConst(PBSpecies,:TENTACRUEL), 
+    getConst(PBSpecies,:VICTREEBEL), 
+    getConst(PBSpecies,:SANDSLASH), 
+    getConst(PBSpecies,:DELIBIRD),
+    getConst(PBSpecies,:STANTLER),
+    getConst(PBSpecies,:ARIADOS),
+    getConst(PBSpecies,:CLAYDOL),
+    getConst(PBSpecies,:GLALIE),
+    getConst(PBSpecies,:RELICANTH),
+    getConst(PBSpecies,:LOPUNNY),
+    getConst(PBSpecies,:CHATOT),
+    getConst(PBSpecies,:CARNIVINE),
+    getConst(PBSpecies,:LIEPARD),
+    getConst(PBSpecies,:MARACTUS),
+    getConst(PBSpecies,:SIMISEAR)
+  ]
+
+  rarity_2 = [
+  getConst(PBSpecies,:POLIWRATH), 
+  getConst(PBSpecies,:HYPNO), 
+  getConst(PBSpecies,:PRIMEAPE), 
+  getConst(PBSpecies,:SKARMORY),
+  getConst(PBSpecies,:HOUNDOOM),
+  getConst(PBSpecies,:UMBREON),
+  getConst(PBSpecies,:HARIYAMA),
+  getConst(PBSpecies,:WALREIN),
+  getConst(PBSpecies,:WAILORD),
+  getConst(PBSpecies,:LEAFEON),
+  getConst(PBSpecies,:TOXICROAK),
+  getConst(PBSpecies,:LUXRAY),
+  getConst(PBSpecies,:CRUSTLE),
+  getConst(PBSpecies,:EXCADRILL),
+  getConst(PBSpecies,:UNFEZANT)
+  ]
+
+  rarity_3 = [
+    getConst(PBSpecies,:DRAGONITE), 
+    getConst(PBSpecies,:ALAKAZAM), 
+    getConst(PBSpecies,:MACHAMP), 
+    getConst(PBSpecies,:AMPHAROS),
+    getConst(PBSpecies,:BLISSEY),
+    getConst(PBSpecies,:TYRANITAR),
+    getConst(PBSpecies,:SALAMENCE),
+    getConst(PBSpecies,:METAGROSS),
+    getConst(PBSpecies,:AGGRON),
+    getConst(PBSpecies,:GALLADE),
+    getConst(PBSpecies,:MAGMORTAR),
+    getConst(PBSpecies,:LUCARIO),
+    getConst(PBSpecies,:HYDREGON),
+    getConst(PBSpecies,:VOLCARONA),
+    getConst(PBSpecies,:BRAVIARY)
+    ]
+
+  commands = []
+  pkmn_list = []
+
+  list = rarity_1 if rarity == 1
+  list = rarity_2 if rarity == 2
+  list = rarity_3 if rarity == 3
+
+  list = list.sort_by { rand }
+  list = list[0..2]
+
+  list.each do |i|
+    cname = getConstantName(PBSpecies,i) rescue nil
+    commands.push([i,PBSpecies.getName(i)]) if cname
+  end
+  return pbChooseList(commands,default,0,-1)
+end
+
+#Rental Pokemon for Single 
+def pbRentalSpecies(rarity)  
+    species=pbChooseSpeciesOrdered(1, rarity)
+    return false if species == 0
+    level=100
+    pbAddPokemonBattler(getRandomPokemon(whitelist=[species], nil, level, nil, nil))
+    speciesname = PBSpecies.getName(species)
+    pbMessage(_INTL("{1} obtained {2}!\\se[Battle recall]\\wtnp[20]\1",$Trainer.name,speciesname))
+    return true
+end
+
+
+#Returns Party that was stored in variable
+def pbRentReturn
+  $Trainer.party = $game_variables[99]
+  Kernel.pbMessage(_INTL("Gave back rental pokemon."))
+end
+
+#Pokémon randomizer
+#============================================================
+#Random_Pokemon script by leilou
+#
+#This script is ment to help to create a random Pokémon in Pokémon Essentials
+#
+#Pokémon Essentials is created by Poccil, based on Flameguru's 
+#Pokémon Starter Kit and managed and updated by Maruno
+#
+#I don't claim this script to be perfect. 
+#Please report bugs at the resources thread on Relic Castle.
+#=============================================================
+#
+#functions:
+#
+# getRandomPokemon(whitelist,blacklist,level,movewhitelist,moveblacklist)
+#   Summary:
+#	 Returns a random Pokémon with random moves and level(optional)
+#   Arguments:
+#	 whitelist:
+#	   An array of Pokémon or nil. 
+#	   If an Array is given the script will choose a Pokémon out of the array.
+#	   If nil is given the script will choose out of all Pokémon.
+#	   Default: nil
+#	 blacklist:
+#	   An array of Pokémon or nil. 
+#	   If an Array is given the script will not choose a Pokémon out of the array.
+#	   If nil is given the script will not blacklist any Pokémon.
+#	   Default: nil
+#	 level:
+#	   An Integer or nil
+#	   If an Integer is given the Pokémon will have that level.
+#	   If nil is given the Pokémon will have a random level between 0 and 100.
+#	   Default: nil
+#	 movewhitelist:
+#	   An array of Moves, false or nil. 
+#	   If an Array is given the Pokémon will only have moves out of this Array.
+#	   If false is given the Pokémon will have it's natural moves(the ones a
+#		 wild Pokémon on that level would have).
+#	   If nil is given the script will choose out of all Moves the Pokémon can
+#		 learn by leveling up or tm.
+#	   Default: nil
+#	 moveblacklist:
+#	   An array of Moves or nil. 
+#	   If an Array is given the Pokémon will not have a Moves out of the array.
+#	   If nil is given the script will not blacklist any Moves.
+#	   Default: nil
+#   return value:
+#	 The generated Pokémon of the type PokeBattle_Pokemon
+#
+# addPokemon(pokemon)
+#   Summary:
+#	 Places the given Pokémon in the players team/storage. 
+#	 It does the same as pbAddPokemon. The difference it that it takes
+#	 a PokeBattle_Pokemon as argument which is returned by getRandomPokemon.
+#   Arguments:
+#	 pokemon:
+#	   A PokeBattle_Pokemon object
+#	   This is the Pokémon to be added.
+#   return value:
+#	   none
+#
+# getAllPokemonList
+#   Summary:
+#	 Returns a list of all Pokémon defined in the PBS file pokemon.txt
+#	 You may want to use this method to generate a whitelist with all Pokémon.
+#   Arguments: 
+#	 none
+#   return value:
+#	 A list of Integers that represent the dex number of all Pokémon.
+#
+# filterUnevolved(pokemonList)
+#   Summary:
+#	 Returns a list of all unevolved Pokeémon in pokemonList.
+#   Arguments:
+#	 pokemonList:
+#	   An array of Integer or PBSpecies
+#	   An array of Pokémon. This is the array to be filtered.
+#   return value:
+#	 A list of Integers that represent the dex number of the unevolved Pokémon.
+#
+# filterType(pokemonList, type1, type2)
+#   Summary:
+#	 Returns a list of all Pokémon in pokemonList of the given type(s).
+#   Arguments:
+#	 pokemonList:
+#	   An array of Integer or PBSpecies
+#	   An array of Pokémon. This is the array to be filtered.
+#	 type1:
+#	   PBTypes
+#	   The type to filter for.
+#	 type2:
+#	   PBTypes, nil or false
+#		 When a type is given only Pokémon with the two given types are returned.
+#		 When nil is given any Pokémon with type1 as type are returned.
+#		 When false is fiven only Pokémon that are only type1 are returned.
+#   return value:
+#	 An array of Integers that represent the dex number of the Pokémon of the
+#	 given type(s).
+#
+# getAllPossibleMoves(pokemon)
+#   Summary:
+#	 This method returns a list of the ids of all natural and tm moves the
+#	 Pokémon can learn without taking level into account.
+#   Arguments:
+#	 pokemon:
+#	   PokeBattle_Pokemon
+#	   The Pokémon in question.
+#   return value:
+#	 An array of Integers representing the ids of all moves that can be learned
+#	 by the Pokémon.
+#
+#=============================================================
+ 
+def getRandomPokemon(whitelist = nil, blacklist = nil, level = nil, 
+  movewhitelist = nil, moveblacklist = nil)
+randomMoves = true
+if movewhitelist == false
+randomMoves = false
+end
+#make sure whitelist and blacklist are in the right format
+if whitelist.is_a?(Array)
+for i in 0 ... whitelist.length
+  if whitelist[i].is_a?(String) || whitelist[i].is_a?(Symbol)
+  whitelist[i]=getID(PBSpecies,whitelist[i])
+  end
+  if whitelist[i].is_a?(Integer)
+  const = getConstantName(PBSpecies,whitelist[i]) rescue whitelist[i] = nil
+  if !hasConst?(PBSpecies,const) #the pokemon doesn't exist
+    whitelist[i] = nil
+  end
+  else
+  whitelist[i] = nil
+  end
+end
+whitelist.compact!
+if whitelist.length == 0
+  return nil #empty whitelist
+end
+else
+whitelist = nil
+end
+
+if !whitelist #no whitelist => choose from all pokemon
+whitelist = getAllPokemonList
+end 
+
+if blacklist.is_a?(Array)
+for i in 0 ... blacklist.length
+  if blacklist[i].is_a?(String) || blacklist[i].is_a?(Symbol)
+  blacklist[i]=getID(PBSpecies,blacklist[i])
+  end
+  if blacklist[i].is_a?(Integer)
+  const = getConstantName(PBSpecies,blacklist[i]) rescue blacklist[i] = nil
+  if !hasConst?(PBSpecies,const) #the pokemon doesn't exist
+    blacklist[i] = nil
+  end
+  else
+  blacklist[i] = nil
+  end
+end
+blacklist.uniq! #remove all duplicates
+blacklist.compact!
+if blacklist.length == 0
+  blacklist = nil
+end
+else
+blacklist = nil
+end
+
+#sort blacklist out of whitelist
+if blacklist
+for i in 0 ... whitelist.length
+  if blacklist.include?(whitelist[i])
+  whitelist[i] = nil
+  end
+end
+whitelist.compact!
+if whitelist.length == 0
+  return nil #all pkmn of whitelist are in blacklist
+end
+end
+ 
+id = nil
+#choose pokemon species
+randNum = rand(whitelist.length-1)
+id = whitelist[randNum]
+
+
+#choose level if none is given
+if !(level && level.is_a?(Integer))
+level = rand(99) + 1
+end
+#create a pokemon with player as trainer and without moves
+pokemon=PokeBattle_Pokemon.new(id,level,$Trainer,false)
+
+#randomize moves(all natural and tm moves)
+if randomMoves
+#format move whitelist
+if movewhitelist && movewhitelist.is_a?(Array)
+  for i in 0 ... movewhitelist.length
+  if movewhitelist[i].is_a?(String) || movewhitelist[i].is_a?(Symbol)
+    movewhitelist[i]=getID(PBMoves,movewhitelist[i])
+  end
+  if whitelist[i].is_a?(Integer)
+    const = getConstantName(PBMoves,movewhitelist[i]) rescue movewhitelist[i] = nil
+    if !hasConst?(PBMoves,const) #the pokemon doesn't exist
+    movewhitelist[i] = nil
+    end
+  else
+    movewhitelist[i] = nil
+  end
+  end
+  movewhitelist.compact!
+else
+  movewhitelist = nil
+end
+
+#format move blacklist
+if moveblacklist && moveblacklist.is_a?(Array)
+  for i in 0 ... moveblacklist.length
+  if moveblacklist[i].is_a?(String) || moveblacklist[i].is_a?(Symbol)
+    moveblacklist[i]=getID(PBMoves,moveblacklist[i])
+  end
+  if moveblacklist[i].is_a?(Integer)
+    const = getConstantName(PBMoves,moveblacklist[i]) rescue moveblacklist[i] = nil
+    if !hasConst?(PBMoves,const) #the pokemon doesn't exist
+    moveblacklist[i] = nil
+    end
+  else
+    moveblacklist[i] = nil
+  end
+  end
+  moveblacklist.compact!
+else
+  moveblacklist = nil
+end
+
+#if there is no whitelist make all learnable attacks the whitelist
+if !movewhitelist
+  movewhitelist = getAllPossibleMoves(pokemon)
+end
+
+#sort out blacklist moves of whitelist
+if moveblacklist && movewhitelist
+  for i in 0 ... movewhitelist.length
+  if moveblacklist.includes?(movewhitelist[i])
+    movewhitelist[i] = nil
+  end
+  end
+  movewhitelist.compact!
+end
+pokemon.moves = [] #delete all moves
+
+4.times do
+  if movewhitelist.length == 0
+  break
+  end
+  randNum = rand(movewhitelist.length-1)
+  pokemon.moves.push(PBMove.new(movewhitelist[randNum]))
+  movewhitelist.delete_at(randNum)
+end
+else #pokemon learns the moves it would naturally have on this level
+pokemon.resetMoves
+end
+
+return pokemon
+end
+
+def getAllPossibleMoves(pokemon)
+moves=[] #all learnable moves
+pbEachNaturalMove(pokemon){|move,level|
+ moves.push(move) if !moves.include?(move)
+}
+data = load_data("Data/tm.dat")
+for i in 0 ... data.length
+if pokemon.compatibleWithMove?(i)
+  moves.push(i) if !moves.include?(i)
+end
+end
+return moves
+end
+
+def pbAddPokemonBattler(pokemon)
+if pbBoxesFull?
+Kernel.pbMessage(_INTL("There's no more room for Pokémon!\1"))
+Kernel.pbMessage(_INTL("The Pokémon Boxes are full and can't accept any more!"))
+return false
+end
+speciesname=PBSpecies.getName(pokemon.species)
+if $Trainer.party.length<6
+  $Trainer.party[$Trainer.party.length] = pokemon
+else
+  $PokemonStorage.pbStoreCaught(pokemon)
+end
+end
+
+#returns only the unevolved pokemon in the list
+def filterUnevolved(pokemonList)
+#break if wrong input
+if !(pokemonList && pokemonList.is_a?(Array))
+return
+end
+
+for i in 0 ... pokemonList.length
+#make sure everything is formatted the right way
+if pokemonList[i].is_a?(String) || pokemonList[i].is_a?(Symbol)
+  pokemonList[i]=getID(PBSpecies,pokemonList[i])
+end
+if pokemonList[i].is_a?(Integer)
+  const = getConstantName(PBSpecies,pokemonList[i]) rescue pokemonList[i] = nil
+  if !hasConst?(PBSpecies,const) #the pokemon doesn't exist
+  pokemonList[i] = nil
+  end
+  #check if pokemon has a prevolution
+  if pokemonList[i] != pbGetPreviousForm(pokemonList[i])
+  pokemonList[i] = nil
+  end
+else
+  pokemonList[i] = nil
+end
+end
+pokemonList.compact!
+return pokemonList
+end
+
+def filterType(pokemonList, type1, type2=nil)
+#break if wrong input
+if !(pokemonList && pokemonList.is_a?(Array))
+return
+end
+
+dexdata=pbOpenDexData
+
+for i in 0 ... pokemonList.length
+#make sure everything is formatted the right way
+if pokemonList[i].is_a?(String) || pokemonList[i].is_a?(Symbol)
+  pokemonList[i]=getID(PBSpecies,pokemonList[i])
+end
+if pokemonList[i].is_a?(Integer)
+  const = getConstantName(PBSpecies,pokemonList[i]) rescue pokemonList[i] = nil
+  if !hasConst?(PBSpecies,const) #the pokemon doesn't exist
+  pokemonList[i] = nil
+  end
+  #check if pokemon has the requested types
+  pbDexDataOffset(dexdata,pokemonList[i],8)
+  ptype1=dexdata.fgetb
+  pbDexDataOffset(dexdata,pokemonList[i],9)
+  ptype2=dexdata.fgetb
+  if !(type1==ptype1||type1==ptype2)
+  pokemonList[i] = nil
+  next
+  elsif type2 && !(type2==ptype1||type2==ptype2)
+  pokemonList[i] = nil
+  next
+  elsif (type2 == false) && (ptype1 != ptype2)
+  pokemonList[i] = nil
+  next
+  end
+else
+  pokemonList[i] = nil
+end
+end
+pokemonList.compact!
+dexdata.close
+return pokemonList
+end
+
+def getAllPokemonList
+pokemonList = []
+for i in 0..PBSpecies.maxValue
+for c in PBSpecies.constants
+  if PBSpecies.const_get(c.to_sym)==i
+  pokemonList.push(i)
+  end
+end
+end
+return pokemonList
+end
