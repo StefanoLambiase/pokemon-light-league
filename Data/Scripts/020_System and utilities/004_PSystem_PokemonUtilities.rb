@@ -605,7 +605,7 @@ end
 #Returns Party that was stored in variable
 def pbRentReturn
   $Trainer.party = $game_variables[99]
-  Kernel.pbMessage(_INTL("Gave back rental pokemon."))
+  Kernel.pbMessage(_INTL("Ti è stata restituità la tua squadra."))
 end
 
 #Pokémon randomizer

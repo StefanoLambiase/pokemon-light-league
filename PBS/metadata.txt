@@ -666,8 +666,15 @@ Bicycle = true
 Outdoor = false
 #-------------------------------
 [190]
-# Folgo Vetta
+# Folgovetta
 BattleBack = snow
 Bicycle = false
 Outdoor = true
+ShowArea = true
+#-------------------------------
+[193]
+# Covo criminale
+BattleBack = elite1
+Bicycle = false
+Outdoor = false
 ShowArea = true
