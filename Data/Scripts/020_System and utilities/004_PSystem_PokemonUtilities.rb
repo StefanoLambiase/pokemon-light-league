@@ -987,3 +987,21 @@ end
 end
 return pokemonList
 end
+
+# 0: no bututiv, 1: batitiv, 2: butitiv low level, 3: butitiv ready
+def isButitivReady
+  for i in 0...$Trainer.party.length
+    if $Trainer.party[i].species==PBSpecies::BATITIV
+      return 1
+    end
+    if $Trainer.party[i].species==PBSpecies::BUTITIV
+      if $Trainer.party[i].level >= 36
+        return 3
+      else
+        return 2
+      end
+      break
+    end
+    end
+  return 0
+  end
