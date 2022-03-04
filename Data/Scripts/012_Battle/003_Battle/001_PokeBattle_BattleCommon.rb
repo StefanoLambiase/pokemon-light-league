@@ -81,6 +81,11 @@ module PokeBattle_BattleCommon
     end
     # Messages
     itemName = PBItems.getName(ball)
+    # Draghi non catturabili
+    if $game_switches[86]
+      pbDisplay(_INTL("{1} selvatico appartiene al campione. Non puoi catturarlo!",battler.pokemon.name))
+      return
+    end
     if battler.fainted?
       if itemName.starts_with_vowel?
         pbDisplay(_INTL("{1} threw an {2}!",pbPlayer.name,itemName))
