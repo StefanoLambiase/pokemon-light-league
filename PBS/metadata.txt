@@ -678,3 +678,28 @@ BattleBack = elite1
 Bicycle = false
 Outdoor = false
 ShowArea = true
+#-------------------------------
+[194]
+# Isola del Drago
+Weather = Storm,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[195]
+# Tana dei Draghi
+Bicycle = false
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[196]
+# Vulcano dell'isola del Drago
+Bicycle = true
+Outdoor = false
+ShowArea = false
+#-------------------------------
+[197]
+# Rovine nel Vulcano
+Bicycle = false
+Outdoor = false
+ShowArea = false
