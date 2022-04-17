@@ -703,3 +703,46 @@ ShowArea = false
 Bicycle = false
 Outdoor = false
 ShowArea = false
+#-------------------------------
+[198]
+# Percorso 9
+SnapEdges = true
+BattleBack = grass
+Bicycle = true
+MapPosition = 0,5,12
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[199]
+# Percorso 9
+SnapEdges = true
+BattleBack = 
+Weather = HeavyRain,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[200]
+# Percorso 9
+SnapEdges = true
+BattleBack = sand
+Weather = Sandstorm,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[201]
+# Percorso 9
+SnapEdges = true
+BattleBack = snow
+Weather = Snow,100
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[202]
+# Sottopassaggio del Percorso 9
+BattleBack = rocky
+Bicycle = true
+Outdoor = false
+ShowArea = false
