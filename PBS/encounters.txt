@@ -817,6 +817,28 @@ SuperRod
     RELICANTH,50,51
     RELICANTH,50,51
 #-------------------------------
+181 # Primo Pendio
+25,10,10
+Water
+    LUVDISC,32,35
+    LUVDISC,32,35
+    LUVDISC,32,35
+    LUVDISC,32,35
+    LUVDISC,32,35
+OldRod
+    LUVDISC,25,28
+    LUVDISC,25,28
+GoodRod
+    LUVDISC,25,28
+    LUVDISC,25,28
+    LUVDISC,25,28
+SuperRod
+    LUVDISC,40,45
+    LUVDISC,40,45
+    LUVDISC,40,45
+    LUVDISC,50,51
+    LUVDISC,50,51
+#-------------------------------
 182 # Piano Intricato
 25,10,10
 Cave
@@ -851,3 +873,121 @@ SuperRod
     CORSOLA,40,45
     RELICANTH,50,51
     RELICANTH,50,51
+#-------------------------------
+196 # Isola del Drago
+25,10,10
+Cave
+    SLUGMA,35,37
+    SLUGMA,35,37
+    MAGMAR,35,37
+    MAGMAR,35,37
+    HOUNDOOM,35,37
+    HOUNDOOM,35,37
+    HOUNDOOM,35,37
+    HOUNDOOM,35,37
+    TORKOAL,35,37
+    TORKOAL,35,37
+    DARUMAKA,35,37
+    DARUMAKA,35,37
+#-------------------------------
+198 # Percorso 9 (Standard)
+25,10,10
+Land
+    BIBAREL,37,40
+    FEAROW,37,40
+    BIBAREL,37,40
+    FEAROW,37,40
+    BIBAREL,37,40
+    DODRIO,37,40
+    DODRIO,37,40
+    DODRIO,37,40
+    URSARING,37,40
+    URSARING,37,40
+    URSARING,37,40
+    URSARING,37,40
+Water
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+OldRod
+    MAGIKARP,25,28
+    MAGIKARP,25,28
+GoodRod
+    FEEBAS,25,28
+    FEEBAS,25,28
+    FEEBAS,25,28
+SuperRod
+    WAILMER,40,45
+    WAILMER,40,45
+    QUAGSIRE,40,45
+    SHARPEDO,50,51
+    SHARPEDO,50,51
+#-------------------------------
+199 # Percorso 9 (Pioggia)
+25,10,10
+Land
+    SIMIPOUR,37,40
+    SWANNA,37,40
+    SIMIPOUR,37,40
+    SWANNA,37,40
+    SIMIPOUR,37,40
+    CLAWITZER,37,40
+    CLAWITZER,37,40
+    CLAWITZER,37,40
+    SWAMPERT,37,40
+    SWAMPERT,37,40
+    SWAMPERT,37,40
+    SWAMPERT,37,40
+Water
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+    SLOWPOKE,37,40
+OldRod
+    MAGIKARP,25,28
+    MAGIKARP,25,28
+GoodRod
+    FEEBAS,25,28
+    FEEBAS,25,28
+    FEEBAS,25,28
+SuperRod
+    WAILMER,40,45
+    WAILMER,40,45
+    QUAGSIRE,40,45
+    SHARPEDO,50,51
+    SHARPEDO,50,51
+#-------------------------------
+200 # Percorso 9 (Tempesta di sabbia)
+25,10,10
+Land
+    STUNFISK,37,40
+    SKARMORY,37,40
+    STUNFISK,37,40
+    SKARMORY,37,40
+    STUNFISK,37,40
+    SOLROCK,37,40
+    SOLROCK,37,40
+    SOLROCK,37,40
+    GIGALITH,37,40
+    GIGALITH,37,40
+    GIGALITH,37,40
+    GIGALITH,37,40
+#-------------------------------
+201 # Percorso 9 (Neve)
+25,10,10
+Land
+    SNOVER,37,40
+    DELIBIRD,37,40
+    SNOVER,37,40
+    DELIBIRD,37,40
+    SNOVER,37,40
+    BEARTIC,37,40
+    BEARTIC,37,40
+    BEARTIC,37,40
+    SNORUNT,37,40
+    SNORUNT,37,40
+    SNORUNT,37,40
+    SNORUNT,37,40
