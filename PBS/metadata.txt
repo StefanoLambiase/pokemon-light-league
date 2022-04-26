@@ -694,6 +694,7 @@ ShowArea = true
 #-------------------------------
 [196]
 # Vulcano dell'isola del Drago
+BattleBack = rocky_eve
 Bicycle = true
 Outdoor = false
 ShowArea = false
