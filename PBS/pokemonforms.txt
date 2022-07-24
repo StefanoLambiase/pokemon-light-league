@@ -1701,3 +1701,17 @@ Type1 = DARK
 BaseStats = 60,50,70,150,80,80
 EffortPoints = 0,0,0,3,0,0
 Pokedex = Un Electrode corrotto dal potere delle tenebre e dell'oscurità. La sua capacità esplosiva è aumentata del 7%.
+#-------------------------------
+[GIRATINA,2]
+FormName = Dark form
+Type1 = DARK
+Type2 = GHOST
+BaseStats = 130,130,90,110,130,90
+Abilities = DARKAURA
+HiddenAbility = DARKAURA
+Height = 6.9
+Weight = 50.0
+Shape = 2
+BattlerEnemyX = -2
+BattlerEnemyY = -8
+Pokedex = E' pura tenebra e pura oscurità. Questa è chiaramente la forma finale del signore eterno della dannazione.
