@@ -991,3 +991,35 @@ Land
     SNORUNT,37,40
     SNORUNT,37,40
     SNORUNT,37,40
+#-------------------------------
+206 # Isola del Drago
+25,10,10
+Cave
+    CRUSTLE,38,41
+    CRUSTLE,38,41
+    CRUSTLE,38,41
+    CRUSTLE,38,41
+    WATCHOG,38,41
+    WATCHOG,38,41
+    WATCHOG,38,41
+    WATCHOG,38,41
+    RHYDON,38,41
+    RHYDON,38,41
+    RHYDON,38,41
+    RHYDON,38,41
+#-------------------------------
+208 # Isola del Drago
+25,10,10
+Cave
+    CRUSTLE,38,41
+    CRUSTLE,38,41
+    CRUSTLE,38,41
+    CRUSTLE,38,41
+    WATCHOG,38,41
+    WATCHOG,38,41
+    WATCHOG,38,41
+    WATCHOG,38,41
+    RHYDON,38,41
+    RHYDON,38,41
+    RHYDON,38,41
+    RHYDON,38,41

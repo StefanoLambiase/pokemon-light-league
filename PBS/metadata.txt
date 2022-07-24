@@ -747,3 +747,25 @@ BattleBack = rocky
 Bicycle = true
 Outdoor = false
 ShowArea = false
+#-------------------------------
+[206]
+# Monte Sjor
+BattleBack = cave1
+Bicycle = true
+Outdoor = false
+ShowArea = true
+#-------------------------------
+[207]
+# Ponte Inngang
+BattleBack = champion2
+Bicycle = false
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[208]
+# Monte Sundlaug
+BattleBack = cave1
+Bicycle = true
+DarkMap = true
+Outdoor = false
+ShowArea = true
