@@ -1703,7 +1703,7 @@ EffortPoints = 0,0,0,3,0,0
 Pokedex = Un Electrode corrotto dal potere delle tenebre e dell'oscurità. La sua capacità esplosiva è aumentata del 7%.
 #-------------------------------
 [GIRATINA,2]
-FormName = Dark form
+FormName = Dark forme
 Type1 = DARK
 Type2 = GHOST
 BaseStats = 130,130,90,110,130,90

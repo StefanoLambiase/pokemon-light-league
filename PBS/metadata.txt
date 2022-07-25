@@ -769,3 +769,11 @@ Bicycle = true
 DarkMap = true
 Outdoor = false
 ShowArea = true
+#-------------------------------
+[209]
+# Mondo Distorto
+BattleBack = distortion
+Bicycle = false
+Outdoor = true
+WildBattleBGM = _giratinaBattle.mp3
+ShowArea = true
