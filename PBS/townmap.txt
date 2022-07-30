@@ -1,7 +1,7 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [0]
-Name=
+Name=Rain'Bow
 Filename=mapRegion0.png
 Point=13,14,Gangur Town,Laboratorio del prof. Taiani,33,23,30,
 Point=13,13,Percorso 1,,,,,
@@ -84,6 +84,12 @@ Point=14,10,Sottobosco,,,,,
 Point=15,10,Sottobosco,,,,,
 Point=15,11,Sottobosco,,,,,
 Point=5,2,Isola del Drago,,,,,
+Point = 11,9,Percorso 9,,,,,
+Point = 10,9,Percorso 9,,,,,
+Point = 9,9,Monti Gemelli,Monte Sjor,,,,
+Point = 8,9,Monti Gemelli,Monte Inngang,,,,
+Point = 7,9,Lungomare,,,,,
+Point = 6,9,Barriera Spazio-Temporale,,,,,
 #-------------------------------
 [1]
 Name=
