@@ -1224,7 +1224,7 @@ def pbSamuradaChoose()
   elsif !pokemon.isSpecies?(:SAMURADA)
     pbMessage(_INTL("{1} non è abile nell'arte della spada.",pokemon.name)) { screen.pbUpdate }
   elsif pokemon.level < 50
-    pbMessage(_INTL("{1} non è ancora sufficientemente allenato.",pokemon.name)) { screen.pbUpdate }
+    pbMessage(_INTL("{1} non è ancora sufficientemente allenato, non ha abbastanza esperienza per riuscirci.",pokemon.name)) { screen.pbUpdate }
   else
     pbMessage(_INTL("{1} è pronto a tagliare la lastra.",pokemon.name))
     ret = true

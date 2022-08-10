@@ -320,7 +320,7 @@ MultipleForms.register(:ROTOM,{
 
 MultipleForms.register(:GIRATINA,{
   "getForm" => proc { |pkmn|
-    maps = [49,50,51,72,73,209]   # Map IDs for Origin Forme
+    maps = [49,50,51,72,73,208]   # Map IDs for Origin Forme
     if (pkmn.hasItem?(:GRISEOUSORB) || maps.include?($game_map.map_id)) && pkmn.ballused!=pbGetBallType(:DARKSANDBALL)
       next 1
     end
