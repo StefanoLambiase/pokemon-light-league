@@ -681,3 +681,5 @@
 657,CORONAALIENA,Corona Aliena,Corona Aliena,8,0,"Una corona del signore degli alieni che un tempo cercò di invedere la regione. Attira degli spiriti.",0,0,6,
 658,KITDASCALATORE,Kit da scalatore,Kit da scalatore,8,0,"Praticissimo kit per la costruzione di ponti e le scalate",0,0,0,
 659,OCCHIALIINFRAROSSI,Occhiali infrarossi,Occhiali infrarossi,8,0,"Consente di vedere al buio senza bisogno di accecarsi con Flash.",2,0,6,
+#--------------------------------
+660,SANDBALL,Sandball,Sandball,3,0,"Un esperimento fallito. È concepita per rafforzare al massimo il pokèmon catturato... ma non ci riesce",0,4,4,

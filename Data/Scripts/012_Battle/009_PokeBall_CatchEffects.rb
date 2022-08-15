@@ -25,7 +25,8 @@ $BallTypes = {
   23 => :SPORTBALL,
   24 => :DREAMBALL,
   25 => :BEASTBALL,
-  26 => :DARKSANDBALL
+  26 => :DARKSANDBALL,
+  27 => :SANDBALL
 }
 
 def pbBallTypeToItem(balltype)
@@ -91,6 +92,10 @@ BallHandlers::IsUnconditional.add(:MASTERBALL,proc { |ball,battle,battler|
 # CUSTOM POKEBALLS
 #-------------------------------
 BallHandlers::IsUnconditional.add(:DARKSANDBALL,proc { |ball,battle,battler|  
+  next true
+})
+
+BallHandlers::IsUnconditional.add(:SANDBALL,proc { |ball,battle,battler|  
   next true
 })
 
