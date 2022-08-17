@@ -470,6 +470,41 @@ Land
     CUBONE,11,14
     CUBONE,11,14
 #-------------------------------
+077 # Percorso 1
+25,10,10
+Land
+    STARLY,3,4
+    STARLY,3,4
+    RATTATA,3,5
+    RATTATA,3,5
+    SPEAROW,3,5
+    SPEAROW,3,5
+    RUFFLET,5,6
+    RUFFLET,5,6
+    FLETCHLING,5,6
+    FLETCHLING,5,6
+    TAILLOW,5,6
+    TAILLOW,5,6
+Water
+    MAGIKARP,3,4
+    MAGIKARP,3,4
+    MAGIKARP,3,4
+    MAGIKARP,3,4
+    MUDKIP,3,4
+OldRod
+    MARILL,16,20
+    SQUIRTLE,14,15
+GoodRod
+    MARILL,16,20
+    SQUIRTLE,14,15
+    SQUIRTLE,14,15
+SuperRod
+    WALREIN,40,45
+    BLASTOISE,40,45
+    BLASTOISE,40,45
+    VAPOREON,50,51
+    VAPOREON,50,51
+#-------------------------------
 096 # Percorso 2
 25,10,10
 Land

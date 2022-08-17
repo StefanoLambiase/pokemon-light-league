@@ -668,7 +668,7 @@
 647,SUPERZINCO,Super-zinco,Super-zinco,2,100000,"Fornisce il massimo aumento della difesa speciale di un pokémon.",1,0,0,
 648,SUPERPSSU,PS-Max,PS-Max,2,100000,"Fornisce il massimo aumento degli HP di un pokémon.",1,0,0,
 #--------------------------------
-649,SPIRITOFORTE,Sprito Forte,Sprito Forte,1,0,"Uno spirito forte e risoluto che ispira competitività in un certo pokémon.",1,0,7,
+649,SPIRITOSALDO,Sprito Saldo,Sprito Saldo,1,0,"Uno spirito saldo e risoluto che ispira competitività in un certo pokémon.",1,0,7,
 650,SPIRITOARDENTE,Sprito Ardente,Sprito Ardente,1,0,"Uno spirito ardente accende la competitività di un certo pokémon.",1,0,7,
 651,SPIRITOTEMPESTOSO,Sprito Tempestoso,Sprito Tempestoso,1,0,"Uno spirito tempestoso scatena la competitività di un certo pokémon.",1,0,7,
 #--------------------------------

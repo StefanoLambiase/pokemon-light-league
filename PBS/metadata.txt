@@ -428,7 +428,7 @@ ShowArea = true
 #-------------------------------
 [077]
 # Percorso 1
-BattleBack = grass
+BattleBack = field
 Bicycle = true
 MapPosition = 0,13,11
 Outdoor = true
@@ -779,7 +779,7 @@ WildBattleBGM = _giratinaBattle.mp3
 ShowArea = true
 #-------------------------------
 [210]
-# Lungomare di Krota
+# Lungomare
 BattleBack = grass
 Bicycle = true
 Outdoor = true

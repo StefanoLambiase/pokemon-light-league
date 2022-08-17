@@ -25947,7 +25947,7 @@ Pokedex=Pare abbia costruito da solo la sua maschera con i resti dei pokémon ch
 BattlerPlayerY=0
 BattlerEnemyY=22
 BattlerAltitude=0
-Evolutions=MATITIVFIRE,Item,SPIRITOARDENTE,MATITIVWATER,Item,SPIRITOTEMPESTOSO,MATITIVGRASS,Item,SPIRITOFORTE,
+Evolutions=MATITIVFIRE,Item,SPIRITOARDENTE,MATITIVWATER,Item,SPIRITOTEMPESTOSO,MATITIVGRASS,Item,SPIRITOSALDO,
 #-------------------------------
 [812]
 Name=Matitiv
