@@ -701,6 +701,7 @@ ShowArea = false
 #-------------------------------
 [197]
 # Rovine nel Vulcano
+BattleBack = rocky_eve
 Bicycle = false
 Outdoor = false
 ShowArea = false
