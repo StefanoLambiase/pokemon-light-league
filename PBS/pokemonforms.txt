@@ -1717,7 +1717,7 @@ BattlerEnemyY = -8
 Pokedex = E' pura tenebra e pura oscurità. Questa è chiaramente la forma finale del signore eterno della dannazione.
 #-------------------------------
 [SCEPTILE,2]
-FormName = Sceptile
+FormName = Delta
 Type1 = FIRE
 Abilities = DRYSKIN
 HiddenAbility = DRYSKIN
@@ -1725,7 +1725,7 @@ Height = 1.9
 Weight = 55.2
 #-------------------------------
 [RAMPARDOS,1]
-FormName = Rampardos
+FormName = Delta
 Type1 = PSYCHIC
 Abilities = JUSTIFIED
 HiddenAbility = JUSTIFIED
@@ -1735,7 +1735,7 @@ BattlerEnemyX = 2
 BattlerEnemyY = 21
 #-------------------------------
 [METAGROSS,2]
-FormName = Metagross
+FormName = Delta
 Type1 = DARK
 Type2 = PSYCHIC
 Abilities = RATTLED
