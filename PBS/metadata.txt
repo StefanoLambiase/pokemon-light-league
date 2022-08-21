@@ -709,7 +709,7 @@ ShowArea = false
 [198]
 # Percorso 9
 SnapEdges = true
-BattleBack = grass
+BattleBack = field
 Bicycle = true
 MapPosition = 0,5,12
 Outdoor = true
@@ -718,7 +718,7 @@ ShowArea = true
 [199]
 # Percorso 9
 SnapEdges = true
-BattleBack = 
+BattleBack = field
 Weather = HeavyRain,100
 Bicycle = true
 Outdoor = true
@@ -727,7 +727,7 @@ ShowArea = true
 [200]
 # Percorso 9
 SnapEdges = true
-BattleBack = sand
+BattleBack = rocky
 Weather = Sandstorm,100
 Bicycle = true
 Outdoor = true
