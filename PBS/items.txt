@@ -683,3 +683,4 @@
 659,OCCHIALIINFRAROSSI,Occhiali infrarossi,Occhiali infrarossi,8,0,"Consente di vedere al buio senza bisogno di accecarsi con Flash.",2,0,6,
 #--------------------------------
 660,SANDBALL,Sandball,Sandball,3,0,"Un esperimento fallito. È concepita per rafforzare al massimo il pokèmon catturato... ma non ci riesce",0,4,4,
+661,POKEBALLRAYQUAZA,Pokéball di Rayquaza,Pokéball di Rayquaza,8,0,"Una pokéball con Rayquaza prestata da un allenatore sconosciuto.",0,0,6,
