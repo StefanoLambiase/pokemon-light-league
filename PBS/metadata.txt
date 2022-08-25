@@ -785,3 +785,12 @@ BattleBack = grass
 Bicycle = true
 Outdoor = true
 ShowArea = true
+#-------------------------------
+[211]
+# Cieli di Rain'Bow
+SnapEdges = true
+Weather = Storm,100
+Bicycle = false
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
