@@ -131,6 +131,11 @@
 120,GRANDEPERSONALITA,Grande Personalità,180,_GiovanniBattleOst,,,Male,255,
 121,GRANDEPERSONALITA2,Grande Personalità,180,_AndreaChampionOst,,,Male,255,
 122,PROFSANDMAN,Prof.,180,_SandmanDeltaBattleOst,,,Male,255,
+#------------Ancrestral-------------
+123,ANCESTRAL1,Leader Metro,180,_AncestralKyogreBattleOst1,,,Male,255,
+124,ANCESTRAL2,Leader Metro,180,_AncestralKyogreBattleOst2,,,Male,255,
+125,ANCESTRAL3,Leader Metro,180,_AncestralKyogreBattleOst3,,,Male,255,
+126,ANCESTRAL4,Leader Metro,180,_AncestralKyogreBattleOst4,,,Male,255,
 
 
 

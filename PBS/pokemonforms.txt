@@ -1742,3 +1742,65 @@ Abilities = RATTLED
 HiddenAbility = RATTLED
 Height = 1.9
 Weight = 55.2
+#-------------------------------
+#-------------------------------
+# ANCESTRAL KYOGRE
+#-------------------------------
+#-------------------------------
+[KYOGRE,2]
+FormName = Ancestral
+Type1 = WATER
+BaseStats = 400,120,160,90,180,160
+EffortPoints = 0,0,0,0,0,3
+Abilities = PRIMORDIALSEA
+Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESHARD,1,CONFUSERAY,1,SAFEGUARD
+Color = Blue
+BattlerPlayerX = 0
+BattlerPlayerY = 0
+BattlerEnemyX = -15
+BattlerEnemyY = 50
+Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
+#--------------------------------
+[KYOGRE,3]
+FormName = Ancestral
+Type1 = WATER
+BaseStats = 400,120,160,90,180,160
+EffortPoints = 0,0,0,0,0,3
+Abilities = SKYFALL
+Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESHARD,1,CONFUSERAY,1,SAFEGUARD
+Color = Blue
+BattlerPlayerX = 0
+BattlerPlayerY = 0
+BattlerEnemyX = 4
+BattlerEnemyY = -4
+Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
+#--------------------------------
+[KYOGRE,4]
+FormName = Ancestral
+Type1 = WATER
+Type2 = FIRE
+BaseStats = 400,120,160,90,180,160
+EffortPoints = 0,0,0,0,0,3
+Abilities = SKYFALL
+Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESHARD,1,CONFUSERAY,1,SAFEGUARD
+Color = Blue
+BattlerPlayerX = 0
+BattlerPlayerY = 0
+BattlerEnemyX = 4
+BattlerEnemyY = -4
+Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
+#--------------------------------
+[KYOGRE,5]
+FormName = Ancestral
+Type1 = WATER
+Type2 = ELECTRIC
+BaseStats = 400,120,160,90,180,160
+EffortPoints = 0,0,0,0,0,3
+Abilities = SKYFALL
+Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESHARD,1,CONFUSERAY,1,SAFEGUARD
+Color = Blue
+BattlerPlayerX = 0
+BattlerPlayerY = 0
+BattlerEnemyX = -5
+BattlerEnemyY = 15
+Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
