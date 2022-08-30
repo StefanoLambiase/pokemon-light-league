@@ -370,7 +370,14 @@ class PokeBattle_Battle
       elsif b.takesIndirectDamage?
         oldHP = b.hp
         dmg = (b.statusCount==0) ? b.totalhp/8 : b.totalhp*b.effects[PBEffects::Toxic]/16
-        b.pbContinueStatus { b.pbReduceHP(dmg,false) }
+        # Ancestral Kyogre damage
+        if b.status == PBStatuses::POISON and b.pbIsAncestralKyogre?()
+          dmg = b.totalhp/16
+          b.pbContinueStatus { b.pbReduceHP(dmg,false) }
+          pbDisplay(_INTL("Il dio degli oceani subisce danni ridotti grazie alle sue dimensione gargantuesche.",b.pbThis))
+        else
+          b.pbContinueStatus { b.pbReduceHP(dmg,false) }
+        end
         b.pbItemHPHealCheck
         b.pbAbilitiesOnDamageTaken(oldHP)
         b.pbFaint if b.fainted?

@@ -703,4 +703,15 @@ class PokeBattle_Battler
     end
     return @battle.battlers[(@index^1)]
   end
+
+  #=============================================================================
+  # Custom
+  #=============================================================================
+  def pbIsAncestralKyogre?
+    if @species == PBSpecies::KYOGRE and @form > 1
+      return true
+    else
+      return false
+    end
+  end
 end

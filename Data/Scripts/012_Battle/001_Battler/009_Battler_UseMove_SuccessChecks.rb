@@ -103,6 +103,7 @@ class PokeBattle_Battler
   # Return true if Pokémon continues attacking (although it may have chosen to
   # use a different move in disobedience), or false if attack stops.
   def pbObedienceCheck?(choice)
+    return true
     return true if usingMultiTurnAttack?
     return true if choice[0]!=:UseMove
     return true if !@battle.internalBattle
@@ -206,6 +207,10 @@ class PokeBattle_Battler
         pbCureStatus
       else
         pbContinueStatus
+        if pbIsAncestralKyogre?()
+          pbRecoverHP(@totalhp/4)
+          @battle.pbDisplay(_INTL("Il dio degli oceani beneficia del riposo.",pbThis))
+        end
         if !move.usableWhenAsleep?   # Snore/Sleep Talk
           @lastMoveFailed = true
           return false
@@ -263,7 +268,11 @@ class PokeBattle_Battler
     end
     # Paralysis
     if @status==PBStatuses::PARALYSIS
-      if @battle.pbRandom(100)<25
+      # Ancestral can break free from paralysis
+      if pbIsAncestralKyogre?() and @battle.pbRandom(100)<33
+        pbCureStatus
+        @battle.pbDisplay(_INTL("{1} si è curato dalla paralisi!",pbThis))        
+      elsif @battle.pbRandom(100)<25
         pbContinueStatus
         @lastMoveFailed = true
         return false

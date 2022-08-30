@@ -2893,7 +2893,7 @@ class PokeBattle_Move_0E5 < PokeBattle_Move
   end
 
   def pbEffectAgainstTarget(user,target)
-    if target.species == PBSpecies::KYOGRE and target.form > 1
+    if target.pbIsAncestralKyogre?()
       @battle.pbDisplay(_INTL("Succede qualcosa di strano. Le gocce d'acqua stanno suonando una melodia!"))
       previousBGM = $game_system.getPlayingBGM
       $game_system.pbBGMFade()

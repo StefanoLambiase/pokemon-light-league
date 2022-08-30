@@ -168,6 +168,14 @@ class PokeBattle_Battler
       @battle.pbDisplay(_INTL("{1}'s team is protected by Safeguard!",pbThis)) if showMessages
       return false
     end
+    # Ancestral Kyogre is immunity
+    if pbIsAncestralKyogre?()
+      case newStatus
+      when PBStatuses::BURN
+        @battle.pbDisplay(_INTL("Il dio degli oceani non può essere scottato.",pbThis)) if showMessages
+        return false      
+      end
+    end
     return true
   end
 
