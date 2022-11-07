@@ -2379,6 +2379,12 @@ class PokeBattle_Move_070 < PokeBattle_FixedDamageMove
       @battle.pbDisplay(_INTL("But it failed!"))
       return true
     end
+    if target.pbIsAncestralKyogre?()
+      @battle.pbAnimation("Move:LOCKON", target, user)
+      user.pbReduceHP(user.totalhp)
+      @battle.pbDisplay(_INTL("{1} non può essere sconfitto da questi biechi trucchetti...",target.pbThis))
+      return true
+    end
     return false
   end
 
