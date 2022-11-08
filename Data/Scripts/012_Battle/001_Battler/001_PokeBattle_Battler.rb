@@ -380,6 +380,7 @@ class PokeBattle_Battler
       :SHIELDSDOWN,
       :STANCECHANGE,
       :ZENMODE,
+      :SKYFALL,
       # Appearance-changing abilities
       :ILLUSION,
       :IMPOSTER,

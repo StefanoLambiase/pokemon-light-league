@@ -2263,6 +2263,12 @@ class PokeBattle_Move_069 < PokeBattle_Move
   end
 
   def pbEffectAgainstTarget(user,target)
+    if target.pbIsAncestralKyogre?()
+      @battle.pbAnimation(getConst(PBMoves,:EXPLOSION),target,user)
+      user.pbReduceHP(user.totalhp)
+      @battle.pbDisplay(_INTL("Imitare un tale potere è impossibile e blasfemo... {1} è esploso.", user.pbThis))
+      return
+    end
     user.pbTransform(target)
   end
 
