@@ -118,6 +118,7 @@ begin
     WeightChange        = 112
     Yawn                = 113
     DeEvolve            = 114
+    AirlockBarrier      = 115
 
     #===========================================================================
     # These effects apply to a battler position

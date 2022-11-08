@@ -278,6 +278,7 @@ class PokeBattle_Battler
     @effects[PBEffects::WeightChange]        = 0
     @effects[PBEffects::Yawn]                = 0
     @effects[PBEffects::DeEvolve]            = nil
+    @effects[PBEffects::AirlockBarrier]      = 0
   end
 
   #=============================================================================

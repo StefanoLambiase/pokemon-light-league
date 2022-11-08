@@ -701,3 +701,25 @@ ItemHandlers::BattleUseOnBattler.add(:PILLOLEDIGATTO,proc { |item,battler,scene|
     scene.pbDisplay(_INTL("Non ha avuto alcun effetto.",battler.pbThis))
   end
 })
+
+ItemHandlers::UseInBattle.add(:GROUDONHELP,proc { |item,battler,battle|
+  battle.pbCommonAnimation("_groudon", battler)
+  battle.pbAnimation(getConst(PBMoves,:ERUPTION),battler,battler)
+  battler.effects[PBEffects::Flinch] = 1
+  battle.pbDisplay(_INTL("{1} è distratto da Groudon!",battler.pbThis))
+})
+
+ItemHandlers::BattleUseOnBattler.add(:RAYQUAZAHELP,proc { |item,battler,scene|
+  scene.pbCommonAnimation("rayquaza", battler)
+  scene.pbAnimation(getConst(PBMoves,:REFLECT),battler,battler)
+  battler.effects[PBEffects::AirlockBarrier] = 3
+  scene.pbDisplay(_INTL("{1} è protetto dalle condizioni climatiche avverse!",battler.pbThis))
+})
+
+ItemHandlers::BattleUseOnBattler.add(:PALKIAHELP,proc { |item,battler,scene|
+  scene.pbCommonAnimation("palkia", battler)
+  scene.pbAnimation(getConst(PBMoves,:LIGHTSCREEN),battler,battler)
+  battler.pbRaiseStatStage(PBStats::DEFENSE,2,battler)
+  battler.pbRaiseStatStage(PBStats::SPDEF,2,battler)
+  scene.pbDisplay(_INTL("La barriera di Palkia incrementa di molto le difese di {1}!",battler.pbThis))
+})

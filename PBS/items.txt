@@ -684,3 +684,8 @@
 #--------------------------------
 660,SANDBALL,Sandball,Sandball,3,0,"Un esperimento fallito. È concepita per rafforzare al massimo il pokèmon catturato... ma non ci riesce",0,4,4,
 661,POKEBALLRAYQUAZA,Pokéball di Rayquaza,Pokéball di Rayquaza,8,0,"Una pokéball con Rayquaza prestata da un allenatore sconosciuto.",0,0,6,
+#--------------------------------
+662,GROUDONHELP,Groudon's help,Groudon's help,7,0,"Groudon usa terremoto per distrarre il nemico per un turno.",0,4,0,
+663,RAYQUAZAHELP,Rayquaza's help,Rayquaza's help,7,0,"Rayquaza genera Riparo dal meteo avverso per un pokémon alleato.",0,3,0,
+664,DIALGAHELP,Dialga's help,Dialga's helps,7,0,"Dialga riavvolge brevemente il tempo per concederti una seconda chance in caso di sconfitta.",0,0,0,
+665,PALKIAHELP,Palkia's help,Palkia's help,7,0,"Palkia crea una barriera che incrementa di molto le difese di un pokémon alleato.",0,3,0,

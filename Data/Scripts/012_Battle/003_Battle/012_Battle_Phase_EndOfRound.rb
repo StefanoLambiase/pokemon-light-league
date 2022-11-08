@@ -100,6 +100,7 @@ class PokeBattle_Battle
         b.pbFaint if b.fainted?
       when PBWeather::GreatFlood
         next if !b.takesGreatFloodDamage?
+        next if b.effects[PBEffects::AirlockBarrier] > 0
         pbDisplay(_INTL("{1} will not survive the end of the world!",b.pbThis))
         @scene.pbAnimation(getConst(PBMoves,:AQUARING),b,b)
         @scene.pbDamageAnimation(b)
@@ -516,6 +517,16 @@ class PokeBattle_Battle
         pbJudgeCheckpoint(@battlers[perishSongUsers[0]])
       end
     end
+    # Airlock Barrier
+    priority.each do |b|
+      next if b.fainted? || b.effects[PBEffects::AirlockBarrier]==0
+      b.effects[PBEffects::AirlockBarrier] -= 1
+      if b.effects[PBEffects::AirlockBarrier] == 0
+        pbCommonAnimation("rayquaza", b)
+        pbDisplay(_INTL("{1} non è più protetto dalla condizioni climatiche avverse!",b.pbThis))
+      end
+    end
+
     # Check for end of battle
     if @decision>0
       pbGainExp

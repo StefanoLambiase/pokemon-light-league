@@ -2209,10 +2209,6 @@ BattleHandlers::AbilityOnSwitchIn.add(:DROUGHT,
 BattleHandlers::AbilityOnSwitchIn.add(:SKYFALL,
   proc { |ability,battler,battle|
     pbBattleWeatherAbility(PBWeather::GreatFlood,battler,battle)
-    
-    if battler.pbIsAncestralKyogre?() && battler.form == 1
-      battle.pbStartTerrain(user,PBBattleTerrains::Electric, false)
-    end
   }
 )
 
@@ -2445,13 +2441,17 @@ BattleHandlers::EOREffectAbility.add(:SKYFALL,
     battle.pbShowAbilitySplash(battler)
     battle.pbCommonAnimation("_fireSkyfall",battler)
     battle.eachOtherSideBattler(battler.index) do |b|
+      if b.effects[PBEffects::AirlockBarrier] > 0
+        battle.pbDisplay(_INTL("{1} è protetto dalla barriera di Rayqauza!",b.pbThis))
+        return
+      end
       if b.status != PBStatuses::BURN
         if b.pbCanBurn?(battler,PokeBattle_SceneConstants::USE_ABILITY_SPLASH)
           msg = _INTL("{1} va a fuoco!", b.pbThis)
           b.pbBurn(battler,msg)
         end
       else
-        battle.pbDisplay(_INTL("{1} explodes!",b.pbThis))
+        battle.pbDisplay(_INTL("{1} esplode!",b.pbThis))
         battle.pbAnimation(getConst(PBMoves,:EXPLOSION), battler, b)
         b.status = PBStatuses::NONE
         b.pbReduceHP(b.totalhp/8)
@@ -2470,6 +2470,10 @@ BattleHandlers::MoveImmunityTargetAbility.add(:SKYFALL,
     battle.pbCommonAnimation("_electricSkyfall",target)
     battle.pbDisplay(_INTL("È difficile muoversi nell'aura elettrica di {1}!",target.pbThis(true)))
 
+    if user.effects[PBEffects::AirlockBarrier] > 0
+      battle.pbDisplay(_INTL("{1} è protetto dalla barriera di Rayqauza!",user.pbThis))
+      return
+    end
     if user.status != PBStatuses::PARALYSIS
       if user.pbCanParalyze?(user,PokeBattle_SceneConstants::USE_ABILITY_SPLASH)
         msg = _INTL("{1} è rimasto folgorato!", user.pbThis)
