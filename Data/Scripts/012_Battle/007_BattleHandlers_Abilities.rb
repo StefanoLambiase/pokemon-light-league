@@ -2209,6 +2209,10 @@ BattleHandlers::AbilityOnSwitchIn.add(:DROUGHT,
 BattleHandlers::AbilityOnSwitchIn.add(:SKYFALL,
   proc { |ability,battler,battle|
     pbBattleWeatherAbility(PBWeather::GreatFlood,battler,battle)
+    
+    if battler.pbIsAncestralKyogre?() && battler.form == 1
+      battle.pbStartTerrain(user,PBBattleTerrains::Electric, false)
+    end
   }
 )
 
@@ -2434,6 +2438,56 @@ BattleHandlers::AbilityOnSwitchIn.add(:OVERCLOCK,
     battle.pbHideAbilitySplash(battler)
   }
 )
+
+BattleHandlers::EOREffectAbility.add(:SKYFALL,
+  proc { |ability,battler,battle|
+    next if battler.form != 4 # Only if kyogre is on fire
+    battle.pbShowAbilitySplash(battler)
+    battle.pbCommonAnimation("_fireSkyfall",battler)
+    battle.eachOtherSideBattler(battler.index) do |b|
+      if b.status != PBStatuses::BURN
+        if b.pbCanBurn?(battler,PokeBattle_SceneConstants::USE_ABILITY_SPLASH)
+          msg = _INTL("{1} va a fuoco!", b.pbThis)
+          b.pbBurn(battler,msg)
+        end
+      else
+        battle.pbDisplay(_INTL("{1} explodes!",b.pbThis))
+        battle.pbAnimation(getConst(PBMoves,:EXPLOSION), battler, b)
+        b.status = PBStatuses::NONE
+        b.pbReduceHP(b.totalhp/8)
+      end
+    end    
+    battle.pbHideAbilitySplash(battler)
+  }
+)
+
+BattleHandlers::MoveImmunityTargetAbility.add(:SKYFALL,
+  proc { |ability,user,target,move,type,battle|
+    next false if !move.pbContactMove?(user)
+    next false if target.form != 5 # Only if kyogre is electric
+    battle.pbShowAbilitySplash(target)
+
+    battle.pbCommonAnimation("_electricSkyfall",target)
+    battle.pbDisplay(_INTL("È difficile muoversi nell'aura elettrica di {1}!",target.pbThis(true)))
+
+    if user.status != PBStatuses::PARALYSIS
+      if user.pbCanParalyze?(user,PokeBattle_SceneConstants::USE_ABILITY_SPLASH)
+        msg = _INTL("{1} è rimasto folgorato!", user.pbThis)
+        user.pbParalyze(target,msg)
+      end
+    else
+      battle.pbDisplay(_INTL("{1} si è sovraccaricato!",b.pbThis))
+      battle.pbAnimation(getConst(PBMoves,:CHARGE), target, user)
+      user.pbReduceHP(user.totalhp/4)
+      user.pbLowerStatStageByAbility(PBStats::SPEED,1,user,false)
+      user.pbLowerStatStageByAbility(PBStats::SPDEF,1,user,false)
+    end
+  
+    battle.pbHideAbilitySplash(target)
+    next false
+  }
+)
+
 
 #===============================================================================
 # AbilityOnSwitchOut handlers

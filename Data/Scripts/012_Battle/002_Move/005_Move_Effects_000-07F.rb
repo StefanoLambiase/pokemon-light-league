@@ -2380,7 +2380,7 @@ class PokeBattle_Move_070 < PokeBattle_FixedDamageMove
       return true
     end
     if target.pbIsAncestralKyogre?()
-      @battle.pbAnimation("Move:LOCKON", target, user)
+      @battle.pbAnimation(getConst(PBMoves,:LOCKON), target, user)
       user.pbReduceHP(user.totalhp)
       @battle.pbDisplay(_INTL("{1} non può essere sconfitto da questi biechi trucchetti...",target.pbThis))
       return true

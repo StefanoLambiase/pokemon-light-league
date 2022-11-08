@@ -1541,3 +1541,25 @@ Pokemon = KYOGRE,50
     EV = 0,0,125,0,252,125
     Shadow = no
     Ball = 0
+[ANCESTRAL3,Alfonso]
+Pokemon = KYOGRE,50
+    Form = 4
+    Moves = TRICKROOM,ENERGYBALL,FLAMETHROW,SHADOWBALL
+    Ability = 0
+    Shiny = no
+    Nature = QUIET
+    IV = 31,0,31,0,31,31
+    EV = 0,0,125,0,252,125
+    Shadow = no
+    Ball = 0
+[ANCESTRAL4,Alfonso]
+Pokemon = KYOGRE,50
+    Form = 5
+    Moves = TRICKROOM,ENERGYBALL,FLAMETHROW,SHADOWBALL
+    Ability = 0
+    Shiny = no
+    Nature = QUIET
+    IV = 31,0,31,0,31,31
+    EV = 0,0,125,0,252,125
+    Shadow = no
+    Ball = 0
