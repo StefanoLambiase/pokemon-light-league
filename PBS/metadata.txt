@@ -115,6 +115,7 @@ ShowArea = true
 #-------------------------------
 [022]
 # test
+BattleBack = storm
 Outdoor = true
 #-------------------------------
 [023]

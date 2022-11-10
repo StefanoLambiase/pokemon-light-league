@@ -1522,7 +1522,7 @@ Pokemon = VOLCARONA,51
 [ANCESTRAL1,Alfonso]
 Pokemon = KYOGRE,50
     Form = 2
-    Moves = TRICKROOM,SURF,ICYWIND,SHOCKWAVE
+    Moves = TRICKROOM,WATERPULSE,ICYWIND,SHOCKWAVE
     Ability = 0
     Shiny = no
     Nature = QUIET
