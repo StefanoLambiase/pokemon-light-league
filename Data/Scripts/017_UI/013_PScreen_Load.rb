@@ -207,6 +207,11 @@ end
 class PokemonLoadScreen
   def initialize(scene)
     @scene = scene
+
+    # @crt = Sprite.new
+    # @crt.bitmap = Bitmap.new("Graphics/Pictures/scanlines.png")
+    # @crt.z = 9999999
+    # @crt.opacity = 25
   end
 
   def pbTryLoadFile(savefile)

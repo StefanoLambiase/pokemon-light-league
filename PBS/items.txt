@@ -652,10 +652,10 @@
 634,PILLOLEDIGATTO,Pillole di Gatto,Pillole di Gatto,2,0,"Un medicinale usato da Gatto per contenere l'oscurità che lo possiede.",0,3,0,
 635,DARKSANDBALL,Dark Sandball,Dark Sandball,3,0,"Una Pokéball formidabile. È concepita per rafforzare al massimo il pokèmon catturato.",0,4,4,
 #--------------------------------
-636,PIASTRINA,Piastrina,Piastrine,1,750,"Simboleggia una vittoria nella competizione della lega della Luce. È una valuta per un certo negozio",0,0,0,
+636,PIASTRINA,Piastrina,Piastrine,1,0,"Simboleggia una vittoria nella competizione della lega della Luce. È una valuta per un certo negozio",0,0,0,
 637,PIASTRINAGOLD,Piastrina Gold,Piastrine Gold,8,0,"Simboleggia il raggiungimento di un grande obiettivo. 7 concedono l'accesso alla Lega.",0,0,0,
 #--------------------------------
-638,CROMOCOMETA,Cromocometa,Cromocomete,1,100000,"Frammento di una rarissima cometa. Usandola su un pokémon, questo diventa cromatico",1,0,0,
+638,CROMOCOMETA,Cromocometa,Cromocomete,1,100000,"Frammento di una rarissima cometa. Usarla su un pokémon lo rende cromatico",1,0,0,
 639,TESSERACOMPETIZIONE,Tessera Competizione, Tessera Competizione,8,0,"È una documento di riconoscimento per tutti i partecipanti alla competizione.",0,0,0,
 640,INVITOLEGA,Invito della Lega,Invito della Lega,8,0,"Solo gli allenatori più potenti del mondo ricevono questo invito.",0,0,0,
 641,MALWARESANDMAN,Malware Sandman,Malware Sandman,1,0,"Un malware programmato da Gatto. Manda in overclock un certo pokémon al costo della sua stabilità.",1,0,7,
