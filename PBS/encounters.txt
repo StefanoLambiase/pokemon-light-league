@@ -1027,7 +1027,7 @@ Land
     SNORUNT,37,40
     SNORUNT,37,40
 #-------------------------------
-206 # Isola del Drago
+206 # Monte Ingang
 25,10,10
 Cave
     CRUSTLE,38,41
@@ -1043,7 +1043,7 @@ Cave
     RHYDON,38,41
     RHYDON,38,41
 #-------------------------------
-208 # Isola del Drago
+208 # Monte Ingang
 25,10,10
 Cave
     CRUSTLE,38,41
