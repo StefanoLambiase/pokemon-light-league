@@ -795,3 +795,19 @@ Bicycle = false
 Outdoor = true
 BicycleAlways = false
 ShowArea = true
+#-------------------------------
+[213]
+# Cima della Lega
+SnapEdges = true
+Bicycle = false
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
+#-------------------------------
+[214]
+# Cima della Lega
+SnapEdges = true
+Bicycle = false
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
