@@ -805,9 +805,9 @@ BicycleAlways = false
 ShowArea = true
 #-------------------------------
 [214]
-# Cima della Lega
+# Cima della Lega Tempesta
 SnapEdges = true
 Bicycle = false
 Outdoor = true
 BicycleAlways = false
-ShowArea = true
+ShowArea = false
