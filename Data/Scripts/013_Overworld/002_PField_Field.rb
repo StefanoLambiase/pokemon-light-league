@@ -475,6 +475,10 @@ Events.onMapSceneChange += proc { |_sender,e|
       $PokemonTemp.darknessSprite = nil
     end
   end
+  # Custom: reset Taiani's warning count if you have not yet reached the limit
+  if mapChanged && $PokemonGlobal.bicycleWarningCount < 3
+    $PokemonGlobal.bicycleWarningCount = 0
+  end
   # Show location signpost
   if mapChanged
     if pbGetMetadata($game_map.map_id,MetadataShowArea)

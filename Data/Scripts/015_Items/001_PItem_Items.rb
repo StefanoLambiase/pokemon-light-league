@@ -559,10 +559,34 @@ end
 #===============================================================================
 # Decide whether the player is able to ride/dismount their Bicycle
 #===============================================================================
+def pbTaianiWarningsCheck
+  if $PokemonGlobal.bicycleWarningCount == 0
+    if $game_map.map_id == 76
+      pbMessage(_INTL("<b>Prof Taiani</b>: Bruce ti vedo! Non girare in bici nel mio laboratorio!"))
+    else
+      pbMessage(_INTL("\\c[2]Risuonano le parole del prof. Taiani...\\wt[20] dalla bici!?"))
+      pbMessage(_INTL("C'è un luogo ed un tempo per ogni cosa, ma la bici qui non la devi nemmeno toccare."))
+    end
+  end
+  if $PokemonGlobal.bicycleWarningCount == 1
+    pbMessage(_INTL("Bruce, ti ho detto che non è il luogo adatto per la bici. Non farmi incazzare."))
+  end
+  if $PokemonGlobal.bicycleWarningCount == 2
+    pbMessage(_INTL("Vabbè, basta, ora ti faccio vedere io. Voglio proprio vedere come fai."))
+  end
+  
+  $PokemonGlobal.bicycleWarningCount += 1
+end
+
 def pbBikeCheck
+  # Custom: Taiani's lock
+  if $PokemonGlobal.bicycleWarningCount >= 3
+    pbMessage(_INTL("Le ruote non si muovono. C'è un qualche tipo di Parental Control su questa bicicletta elettrica."))
+    return false
+  end
   if $PokemonGlobal.surfing ||
      (!$PokemonGlobal.bicycle && PBTerrain.onlyWalk?(pbGetTerrainTag))
-    pbMessage(_INTL("Can't use that here."))
+     pbTaianiWarningsCheck
     return false
   end
   if $game_player.pbHasDependentEvents?
@@ -579,7 +603,7 @@ def pbBikeCheck
   val = pbGetMetadata($game_map.map_id,MetadataBicycle)
   val = pbGetMetadata($game_map.map_id,MetadataOutdoor) if val==nil
   if !val
-    pbMessage(_INTL("Can't use that here."))
+    pbTaianiWarningsCheck
     return false
   end
   return true
