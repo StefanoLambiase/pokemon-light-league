@@ -543,18 +543,18 @@ SuperRod
 097 # Percorso 3
 25,10,10
 Land
-    STARLY,5,9
-    ZIGZAGOON,5,9
-    METAPOD,6,9
-    METAPOD,6,9
-    METAPOD,6,9
-    SHINX,7,10
-    SHINX,7,10
-    SHINX,7,10
-    SHINX,7,10
-    SHINX,7,10
-    RALTS,10,15
-    RALTS,10,15
+    ZIGZAGOON,8,10
+    SHINX,8,10
+    GEODUDE,9,11
+    GEODUDE,9,11
+    ODDISH,8,10
+    MACHOP,9,11
+    BONSLY,9,11
+    BONSLY,9,11
+    RALTS,10,11
+    RALTS,10,11
+    ABRA,10
+    ABRA,10
 #-------------------------------
 103 # Percorso 4
 25,10,10

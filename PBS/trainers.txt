@@ -185,29 +185,29 @@ Pokemon = MACHOP,8
 # Consiglio = 'Ah si, il percorso 3, quel covo di matti! C'è anche un mio vecchio amico, uno strano, uno zimbello. Comunque! In quel percorso ci sono molti tipi diversi tra di loro. I più pericolosi sono vuolnerabili a mosse di tipo Roccia e di tipo Buio! Buona fortuna!'
 #-------------------------------
 [CANDIDATO1_M,Giulio]
-Pokemon = BIDOOF,8
+Pokemon = BIDOOF,10
     Gender = male
     Ability = 0
-Pokemon = ZUBAT,7
+Pokemon = ZUBAT,10
     Gender = female
     Ability = 0
 #-------------------------------
 [ENGINEER,Ernesto]
-Pokemon = STARLY,8
+Pokemon = STARLY,11
     Gender = female
     Ability = 0
     IV = 7
     EV = 8
 #-------------------------------
 [PSYCHIC_F,Igresia]
-Pokemon = VOLCARONA,12
+Pokemon = VOLCARONA,13
     Name = Bastone
     Gender = male
     Ability = 0
     IV = 7
     EV = 4
     Shiny = yes
-Pokemon = GROWLITHE,10
+Pokemon = GROWLITHE,11
     Name = Carota
     Gender = female
     Ability = 0
@@ -216,23 +216,23 @@ Pokemon = GROWLITHE,10
     Shiny = yes
 #-------------------------------
 [COOLTRAINER_M,Buggy]
-Pokemon = MRMIME,10
+Pokemon = MRMIME,12
     Gender = male
     Ability = 0
     IV = 2
     EV = 4
 #-------------------------------
 [RIVALE2,Andrea]
-Pokemon = SNEASEL,10
+Pokemon = SNEASEL,12
     Gender = female
     Ability = 0
     IV = 7
     EV = 4
-Pokemon = BATITIV,12
+Pokemon = BATITIV,13
     Gender = male
     IV = 4
     EV = 4
-    Ball = 276
+    Ball = 11
 #-------------------------------
 #
 # Pisik Town -------------------------------------------------------
