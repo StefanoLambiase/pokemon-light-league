@@ -157,26 +157,26 @@ Pokemon = CHARMANDER,4
 #
 #-------------------------------
 [CANDIDATO1_M,Ornaldo]
-Pokemon = STARLY,4
+Pokemon = STARLY,7
     Ability = 0
     Nature = TIMID
 #-------------------------------
 [CANDIDATO1_F,Ciccino cuoricino]
-Pokemon = MARILL,5
+Pokemon = MARILL,8
     Ability = 1
     Nature = JOLLY
 #-------------------------------
 [CANDIDATO2_M,Bonario]
-Pokemon = BAGON,4
+Pokemon = BAGON,7
     Ability = 0
     Nature = JOLLY
 #-------------------------------
 [SCIENTIST,Veritiero]
-Pokemon = DRATINI,4
+Pokemon = DRATINI,8
     Gender = male
     Ability = 0
     Moves = TWISTER,THUNDERWAVE,,
-Pokemon = MACHOP,4
+Pokemon = MACHOP,8
     Ability = 0
     Nature = JOLLY
 #-------------------------------
