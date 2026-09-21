@@ -1180,7 +1180,7 @@ Pokemon = BRONZONG,44
 #
 #-------------------------------
 [CANDIDATO3_M,Parshendi]
-Pokemon = AERODACTYL,43
+Pokemon = AERODACTYL,45
     Moves = CRUNCH,STONEEDGE,WINGATTACK,
     Ability = 2
     Gender = male
@@ -1191,7 +1191,7 @@ Pokemon = AERODACTYL,43
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = STEELIX,42
+Pokemon = STEELIX,44
     Moves = TWISTER,ROCKTOMB,IRONTAIL,CRUNCH
     Ability = 2
     Gender = female
@@ -1204,7 +1204,7 @@ Pokemon = STEELIX,42
     Ball = 0
 #-------------------------------
 [CANDIDATO3_F,Parshendi]
-Pokemon = SWAMPERT,43
+Pokemon = SWAMPERT,45
     Moves = WATERFALL,TAKEDOWN,SUPERPOWER,
     Ability = 1
     Gender = female
@@ -1215,7 +1215,7 @@ Pokemon = SWAMPERT,43
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = FLYGON,43
+Pokemon = FLYGON,45
     Moves = EARTHPOWER,DRAGONPULSE,HEATWAVE,
     Ability = 2
     Gender = female
@@ -1228,7 +1228,7 @@ Pokemon = FLYGON,43
     Ball = 0
 #-------------------------------
 [CANDIDATO2_F,Lola]
-Pokemon = BASTIODON,47
+Pokemon = BASTIODON,46
     Item = LEFTOVERS
     Moves = HEAVYSLAM,PROTECT,SUBSTITUTE,GIGAIMPACT
     Ability = 1
@@ -1242,7 +1242,7 @@ Pokemon = BASTIODON,47
     Ball = 0
 #-------------------------------
 [GAIASERGIO,Gaia]
-Pokemon = GARDEVOIR,45
+Pokemon = GARDEVOIR,47
     Moves = DAZZLINGGLEAM,PSYCHIC,FOCUSBLAST,WILLOWISP
     Ability = 2
     Gender = female
@@ -1263,7 +1263,7 @@ Pokemon = LOPUNNY,47
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = METAGROSS,47
+Pokemon = METAGROSS,48
     Item = METAGROSSITE
     Moves = HAMMERARM,METEORMASH,ZENHEADBUTT,
     Ability = 0
@@ -1277,7 +1277,7 @@ Pokemon = METAGROSS,47
 #-------------------------------
 [RIVALE5,Andrea]
 Items = REVIVE
-Pokemon = TOGEKISS,43
+Pokemon = TOGEKISS,46
     Moves = AIRSLASH,FUTURESIGHT,DAZZLINGGLEAM,FOLLOWME
     Ability = 2
     Gender = female
@@ -1288,7 +1288,7 @@ Pokemon = TOGEKISS,43
     Name = Sorpresa
     Shadow = no
     Ball = 0
-Pokemon = CAMERUPT,44
+Pokemon = CAMERUPT,46
     Moves = ERUPTION,EARTHQUAKE,,
     Ability = 1
     Gender = male
@@ -1308,7 +1308,7 @@ Pokemon = BUTITIV,47
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = LUXRAY,45
+Pokemon = LUXRAY,46
     Moves = WILDCHARGE,CRUNCH,ICEFANG,PLAYROUGH
     Ability = 1
     Gender = female
