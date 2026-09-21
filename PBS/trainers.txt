@@ -998,7 +998,7 @@ Pokemon = MAGNEZONE,39
 #
 #-------------------------------
 [COOLTRAINER_M,Franco]
-Pokemon = HIPPOWDON,40
+Pokemon = HIPPOWDON,39
     Moves = CRUNCH,THUNDERFANG,,
     Ability = 0
     Gender = female
@@ -1009,9 +1009,9 @@ Pokemon = HIPPOWDON,40
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = SANDSLASH,42
+Pokemon = SANDSLASH,40
     Item = FOCUSSASH
-    Moves = EARTHQUAKE,SWORDDANCE,,
+    Moves = EARTHQUAKE,SWORDSDANCE,,
     Ability = 2
     Gender = male
     Shiny = no
@@ -1023,7 +1023,7 @@ Pokemon = SANDSLASH,42
     Ball = 0
 #-------------------------------
 [CANDIDATO3_F,Giovanna]
-Pokemon = LUCARIO,44
+Pokemon = LUCARIO,41
     Item = LUCARIONITE
     Moves = EXTREMESPEED,METEORMASH,CLOSECOMBAT,
     Ability = 1
@@ -1037,8 +1037,8 @@ Pokemon = LUCARIO,44
     Ball = 0
 #-------------------------------
 [LASS,Camillina]
-Pokemon = GABITE,42
-    Item = LUCARIONITE
+Pokemon = GABITE,40
+    Item = ROCKYHELMET
     Moves = DRAGONCLAW,EARTHQUAKE,IRONHEAD,REST
     Ability = 2
     Gender = female
@@ -1049,7 +1049,7 @@ Pokemon = GABITE,42
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = DRAPION,40
+Pokemon = DRAPION,39
     Moves = THUNDERFANG,XSCISSOR,CROSSPOISON,KNOCKOFF
     Ability = 0
     Gender = male
@@ -1062,7 +1062,7 @@ Pokemon = DRAPION,40
     Ball = 0
 #-------------------------------
 [CANDIDATO2_F,Andrea]
-Pokemon = GALLADE,42
+Pokemon = GALLADE,40
     Moves = PSYCHOCUT,CLOSECOMBAT,EARTHQUAKE,
     Ability = 2
     Gender = male
@@ -1073,7 +1073,7 @@ Pokemon = GALLADE,42
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = GARDEVOIR,42
+Pokemon = GARDEVOIR,40
     Moves = DAZZLINGGLEAM,PSYCHIC,FOCUSBLAST,WILLOWISP
     Ability = 2
     Gender = female
@@ -1087,7 +1087,7 @@ Pokemon = GARDEVOIR,42
 #-------------------------------
 [ALFONSOPICCOLO,Alfonso]
 Items = FULLRESTORE
-Pokemon = TYPHLOSION,43
+Pokemon = TYPHLOSION,42
     Moves = LAVAPLUME,FOCUSBLAST,SUBSTITUTE,REST
     Ability = 2
     Gender = male
@@ -1122,7 +1122,7 @@ Pokemon = GYARADOS,42
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = DRAGONITE,44
+Pokemon = DRAGONITE,43
     Moves = FIREPUNCH,ICEPUNCH,THUNDERPUNCH,DRAGONCLAW
     Ability = 0
     Gender = male
