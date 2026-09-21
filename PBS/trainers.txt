@@ -1135,6 +1135,47 @@ Pokemon = DRAGONITE,43
     Ball = 0
 #-------------------------------
 #
+# Percorso 8 - Lago dell'universita -------------------------------------------------
+#
+#-------------------------------
+[FISHERMAN,Remo]
+Items = SUPERPOTION
+LoseText = "Il lago oggi non mi ha portato fortuna."
+Pokemon = WHISCASH,42
+    Moves = EARTHQUAKE,AQUATAIL,ZENHEADBUTT,REST
+    Ability = 0
+    Gender = male
+    Nature = ADAMANT
+    IV = 24,24,24,24,24,24
+Pokemon = SEISMITOAD,42
+    Moves = DRAINPUNCH,MUDDYWATER,SLUDGEWAVE,RAINDANCE
+    Ability = 1
+    Gender = male
+    Nature = QUIET
+    IV = 24,24,24,24,24,24
+Pokemon = GYARADOS,43
+    Moves = WATERFALL,CRUNCH,ICEFANG,DRAGONDANCE
+    Ability = 0
+    Gender = female
+    Nature = JOLLY
+    IV = 24,24,24,24,24,24
+#-------------------------------
+[PSYCHIC_M,Ermes]
+LoseText = "Non l'avevo previsto."
+Pokemon = GRUMPIG,42
+    Moves = PSYCHIC,POWERGEM,BOUNCE,REST
+    Ability = 0
+    Gender = male
+    Nature = CALM
+    IV = 24,24,24,24,24,24
+Pokemon = BRONZONG,44
+    Item = LEFTOVERS
+    Moves = GYROBALL,PSYCHIC,HYPNOSIS,STEALTHROCK
+    Ability = 0
+    Nature = SASSY
+    IV = 24,24,24,24,24,24
+#-------------------------------
+#
 # Sifda della montagna --------------------------------------------------------
 #
 #-------------------------------
