@@ -1364,9 +1364,50 @@ Pokemon = FEAROW,53
     Shadow = no
     Ball = 0
 #-------------------------------
+#
+# Isola del Drago -------------------------------------------------------------
+#
+#-------------------------------
+[COOLTRAINER_F,Ortensia]
+Items = HYPERPOTION
+LoseText = "I draghi non perdonano... ma oggi hanno perso."
+Pokemon = ALTARIA,47
+    Moves = DRAGONPULSE,MOONBLAST,COTTONGUARD,ROOST
+    Ability = 0
+    Gender = female
+    Nature = CALM
+    IV = 24,24,24,24,24,24
+Pokemon = DRAGONAIR,48
+    Moves = DRAGONPULSE,THUNDERBOLT,ICEBEAM,THUNDERWAVE
+    Ability = 0
+    Gender = female
+    Nature = MODEST
+    IV = 24,24,24,24,24,24
+Pokemon = HAXORUS,48
+    Moves = DRAGONDANCE,OUTRAGE,EARTHQUAKE,POISONJAB
+    Ability = 1
+    Gender = male
+    Nature = JOLLY
+    IV = 24,24,24,24,24,24
+#-------------------------------
+[JUGGLER,Brunello]
+LoseText = "MMMMMMMH COME TI SCALDI"
+Pokemon = MRMIME,47
+    Moves = PSYCHIC,DAZZLINGGLEAM,ENCORE,BATONPASS
+    Ability = 1
+    Gender = male
+    Nature = TIMID
+    IV = 24,24,24,24,24,24
+Pokemon = DARMANITAN,48
+    Moves = FLAREBLITZ,SUPERPOWER,ROCKSLIDE,UTURN
+    Ability = 0
+    Gender = male
+    Nature = ADAMANT
+    IV = 24,24,24,24,24,24
+#-------------------------------
 [PROFSANDMAN,Sandman]
 Items = FULLRESTORE
-Pokemon = SCEPTILE,46
+Pokemon = SCEPTILE,49
     Item = AIRBALLOON
     Moves = FIREBLAST,DRAGONPULSE,SUBSTITUTE,WILLOWISP
     Ability = 0
@@ -1377,7 +1418,7 @@ Pokemon = SCEPTILE,46
     IV = 23,23,23,27,27,23
     Shadow = no
     Ball = 0
-Pokemon = RAMPARDOS,47
+Pokemon = RAMPARDOS,49
     Item = FOCUSSASH
     Moves = ZENHEADBUTT,LIGHTSCREEN,IRONHEAD,EARTHQUAKE
     Ability = 0
@@ -1388,7 +1429,7 @@ Pokemon = RAMPARDOS,47
     IV = 23,31,31,23,23,31
     Shadow = no
     Ball = 0
-Pokemon = METAGROSS,48
+Pokemon = METAGROSS,50
     Item = TANGABERRY
     Moves = PSYCHOCUT,METEORMASH,PUNISHMENT,SWORDSDANCE
     Ability = 0
@@ -1400,7 +1441,7 @@ Pokemon = METAGROSS,48
     EV = 0,,,,,
     Shadow = no
     Ball = 0
-Pokemon = ARMALDO,49
+Pokemon = ARMALDO,50
     Item = WIDELENS
     Moves = XSCISSOR,ROCKSLIDE,EARTHQUAKE,AERIALACE
     Ability = 1
@@ -1412,7 +1453,7 @@ Pokemon = ARMALDO,49
     Ball = 0
 #-------------------------------
 [DARKMCROSE,McRose]
-Pokemon = DUSKNOIR,48
+Pokemon = DUSKNOIR,49
     Moves = PAINSPLIT,WILLOWISP,FUTURESIGHT,SHADOWPUNCH
     Ability = 0
     Gender = male
@@ -1422,7 +1463,7 @@ Pokemon = DUSKNOIR,48
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = GOLEM,48
+Pokemon = GOLEM,49
     Moves = DOUBLEEDGE,SUCKERPUNCH,EARTHQUAKE,STEALTHROCK
     Ability = 0
     Gender = male
@@ -1432,7 +1473,7 @@ Pokemon = GOLEM,48
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = MACHAMP,49
+Pokemon = MACHAMP,50
     Moves = NIGHTSLASH,DRAINPUNCH,FIREPUNCH,THUNDERPUNCH
     Ability = 0
     Gender = female
@@ -1442,7 +1483,7 @@ Pokemon = MACHAMP,49
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = VESPIQUEN,49
+Pokemon = VESPIQUEN,50
     Moves = ATTACKORDER,DARKPULSE,AIRSLASH,POWERGEM
     Ability = 1
     Gender = female
