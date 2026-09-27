@@ -811,3 +811,11 @@ Bicycle = false
 Outdoor = true
 BicycleAlways = false
 ShowArea = false
+#-------------------------------
+[216]
+# Cima della Lega Tempesta
+SnapEdges = true
+Bicycle = true
+Outdoor = true
+BicycleAlways = false
+ShowArea = true

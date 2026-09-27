@@ -689,3 +689,8 @@
 663,RAYQUAZAHELP,Rayquaza's help,Rayquaza's help,7,0,"Rayquaza genera Riparo dal meteo avverso per un pokémon alleato.",0,3,0,
 664,DIALGAHELP,Dialga's help,Dialga's helps,7,0,"Dialga riavvolge brevemente il tempo per concederti una seconda chance in caso di sconfitta.",0,0,0,
 665,PALKIAHELP,Palkia's help,Palkia's help,7,0,"Palkia crea una barriera che incrementa di molto le difese di un pokémon alleato.",0,3,0,
+#--------------------------------
+666,COMPENDIODIMEMORIE,Compendio di Memorie,Compendio di Memorie,8,0,"È una compendio di memorie del passato. Un esperto potrebbe saper interpretarlo.",0,0,0,
+667,GIORNALIDEPOCA,Giornali d'epoca,Giornali d'epoca,8,0,"È una mucchio di giornali del passato. Un esperto potrebbe saper interpretarli.",0,0,0,
+668,REGISTRIDEGLIINDICENTI,Registro degli Incidenti,Registro degli Incidenti,8,0,"È una registro contenente i una serie di incidenti del passato. Un esperto potrebbe saper interpretarli.",0,0,0,
+669,PAPERDIRICERCA,Articoli Scientifici,Articoli Scientifici,8,0,"È una piccola pila di articoli scientifici di ricerca. Un esperto potrebbe saper interpretarli.",0,0,0,
