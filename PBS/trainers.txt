@@ -748,7 +748,7 @@ Pokemon = DIOSHEDINJA,33
 #-------------------------------
 [CANDIDATO2_M,Matteo]
 Items = REVIVE
-Pokemon = ROSERADE,33
+Pokemon = ROSERADE,32
     Item = POISONBARB
     Moves = MEGADRAIN,SLUDGEBOMB,DAZZLINGGLEAM,
     Ability = 1
@@ -759,7 +759,7 @@ Pokemon = ROSERADE,33
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = PELIPPER,33
+Pokemon = PELIPPER,32
     Item = FOCUSSASH
     Moves = WATERPULSE,TAILWIND,HURRICANE,
     Ability = 1
@@ -783,7 +783,7 @@ Pokemon = JOLTEON,33
 #-------------------------------
 [CANDIDATO2_F,Franca]
 Items = SUPERPOTION
-Pokemon = EMBOAR,36
+Pokemon = EMBOAR,34
     Moves = ASSURANCE,HEADSMASH,ROAR,FLAREBLITZ
     Ability = 1
     Gender = male
@@ -793,7 +793,7 @@ Pokemon = EMBOAR,36
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = PIDGEOT,34
+Pokemon = PIDGEOT,33
     Item = FOCUSSASH
     Moves = QUICKATTACK,WINGATTACK,UTURN,
     Ability = 0
@@ -804,7 +804,7 @@ Pokemon = PIDGEOT,34
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = CRYOGONAL,35
+Pokemon = CRYOGONAL,33
     Moves = ICEBEAM,ANCIENTPOWER,FLASHCANNON,
     Ability = 0
     Gender = female
@@ -817,7 +817,7 @@ Pokemon = CRYOGONAL,35
 #-------------------------------
 [RIVALE4,Andrea]
 Items = REVIVE
-Pokemon = TOGEKISS,36
+Pokemon = TOGEKISS,35
     Moves = AIRSLASH,FUTURESIGHT,DAZZLINGGLEAM,FOLLOWME
     Ability = 2
     Gender = female
@@ -828,7 +828,7 @@ Pokemon = TOGEKISS,36
     Name = Sorpresa
     Shadow = no
     Ball = 0
-Pokemon = CAMERUPT,35
+Pokemon = CAMERUPT,34
     Moves = ERUPTION,EARTHQUAKE,,
     Ability = 1
     Gender = male
@@ -838,7 +838,7 @@ Pokemon = CAMERUPT,35
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = BUTITIV,35
+Pokemon = BUTITIV,34
     Moves = EXPLOSION,SHADOWCLAW,DRAGONCLAW,
     Ability = 0
     Gender = male
@@ -848,7 +848,7 @@ Pokemon = BUTITIV,35
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = LUXRAY,35
+Pokemon = LUXRAY,34
     Moves = WILDCHARGE,CRUNCH,ICEFANG,PLAYROUGH
     Ability = 1
     Gender = female
@@ -864,7 +864,7 @@ Pokemon = LUXRAY,35
 #-------------------------------
 [RECLUTAELITE,Stanislao]
 Items = SUPERPOTION
-Pokemon = PELIPPER,37
+Pokemon = PELIPPER,36
     Moves = WATERPULSE,HURRICANE,ROOST,UTURN
     Ability = 1
     Gender = female
@@ -874,7 +874,7 @@ Pokemon = PELIPPER,37
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = SCEPTILE,38
+Pokemon = SCEPTILE,37
     Item = SCEPTILITE
     Moves = DRAGONPULSE,ENERGYBALL,GIGADRAIN,DRAGONDANCE
     Ability = 1
@@ -898,7 +898,7 @@ Pokemon = BLASTOISE,37
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = STARAPTOR,38
+Pokemon = STARAPTOR,36
     Moves = BRAVEBIRD,CLOSECOMBAT,STEELWING,
     Ability = 0
     Gender = male
@@ -910,7 +910,7 @@ Pokemon = STARAPTOR,38
     Ball = 0
 #-------------------------------
 [MCROSE,Mc Rose]
-Pokemon = DUSKNOIR,39
+Pokemon = DUSKNOIR,38
     Moves = SHADOWBALL,WILLOWISP,TRICKROOM,
     Ability = 0
     Gender = male
@@ -921,7 +921,7 @@ Pokemon = DUSKNOIR,39
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = GOLEM,39
+Pokemon = GOLEM,38
     Moves = EARTHQUAKE,STONEEDGE,HEAVYSLAM,
     Ability = 2
     Gender = male
@@ -932,7 +932,7 @@ Pokemon = GOLEM,39
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = MACHAMP,40
+Pokemon = MACHAMP,39
     Moves = DYNAMICPUNCH,KNOCKOFF,,
     Ability = 1
     Gender = female
@@ -943,7 +943,7 @@ Pokemon = MACHAMP,40
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = VESPIQUEN,39
+Pokemon = VESPIQUEN,38
     Moves = TRICKROOM,ATTACKORDER,DEFENDORDER,SLUDGEBOMB
     Ability = 2
     Gender = female
@@ -957,7 +957,7 @@ Pokemon = VESPIQUEN,39
 #-------------------------------
 [DARKGATTO,Gatto]
 Items = SUPERPOTION
-Pokemon = ELECTRODE,40
+Pokemon = ELECTRODE,39
     Moves = THUNDERBOLT,DARKPULSE,TOXIC,
     Ability = 1
     Gender = male
@@ -980,7 +980,7 @@ Pokemon = PORYGONX,40
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = MAGNEZONE,40
+Pokemon = MAGNEZONE,39
     Moves = THUNDERBOLT,FLASHCANNON,DARKPULSE,
     Ability = 2
     Gender = male
@@ -998,7 +998,7 @@ Pokemon = MAGNEZONE,40
 #
 #-------------------------------
 [COOLTRAINER_M,Franco]
-Pokemon = HIPPOWDON,40
+Pokemon = HIPPOWDON,39
     Moves = CRUNCH,THUNDERFANG,,
     Ability = 0
     Gender = female
@@ -1009,9 +1009,9 @@ Pokemon = HIPPOWDON,40
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = SANDSLASH,42
+Pokemon = SANDSLASH,40
     Item = FOCUSSASH
-    Moves = EARTHQUAKE,SWORDDANCE,,
+    Moves = EARTHQUAKE,SWORDSDANCE,,
     Ability = 2
     Gender = male
     Shiny = no
@@ -1023,7 +1023,7 @@ Pokemon = SANDSLASH,42
     Ball = 0
 #-------------------------------
 [CANDIDATO3_F,Giovanna]
-Pokemon = LUCARIO,44
+Pokemon = LUCARIO,41
     Item = LUCARIONITE
     Moves = EXTREMESPEED,METEORMASH,CLOSECOMBAT,
     Ability = 1
@@ -1037,8 +1037,8 @@ Pokemon = LUCARIO,44
     Ball = 0
 #-------------------------------
 [LASS,Camillina]
-Pokemon = GABITE,42
-    Item = LUCARIONITE
+Pokemon = GABITE,40
+    Item = ROCKYHELMET
     Moves = DRAGONCLAW,EARTHQUAKE,IRONHEAD,REST
     Ability = 2
     Gender = female
@@ -1049,7 +1049,7 @@ Pokemon = GABITE,42
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = DRAPION,40
+Pokemon = DRAPION,39
     Moves = THUNDERFANG,XSCISSOR,CROSSPOISON,KNOCKOFF
     Ability = 0
     Gender = male
@@ -1062,7 +1062,7 @@ Pokemon = DRAPION,40
     Ball = 0
 #-------------------------------
 [CANDIDATO2_F,Andrea]
-Pokemon = GALLADE,42
+Pokemon = GALLADE,40
     Moves = PSYCHOCUT,CLOSECOMBAT,EARTHQUAKE,
     Ability = 2
     Gender = male
@@ -1073,7 +1073,7 @@ Pokemon = GALLADE,42
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = GARDEVOIR,42
+Pokemon = GARDEVOIR,40
     Moves = DAZZLINGGLEAM,PSYCHIC,FOCUSBLAST,WILLOWISP
     Ability = 2
     Gender = female
@@ -1087,7 +1087,7 @@ Pokemon = GARDEVOIR,42
 #-------------------------------
 [ALFONSOPICCOLO,Alfonso]
 Items = FULLRESTORE
-Pokemon = TYPHLOSION,43
+Pokemon = TYPHLOSION,42
     Moves = LAVAPLUME,FOCUSBLAST,SUBSTITUTE,REST
     Ability = 2
     Gender = male
@@ -1122,7 +1122,7 @@ Pokemon = GYARADOS,42
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = DRAGONITE,44
+Pokemon = DRAGONITE,43
     Moves = FIREPUNCH,ICEPUNCH,THUNDERPUNCH,DRAGONCLAW
     Ability = 0
     Gender = male
@@ -1135,11 +1135,52 @@ Pokemon = DRAGONITE,44
     Ball = 0
 #-------------------------------
 #
+# Percorso 8 - Lago dell'universita -------------------------------------------------
+#
+#-------------------------------
+[FISHERMAN,Remo]
+Items = SUPERPOTION
+LoseText = "Il lago oggi non mi ha portato fortuna."
+Pokemon = WHISCASH,42
+    Moves = EARTHQUAKE,AQUATAIL,ZENHEADBUTT,REST
+    Ability = 0
+    Gender = male
+    Nature = ADAMANT
+    IV = 24,24,24,24,24,24
+Pokemon = SEISMITOAD,42
+    Moves = DRAINPUNCH,MUDDYWATER,SLUDGEWAVE,RAINDANCE
+    Ability = 1
+    Gender = male
+    Nature = QUIET
+    IV = 24,24,24,24,24,24
+Pokemon = GYARADOS,43
+    Moves = WATERFALL,CRUNCH,ICEFANG,DRAGONDANCE
+    Ability = 0
+    Gender = female
+    Nature = JOLLY
+    IV = 24,24,24,24,24,24
+#-------------------------------
+[PSYCHIC_M,Ermes]
+LoseText = "Non l'avevo previsto."
+Pokemon = GRUMPIG,42
+    Moves = PSYCHIC,POWERGEM,BOUNCE,REST
+    Ability = 0
+    Gender = male
+    Nature = CALM
+    IV = 24,24,24,24,24,24
+Pokemon = BRONZONG,44
+    Item = LEFTOVERS
+    Moves = GYROBALL,PSYCHIC,HYPNOSIS,STEALTHROCK
+    Ability = 0
+    Nature = SASSY
+    IV = 24,24,24,24,24,24
+#-------------------------------
+#
 # Sifda della montagna --------------------------------------------------------
 #
 #-------------------------------
 [CANDIDATO3_M,Parshendi]
-Pokemon = AERODACTYL,43
+Pokemon = AERODACTYL,45
     Moves = CRUNCH,STONEEDGE,WINGATTACK,
     Ability = 2
     Gender = male
@@ -1150,7 +1191,7 @@ Pokemon = AERODACTYL,43
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = STEELIX,42
+Pokemon = STEELIX,44
     Moves = TWISTER,ROCKTOMB,IRONTAIL,CRUNCH
     Ability = 2
     Gender = female
@@ -1163,7 +1204,7 @@ Pokemon = STEELIX,42
     Ball = 0
 #-------------------------------
 [CANDIDATO3_F,Parshendi]
-Pokemon = SWAMPERT,43
+Pokemon = SWAMPERT,45
     Moves = WATERFALL,TAKEDOWN,SUPERPOWER,
     Ability = 1
     Gender = female
@@ -1174,7 +1215,7 @@ Pokemon = SWAMPERT,43
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = FLYGON,43
+Pokemon = FLYGON,45
     Moves = EARTHPOWER,DRAGONPULSE,HEATWAVE,
     Ability = 2
     Gender = female
@@ -1187,7 +1228,7 @@ Pokemon = FLYGON,43
     Ball = 0
 #-------------------------------
 [CANDIDATO2_F,Lola]
-Pokemon = BASTIODON,47
+Pokemon = BASTIODON,46
     Item = LEFTOVERS
     Moves = HEAVYSLAM,PROTECT,SUBSTITUTE,GIGAIMPACT
     Ability = 1
@@ -1201,7 +1242,7 @@ Pokemon = BASTIODON,47
     Ball = 0
 #-------------------------------
 [GAIASERGIO,Gaia]
-Pokemon = GARDEVOIR,45
+Pokemon = GARDEVOIR,47
     Moves = DAZZLINGGLEAM,PSYCHIC,FOCUSBLAST,WILLOWISP
     Ability = 2
     Gender = female
@@ -1222,7 +1263,7 @@ Pokemon = LOPUNNY,47
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = METAGROSS,47
+Pokemon = METAGROSS,48
     Item = METAGROSSITE
     Moves = HAMMERARM,METEORMASH,ZENHEADBUTT,
     Ability = 0
@@ -1236,7 +1277,7 @@ Pokemon = METAGROSS,47
 #-------------------------------
 [RIVALE5,Andrea]
 Items = REVIVE
-Pokemon = TOGEKISS,43
+Pokemon = TOGEKISS,47
     Moves = AIRSLASH,FUTURESIGHT,DAZZLINGGLEAM,FOLLOWME
     Ability = 2
     Gender = female
@@ -1247,7 +1288,7 @@ Pokemon = TOGEKISS,43
     Name = Sorpresa
     Shadow = no
     Ball = 0
-Pokemon = CAMERUPT,44
+Pokemon = CAMERUPT,47
     Moves = ERUPTION,EARTHQUAKE,,
     Ability = 1
     Gender = male
@@ -1257,7 +1298,7 @@ Pokemon = CAMERUPT,44
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = BUTITIV,47
+Pokemon = BUTITIV,48
     Moves = EXPLOSION,SHADOWCLAW,DRAGONCLAW,
     Ability = 0
     Gender = male
@@ -1267,7 +1308,7 @@ Pokemon = BUTITIV,47
     Happiness = 255
     Shadow = no
     Ball = 0
-Pokemon = LUXRAY,45
+Pokemon = LUXRAY,47
     Moves = WILDCHARGE,CRUNCH,ICEFANG,PLAYROUGH
     Ability = 1
     Gender = female
@@ -1280,7 +1321,7 @@ Pokemon = LUXRAY,45
 [CANDIDATO1_M,Gennaro Bullo]
 Items = FULLRESTORE, FULLRESTORE
 LoseText = "Effettivamente avrei potuto catturare qualche altro pokémon..."
-Pokemon = RATICATE,55
+Pokemon = RATICATE,53
     Item = MUSCLEBAND
     Moves = SUCKERPUNCH,FLAMEWHEEL,FACADE,PLUCK
     Ability = 1
@@ -1294,7 +1335,7 @@ Pokemon = RATICATE,55
     Ball = 4
 #-------------------------------
 [CANDIDATO2_F,Grindia]
-Pokemon = LINOONE,46
+Pokemon = LINOONE,48
     Moves = SLASH,SHADOWCLAW,STOMPINGTANTRUM,THUNDERWAVE
     Ability = 2
     Gender = male
@@ -1304,7 +1345,7 @@ Pokemon = LINOONE,46
     EV = 252,0,100,0,100,0,
     Shadow = no
     Ball = 0
-Pokemon = BIBAREL,51
+Pokemon = BIBAREL,49
     Moves = AQUATAIL,IRONTAIL,BULLDOZE,SWORDSDANCE
     Ability = 2
     Gender = male
@@ -1313,7 +1354,7 @@ Pokemon = BIBAREL,51
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = FEAROW,53
+Pokemon = FEAROW,50
     Moves = DRILLPECK,DRILLRUN,UTURN,STEELWING
     Ability = 1
     Gender = female
@@ -1323,9 +1364,50 @@ Pokemon = FEAROW,53
     Shadow = no
     Ball = 0
 #-------------------------------
+#
+# Isola del Drago -------------------------------------------------------------
+#
+#-------------------------------
+[COOLTRAINER_F,Ortensia]
+Items = HYPERPOTION
+LoseText = "I draghi non perdonano... ma oggi hanno perso."
+Pokemon = ALTARIA,49
+    Moves = DRAGONPULSE,MOONBLAST,COTTONGUARD,ROOST
+    Ability = 0
+    Gender = female
+    Nature = CALM
+    IV = 24,24,24,24,24,24
+Pokemon = DRAGONAIR,50
+    Moves = DRAGONPULSE,THUNDERBOLT,ICEBEAM,THUNDERWAVE
+    Ability = 0
+    Gender = female
+    Nature = MODEST
+    IV = 24,24,24,24,24,24
+Pokemon = HAXORUS,50
+    Moves = DRAGONDANCE,OUTRAGE,EARTHQUAKE,POISONJAB
+    Ability = 1
+    Gender = male
+    Nature = JOLLY
+    IV = 24,24,24,24,24,24
+#-------------------------------
+[JUGGLER,Brunello]
+LoseText = "MMMMMMMH COME TI SCALDI"
+Pokemon = MRMIME,49
+    Moves = PSYCHIC,DAZZLINGGLEAM,ENCORE,BATONPASS
+    Ability = 1
+    Gender = male
+    Nature = TIMID
+    IV = 24,24,24,24,24,24
+Pokemon = DARMANITAN,50
+    Moves = FLAREBLITZ,SUPERPOWER,ROCKSLIDE,UTURN
+    Ability = 0
+    Gender = male
+    Nature = ADAMANT
+    IV = 24,24,24,24,24,24
+#-------------------------------
 [PROFSANDMAN,Sandman]
 Items = FULLRESTORE
-Pokemon = SCEPTILE,46
+Pokemon = SCEPTILE,51
     Item = AIRBALLOON
     Moves = FIREBLAST,DRAGONPULSE,SUBSTITUTE,WILLOWISP
     Ability = 0
@@ -1336,7 +1418,7 @@ Pokemon = SCEPTILE,46
     IV = 23,23,23,27,27,23
     Shadow = no
     Ball = 0
-Pokemon = RAMPARDOS,47
+Pokemon = RAMPARDOS,51
     Item = FOCUSSASH
     Moves = ZENHEADBUTT,LIGHTSCREEN,IRONHEAD,EARTHQUAKE
     Ability = 0
@@ -1347,7 +1429,7 @@ Pokemon = RAMPARDOS,47
     IV = 23,31,31,23,23,31
     Shadow = no
     Ball = 0
-Pokemon = METAGROSS,48
+Pokemon = METAGROSS,52
     Item = TANGABERRY
     Moves = PSYCHOCUT,METEORMASH,PUNISHMENT,SWORDSDANCE
     Ability = 0
@@ -1359,7 +1441,7 @@ Pokemon = METAGROSS,48
     EV = 0,,,,,
     Shadow = no
     Ball = 0
-Pokemon = ARMALDO,49
+Pokemon = ARMALDO,52
     Item = WIDELENS
     Moves = XSCISSOR,ROCKSLIDE,EARTHQUAKE,AERIALACE
     Ability = 1
@@ -1371,7 +1453,7 @@ Pokemon = ARMALDO,49
     Ball = 0
 #-------------------------------
 [DARKMCROSE,McRose]
-Pokemon = DUSKNOIR,48
+Pokemon = DUSKNOIR,51
     Moves = PAINSPLIT,WILLOWISP,FUTURESIGHT,SHADOWPUNCH
     Ability = 0
     Gender = male
@@ -1381,7 +1463,7 @@ Pokemon = DUSKNOIR,48
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = GOLEM,48
+Pokemon = GOLEM,51
     Moves = DOUBLEEDGE,SUCKERPUNCH,EARTHQUAKE,STEALTHROCK
     Ability = 0
     Gender = male
@@ -1391,7 +1473,7 @@ Pokemon = GOLEM,48
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = MACHAMP,49
+Pokemon = MACHAMP,52
     Moves = NIGHTSLASH,DRAINPUNCH,FIREPUNCH,THUNDERPUNCH
     Ability = 0
     Gender = female
@@ -1401,7 +1483,7 @@ Pokemon = MACHAMP,49
     IV = 31,31,31,31,31,31
     Shadow = no
     Ball = 0
-Pokemon = VESPIQUEN,49
+Pokemon = VESPIQUEN,52
     Moves = ATTACKORDER,DARKPULSE,AIRSLASH,POWERGEM
     Ability = 1
     Gender = female
@@ -1413,7 +1495,7 @@ Pokemon = VESPIQUEN,49
     Ball = 0
 #-------------------------------
 [PROFSANDMAN,Sandman,1]
-Pokemon = GIRATINA,55
+Pokemon = GIRATINA,57
     Moves = DARKVOID,ANCIENTPOWER,SHADOWBALL,DARKPULSE
     Gender = male
    Form = 2
@@ -1425,7 +1507,7 @@ Pokemon = GIRATINA,55
     Ball = 0
 #-------------------------------
 [GIANMARCOGIORGIO,Gianmarco & Giorgio]
-Pokemon = DIOMETAPOD,50
+Pokemon = DIOMETAPOD,55
     Item = LEFTOVERS
     Moves = DEFENDORDER,TOXICSPIKES,SPIKES,WHIRLWIND
     Ability = 0
@@ -1436,7 +1518,7 @@ Pokemon = DIOMETAPOD,50
     EV = 252,0,252,0,6,0
     Shadow = no
     Ball = 0
-Pokemon = ELECTIVIRE,48
+Pokemon = ELECTIVIRE,53
     Moves = THUNDERWAVE,THUNDERPUNCH,EARTHQUAKE,ICEPUNCH
     Ability = 0
     Gender = male
@@ -1445,7 +1527,7 @@ Pokemon = ELECTIVIRE,48
     IV = 27,31,27,31,27,27
     Shadow = no
     Ball = 0
-Pokemon = ROTOM,49
+Pokemon = ROTOM,53
     Moves = ENERGYBALL,HEX,DISCHARGE,DARKPULSE
     Ability = 0
     Gender = male
@@ -1456,7 +1538,7 @@ Pokemon = ROTOM,49
     EV = 200,0,100,0,100,100
     Shadow = no
     Ball = 0
-Pokemon = AMPHAROS,49
+Pokemon = AMPHAROS,54
     Item = AMPHAROSITE
     Moves = DISCHARGE,DRAGONPULSE,FOCUSBLAST,POWERGEM
     Ability = 0
@@ -1470,9 +1552,9 @@ Pokemon = AMPHAROS,49
 #-------------------------------
 [SERGIO,Sergio]
 Items = MAXPOTION,MAXPOTION,MAXPOTION,MAXPOTION,MAXPOTION,MAXPOTION,MAXPOTION
-Pokemon = CHANDELURE,49
+Pokemon = CHANDELURE,55
     Item = LIFEORB
-    Moves = TRICKROOM,ENERGYBALL,FLAMETHROW,SHADOWBALL
+    Moves = TRICKROOM,ENERGYBALL,FLAMETHROWER,SHADOWBALL
     Ability = 1
     Gender = female
     Shiny = no
@@ -1481,7 +1563,7 @@ Pokemon = CHANDELURE,49
     EV = 0,0,125,0,252,125
     Shadow = no
     Ball = 0
-Pokemon = INCINEROAR,49
+Pokemon = INCINEROAR,55
     Item = PASSHOBERRY
     Moves = THROATCHOP,FLAREBLITZ,THUNDERPUNCH,FAKEOUT
     Ability = 1
@@ -1492,7 +1574,7 @@ Pokemon = INCINEROAR,49
     EV = 252,0,125,0,0,125
     Shadow = no
     Ball = 0
-Pokemon = EMBOAR,50
+Pokemon = EMBOAR,56
     Item = AIRBALLOON
     Moves = FLAREBLITZ,SUCKERPUNCH,HAMMERARM,HEADSMASH
     Ability = 1
@@ -1503,7 +1585,7 @@ Pokemon = EMBOAR,50
     EV = 252,252,0,0,0,0
     Shadow = no
     Ball = 0
-Pokemon = VOLCARONA,51
+Pokemon = VOLCARONA,57
     Item = ASSAULTVEST
     Moves = HEATWAVE,BUGBUZZ,GIGADRAIN,PSYCHIC
     Ability = 0
