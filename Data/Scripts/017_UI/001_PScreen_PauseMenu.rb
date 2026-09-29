@@ -105,6 +105,7 @@ class PokemonPauseMenu
     cmdPokedex  = -1
     cmdPokemon  = -1
     cmdBag      = -1
+    cmdQuest    = -1
     cmdTrainer  = -1
     cmdSave     = -1
     cmdOption   = -1
@@ -116,6 +117,7 @@ class PokemonPauseMenu
     commands[cmdPokemon = commands.length]  = _INTL("Pokémon") if $Trainer.party.length>0
     commands[cmdBag = commands.length]      = _INTL("Bag") if !pbInBugContest?
     commands[cmdPokegear = commands.length] = _INTL("Pokégear") if $Trainer.pokegear
+    commands[cmdQuest = commands.length]     = _INTL("Quests") if hasAnyQuests?
     commands[cmdTrainer = commands.length]  = $Trainer.name
     if pbInSafari?
       if SAFARI_STEPS<=0
@@ -196,6 +198,12 @@ class PokemonPauseMenu
           pbUseKeyItemInField(item)
           return
         end
+      elsif cmdQuest>=0 && command==cmdQuest
+        pbPlayDecisionSE
+        pbFadeOutIn {
+          pbViewQuests
+          @scene.pbRefresh
+        }
       elsif cmdPokegear>=0 && command==cmdPokegear
         pbFadeOutIn {
           scene = PokemonPokegear_Scene.new
