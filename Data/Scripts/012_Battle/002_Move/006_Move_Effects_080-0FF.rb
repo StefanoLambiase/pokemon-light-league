@@ -3821,6 +3821,14 @@ end
 #===============================================================================
 class PokeBattle_Move_FFF < PokeBattle_Move
 
+  def pbCalcTypeMod(moveType, user, target)
+    if target.pbHasType?(:FAIRY) 
+      @battle.pbDisplay(_INTL("Il tempo non si sottomette alle logiche di efficacia di tipo."))
+      return 4 
+    end
+    return super
+  end
+
   def pbEffectGeneral(user)
     user.effects[PBEffects::HyperBeam] = 2
     user.currentMove = @id

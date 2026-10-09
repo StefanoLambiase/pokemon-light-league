@@ -3068,7 +3068,12 @@ class PokeBattle_AI
     #---------------------------------------------------------------------------
     when "175"
       score += 30 if target.effects[PBEffects::Minimize]
-    #---------------------------------------------------------------------------
+    #------------------------CUSTOM MOVES---------------------------------------
+    # --------- ROAR OF TIME and SPACIAL REND ----------------------------------
+    when "FFF"
+      score += 10000 if move.pp == move.totalpp
+    when "FFE"
+      score += 10000 if move.pp == move.totalpp
     end
     return score
   end

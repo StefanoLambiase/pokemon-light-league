@@ -1,5 +1,6 @@
 pbCompiler
 
+#region Quest system
 #===============================================================================
 # Modern Questing System + UI
 # If you like quests, this is the resource for you!
@@ -847,8 +848,214 @@ module QuestModule
     :RewardString => "Food, glorious food!"
   }
 
-end
+  # ======================================
+  # My quests ============================
+  # ======================================
+  Main_Odeya = {
+    :ID => "13",
+    :Name => "L'inizio della competizione",
+    :QuestGiver => "Organizzatori",
+    :Stage1 => "Raggiungi il Centro Stampa di Odeya.",
+    :Location1 => "Odeya City",
+    :QuestDescription => "Raggiungi Odeya per partecipare alla cerimonia di apertura della Competizione.",
+    :RewardString => "nil"
+  }
 
+  Side_Gaia = {
+    :ID => "14",
+    :Name => "Uno strumento per Gaia",
+    :QuestGiver => "Fratello di Gaia",
+    :Stage1 => "Trova Gaia al monte Ani.",
+    :Location1 => "Monte Ani",
+    :QuestDescription => "Trova Gaia al Monte Ani e restituiscigli il suo strumento musicale.",
+    :RewardString => "nil"
+  }
+
+  Side_Bimba = {
+    :ID => "15",
+    :Name => "La Papera che vola",
+    :QuestGiver => "Bimba",
+    :Stage1 => "Mostra un Porygon alla bimba.",
+    :Location1 => "???",
+    :Stage2 => "Trova Jirachi.",
+    :Location2 => "Grande Giardino",
+    :QuestDescription => "Trova un Porygon e mostralo alla bambina che ti ha donato le sue bacche.",
+    :RewardString => "nil"
+  }
+
+  Main_Petraglia = {
+    :ID => "16",
+    :Name => "L'allenamento di Petraglia",
+    :QuestGiver => "Petraglia, Superquattro",
+    :Stage1 => "Azzera gli EVs di un Pokémon.",
+    :Location1 => "Giardino a Nord del Percorso 4",
+    :Stage2 => "Vinci tutte le lotte in doppio.",
+    :Location2 => "Percorso 4",
+    :QuestDescription => "Segui l'allenamento di Petraglia e azzera gli EVs di un Pokémon in tutte le statistiche con le bacche del Giardino a nord.",
+    :RewardString => "nil"
+  }
+
+  Side_Zoroark = {
+    :ID => "17",
+    :Name => "La ricerca di Zoroark",
+    :QuestGiver => "Anziano di Odeya",
+    :Stage1 => "Trova Zoroark.",
+    :Location1 => "???",
+    :QuestDescription => "Zoroark è partito alla ricerca di un allenatore degno. Scopri dove si sta nascondendo nella regione di Rain'Bow.",
+    :RewardString => "nil"
+  }
+
+  Main_Andrea = {
+    :ID => "18",
+    :Name => "Soci rivali",
+    :QuestGiver => "Andrea",
+    :Stage1 => "Sopravvivi al Percorso 6.",
+    :Location1 => "Percorso 6",
+    :QuestDescription => "Fai squadra con Andrea per sopravvivere ai pericoli che si annidano lungo il Percorso 6.",
+    :RewardString => "nil"
+  }
+
+  Side_Slowking = {
+    :ID => "19",
+    :Name => "La solitudine dei geni",
+    :QuestGiver => "Slowking",
+    :Stage1 => "Porta a Slowking un suo simile.",
+    :Location1 => "Faro del Percorso 6",
+    :QuestDescription => "Cattura e fai evolvere uno SLOWPOKE per creare un amico da far conoscere allo SLOWKING che dirige il traffico marittimo.",
+    :RewardString => "nil"
+  }
+
+  Side_PP = {
+    :ID => "20",
+    :Name => "Indagine su P.P.",
+    :QuestGiver => "Maresciallo Cuomo",
+    :Stage1 => "Trova P.P.",
+    :Location1 => "???",
+    :QuestDescription => "La malavita di Rain'Bow sta gestende un contrabbando di Pokémon. Trova il capo, P.P., ed informa Cuomo.",
+    :RewardString => "nil"
+  }
+
+  Side_Alieni = {
+    :ID => "21",
+    :Name => "Un'invasione respinta",
+    :QuestGiver => "Vecchietta del cimitero",
+    :Stage1 => "Placa gli spiriti.",
+    :Location1 => "???",
+    :QuestDescription => "Sei monoliti marroni sono disseminati nella Regione. Trovali e placa i bollenti spiriti dei Pokémon alieni.",
+    :RewardString => "nil"
+  }
+
+  Main_Samuele = {
+    :ID => "22",
+    :Name => "Chi muore si rivede",
+    :QuestGiver => "Samuele, Superquattro",
+    :Stage1 => "Recupera la piuma.",
+    :Location1 => "Grotta di Fundi Village",
+    :QuestDescription => "Un Pokémon risorto custodisce una piuma di Ho-Oh nella grotta di Fundi Village. Trovalo, recupera la piuma e portala a Samuele.",
+    :RewardString => "nil"
+  }
+
+  Main_Melissa = {
+    :ID => "23",
+    :Name => "Giornalismo d'assalto!",
+    :QuestGiver => "Samuele, Superquattro",
+    :Stage1 => "Trova Melissa.",
+    :Location1 => "Ufficio Stampa di Odeya City",
+    :Stage2 => "Scorta Melissa.",
+    :Location2 => "Ospedale di Odeya City",
+    :QuestDescription => "Un'emergenza sta sconvolgendo Odeya City. Trova la reporter Melissa al Centro Stampa ed aiutala per conto di Samuele.",
+    :RewardString => "nil"
+  }
+
+  Main_Uni = {
+    :ID => "24",
+    :Name => "Sfida Ufficiale! L'Università",
+    :QuestGiver => "Organizzatori",
+    :Stage1 => "Vinci la sfida dell'Università.",
+    :Location1 => "Università",
+    :QuestDescription => "La competizione della Lega della Luce ha lanciato una sfida ufficiale all'Università. Scopri di cosa si tratta e vinci.",
+    :RewardString => "nil"
+  }
+
+  Main_Scalata = {
+    :ID => "25",
+    :Name => "Sfida Ufficiale! La Scalata",
+    :QuestGiver => "Organizzatori",
+    :Stage1 => "Scala il Monte Ani.",
+    :Location1 => "Monte Ani",
+    :QuestDescription => "Nuova sfida ufficiale della Lega della Luce: scala il Monte Ani, recupera il premio e riportalo al Campo Base sano e salvo.",
+    :RewardString => "nil"
+  }
+
+  Main_Taiani = {
+    :ID => "26",
+    :Name => "Aggiornamenti competitivologici",
+    :QuestGiver => "Prof. Taiani",
+    :Stage1 => "Raggiungi il Prof. Taiani.",
+    :Location1 => "Percorso 1",
+    :QuestDescription => "Il professor Taiani vuole saggiare i progressi di Batitiv ma pare porti anche brutte notizie...",
+    :RewardString => "nil"
+  }
+
+  Main_Drago = {
+    :ID => "27",
+    :Name => "Fermento sull'Isola del Drago",
+    :QuestGiver => "Prof. Taiani",
+    :Stage1 => "Raggiungi l'Isola del Drago.",
+    :Location1 => "Isola del Drago",
+    :QuestDescription => "Il Prof. Taiani ha predisposto un traghetto al porto di Odeya City. Raggiungi l'Isola del Drago e ferma Prof. Sandman.",
+    :RewardString => "nil"
+  }
+
+  Main_Stefano = {
+    :ID => "28",
+    :Name => "Un piano da sventare",
+    :QuestGiver => "Prof. Taiani",
+    :Stage1 => "Informa Stefano.",
+    :Location1 => "Percorso 9",
+    :Stage2 => "Informa Stefano.",
+    :Location2 => "Monte Sjor",
+    :Stage3 => "Sconfiggi Prof Sandman.",
+    :Location3 => "Monte Sjor",
+    :QuestDescription => "Il campione Stefano è stato avvistato! Raggiungilo ed informalo sui piani del Prof. Sandman.",
+    :RewardString => "nil"
+  }
+
+  Side_PN = {
+    :ID => "29",
+    :Name => "Un Leggendario da restituire",
+    :QuestGiver => "Allenatore Misterioso",
+    :Stage1 => "Restituisci Rayquaza.",
+    :Location1 => "???",
+    :QuestDescription => "Un allenatore misterioso di ha prestato il suo Rayquaza per risolvere un'emergenza. Trovalo e riportaglielo.",
+    :RewardString => "nil"
+  }
+
+  Main_Lega = {
+    :ID => "30",
+    :Name => "La Lega della Luce",
+    :QuestGiver => "Organizzatori",
+    :Stage1 => "Ottieni 7 Piastrine Gold.",
+    :Location1 => "???",
+    :Stage2 => "Raggiungi La Lega.",
+    :Location2 => "Lega della Luce",
+    :Stage3 => "Sconfiggi La Lega.",
+    :Location3 => "Lega della Luce",
+    :QuestDescription => "Sconfiggi la Lega più potente di tutte per diventare l'allenatore più forte del mondo e reclamare il ruolo di Campione.",
+    :RewardString => "nil"
+  }
+
+  Side_Campioni = {
+    :ID => "31",
+    :Name => "Ospiti d'onore",
+    :QuestGiver => "Prof. Taiani",
+    :Stage1 => "Trova i Campioni.",
+    :Location1 => "???",
+    :QuestDescription => "Trova e sconfiggi i 6 Campioni, e Giovanni, che sono sparsi in luoghi isolati della regione di Rain'Bow.",
+    :RewardString => "nil"
+  }
+
+end
 
 
 #===========================================================================================================================

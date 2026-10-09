@@ -1232,3 +1232,50 @@ def pbSamuradaChoose()
   screen.pbEndScene
   return ret   # Returns whether the pokèmon is a valid samurada
 end
+
+def pbPorygonChoose()
+  scene = PokemonParty_Scene.new
+  screen = PokemonPartyScreen.new(scene,$Trainer.party)
+  screen.pbStartScene(_INTL("Quale pokémon vuoi mostrare alla bimba?"),false)
+  ret = false
+  chosen = screen.pbChoosePokemon
+  break if chosen<0
+  pokemon = $Trainer.party[chosen]
+  if pokemon.egg?
+    pbMessage(_INTL("Un uovo non è quello che cercava.")) { screen.pbUpdate }
+  elsif pokemon.shadowPokemon?
+    pbMessage(_INTL("Un pokèmon ombra non è quello che cercava.")) { screen.pbUpdate }
+  elsif pokemon.isSpecies?(:PORYGON) || pokemon.isSpecies?(:PORYGON2) || pokemon.isSpecies?(:PORYGONZ) || pokemon.isSpecies?(:PORYGONX)
+    pbMessage(_INTL("{1} è proprio quello che cercava.",pokemon.name))
+    ret = true
+  elsif pokemon.isSpecies?(:PSYDUCK) || pokemon.isSpecies?(:GOLDUCK) || pokemon.isSpecies?(:PORYGONZ) || pokemon.isSpecies?(:FARFETCHD) || pokemon.isSpecies?(:DUCKLETT) || pokemon.isSpecies?(:SWANNA)
+    pbMessage(_INTL("{1} non è la papera giusta!.",pokemon.name)) { screen.pbUpdate }
+  else
+    pbMessage(_INTL("{1} non è quello che cercava.",pokemon.name)) { screen.pbUpdate }
+  end
+  screen.pbEndScene
+  return ret   # Returns whether the pokèmon is a valid version of poryong
+end
+
+def pbSlowkingChoose()
+  scene = PokemonParty_Scene.new
+  screen = PokemonPartyScreen.new(scene,$Trainer.party)
+  screen.pbStartScene(_INTL("Quale pokémon vuoi mostrare alla bimba?"),false)
+  ret = false
+  chosen = screen.pbChoosePokemon
+  break if chosen<0
+  pokemon = $Trainer.party[chosen]
+  if pokemon.egg?
+    pbMessage(_INTL("Un uovo non è quello che cercava.")) { screen.pbUpdate }
+  elsif pokemon.shadowPokemon?
+    pbMessage(_INTL("Un pokèmon ombra non è quello che cercava.")) { screen.pbUpdate }
+  elsif pokemon.isSpecies?(:SLOWKING)
+    pbMessage(_INTL("{1} è proprio quello che cercava.",pokemon.name))
+    ret = true
+  else
+    pbMessage(_INTL("{1} non è uno SLOWKING.",pokemon.name)) { screen.pbUpdate }
+  end
+  screen.pbEndScene
+  return ret   # Returns whether the pokèmon is a valid version of poryong
+end
+

@@ -819,3 +819,11 @@ Bicycle = true
 Outdoor = true
 BicycleAlways = false
 ShowArea = true
+#-------------------------------
+[228]
+# Via Vittoria
+SnapEdges = true
+Bicycle = true
+Outdoor = true
+BicycleAlways = false
+ShowArea = true
