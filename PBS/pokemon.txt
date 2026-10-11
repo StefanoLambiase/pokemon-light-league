@@ -7753,7 +7753,7 @@ BattlerEnemyX = 0
 BattlerEnemyY = 14
 BattlerShadowX = 0
 BattlerShadowSize = 1
-Evolutions = PORYGONZ,TradeItem,DUBIOUSDISC
+Evolutions = PORYGONZ,TradeItem,DUBIOUSDISC,PORYGONX,Item,MALWARESANDMAN
 #-------------------------------
 [234]
 Name = Stantler

@@ -2208,3 +2208,11 @@ Pokemon = RAYQUAZA,65
     Nature = ADAMANT
     IV = 31
 #-------------------------------
+[GRARD,G'rard]
+Items = FULLRESTORE,FULLRESTORE
+Pokemon = RAYQUAZA,40
+    Item = LIFEORB
+    Moves = DRAGONASCENT,EXTREMESPEED,EARTHQUAKE,DRAGONDANCE
+    Ability = 0
+    Nature = ADAMANT
+    IV = 31

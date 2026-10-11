@@ -1060,6 +1060,50 @@ end
 
 #===========================================================================================================================
 
+# Kills the pokémon
+def pbApplyTauroPenalty
+  return if !$tauroVictims
+
+  victims = $tauroVictims
+  $tauroVictims = nil
+
+  party = $Trainer.party
+  return if party.empty?
+
+  # Save the first Pokemon only if everyone is KO
+  survivor = nil
+  if !party.any? { |pkmn| pkmn.able? }
+    survivor = party[0]
+  end
+
+  party.delete_if do |pkmn|
+    if victims.include?(pkmn) && !pkmn.equal?(survivor)
+      # Return held item to bag before deleting
+      if pkmn.item && pkmn.item != 0
+        if !$PokemonBag.pbStoreItem(pkmn.item)
+          pbMessage(_INTL("Non c'è spazio nella Borsa!"))
+          next false
+        end
+      end
+
+      pbMessage(_INTL("{1} è morto definitivamente.",pkmn.name))
+      true
+    else
+      false
+    end
+  end
+
+  # Revive the only survivor
+  if survivor
+    survivor.hp = 1
+    pbMessage(_INTL(
+      "Se ne lascia sempre uno in vita per raccontare la storia..."
+    ))
+  end
+end
+
+# ========================================================================================================
+
 class Scene_DebugIntro
   def main
     Graphics.transition(0)

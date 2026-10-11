@@ -310,6 +310,59 @@ def pbChoosePokemonForTrade(variableNumber,nameVarNumber,wanted)
   })
 end
 
+#===============================================================================
+# Custom Trade
+#===============================================================================
+def pbNPCTrade
+  # NPC Pokémon variable
+  varID = 47
+
+  price = 2500
+
+  # Check the player has the money
+  return if $Trainer.money < price
+
+  # Init if the variable is empty
+  if !$game_variables[varID].is_a?(PokeBattle_Pokemon)
+    $game_variables[varID] = pbNewPkmn(:RATTATA, 5)
+  end
+
+  # The trader offers the pokémon in the variable
+  offered = $game_variables[varID]
+
+  pbMessage(_INTL("Hey ScOnOsCiUtO, non è che vuoi un bel {1} di Lv. {2}? *Occhiolino* *Occhiolino*",
+    offered.name, offered.level))
+
+  return unless pbConfirmMessage(
+    _INTL("Vuoi scambiare un Pokémon?"))
+
+  # The player chooses its pokémon
+  pbChooseNonEggPokemon(1, 2)
+  index = $game_variables[1]
+  given = $Trainer.party[index]
+
+  return if index.nil? || index < 0
+
+  # Safety Check
+  if given.hp > 0 && offered.hp <= 0 && !pbCheckAble(index)
+    pbMessage("Non puoi scambiare il tuo ultimo Pokémon utilizzabile!")
+    return
+  end
+
+  return unless pbConfirmMessage(
+    _INTL("Scambiare {1} per {2}?",
+      given.name, offered.name))
+  
+  # Save my pokémon
+  $game_variables[varID] = given
+
+  # Payment
+  $Trainer.money -= price
+  pbMessage(_INTL("Hai pagato {1} Pokédollari!", price))
+
+  # Trade
+  pbStartTrade(index, offered, offered.name, "Lo Scambiatore")
+end
 
 
 #===============================================================================

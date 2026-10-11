@@ -384,6 +384,44 @@ class PokeBattle_Battle
     end
   end
 
+  # ====================== CUSTOM ======================================
+  # Memorizes the pokémon that are dead after Tauro's battle
+  def pbEndBattleAgainstTauro
+    return if !trainerBattle?
+    return if @opponent[0].trainerTypeName != "Tauro"
+  
+    # Memorize KO pokémon
+    $tauroVictims = $Trainer.party.select { |pkmn| pkmn.hp <= 0 }
+  end
+
+  # Kills the pokémon
+  def pbApplyTauroPenalty
+    return if !$tauroVictims
+  
+    victims = $tauroVictims
+    $tauroVictims = nil
+  
+    party = $Trainer.party
+    return if party.empty?
+  
+    # Always save the first pokémon
+    survivor = party[0]
+  
+    party.delete_if do |pkmn|
+      victims.include?(pkmn) && !pkmn.equal?(survivor)
+    end
+  
+    # If the entire team was KO reanimate the first one
+    if party.none? { |pkmn| pkmn.able? }
+      survivor.hp = 1
+    end
+  
+    pbMessage(_INTL(
+      "Se ne lascia sempre uno in vita per raccontare la storia..."
+    ))
+  end
+  # ========================================================================
+
   def pbEndOfBattle
     oldDecision = @decision
     @decision = 4 if @decision==1 && wildBattle? && @caughtPokemon.length>0
@@ -396,6 +434,7 @@ class PokeBattle_Battle
         @scene.pbTrainerBattleSuccess
         case @opponent.length
         when 1
+          pbEndBattleAgainstTauro
           pbDisplayPaused(_INTL("You defeated {1}!",@opponent[0].fullname))
         when 2
           pbDisplayPaused(_INTL("You defeated {1} and {2}!",@opponent[0].fullname,
@@ -424,6 +463,7 @@ class PokeBattle_Battle
         if trainerBattle?
           case @opponent.length
           when 1
+            pbEndBattleAgainstTauro
             pbDisplayPaused(_INTL("You lost against {1}!",@opponent[0].fullname))
           when 2
             pbDisplayPaused(_INTL("You lost against {1} and {2}!",

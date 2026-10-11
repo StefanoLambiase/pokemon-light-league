@@ -1279,3 +1279,53 @@ def pbSlowkingChoose()
   return ret   # Returns whether the pokèmon is a valid version of poryong
 end
 
+def pbChangeNatureWithStardust
+  item = :STARDUST
+
+  unless $PokemonBag.pbHasItem?(item)
+    pbMessage("Ti serve una Polvostella!")
+    return
+  end
+
+  pbChooseNonEggPokemon(1, 2)
+  index = $game_variables[1]
+  return if index.nil? || index < 0
+
+  pkmn = $Trainer.party[index]
+
+  natures = [
+    "Hardy", "Lonely", "Brave", "Adamant", "Naughty",
+    "Bold", "Docile", "Relaxed", "Impish", "Lax",
+    "Timid", "Hasty", "Serious", "Jolly", "Naive",
+    "Modest", "Mild", "Quiet", "Bashful", "Rash",
+    "Calm", "Gentle", "Sassy", "Careful", "Quirky"
+  ]
+
+  choice = pbMessage(
+    _INTL("Quale natura vuoi per {1}?", pkmn.name),
+    natures,
+    -1
+  )
+
+  return if choice.nil? || choice < 0
+
+  if pkmn.nature == choice
+    pbMessage("Questo Pokémon ha già questa natura!")
+    return
+  end
+
+  unless pbConfirmMessage(
+    _INTL("Consumare una Polvostella per cambiare natura?")
+  )
+    return
+  end
+
+  return unless $PokemonBag.pbDeleteItem(item, 1)
+
+  pkmn.setNature(choice)
+
+  pbMessage(_INTL(
+    "{1} mediterà a lungo per diventare {2}!",
+    pkmn.name, natures[choice]
+  ))
+end
