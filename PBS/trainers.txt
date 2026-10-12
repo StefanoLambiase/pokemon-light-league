@@ -2170,7 +2170,7 @@ Pokemon = HAXORUS,65
     Nature = JOLLY
     IV = 31
 #-------------------------------
-[PN,N]
+[PN,PN]
 Items = FULLRESTORE,FULLRESTORE
 Pokemon = TYRANITAR,63
     Item = ASSAULTVEST
