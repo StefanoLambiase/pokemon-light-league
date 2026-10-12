@@ -1329,3 +1329,37 @@ def pbChangeNatureWithStardust
     pkmn.name, natures[choice]
   ))
 end
+
+def pbSelectStarter
+  starters = [
+    [:BULBASAUR, "Bulbasaur"],
+    [:CHARMANDER, "Charmander"],
+    [:SQUIRTLE, "Squirtle"],
+    [:CHIKORITA, "Chikorita"],
+    [:CYNDAQUIL, "Cyndaquil"],
+    [:TOTODILE, "Totodile"],
+    [:TREECKO, "Treecko"],
+    [:TORCHIC, "Torchic"],
+    [:MUDKIP, "Mudkip"],
+    [:TURTWIG, "Turtwig"],
+    [:CHIMCHAR, "Chimchar"],
+    [:PIPLUP, "Piplup"],
+    [:SNIVY, "Snivy"],
+    [:TEPIG, "Tepig"],
+    [:OSHAWOTT, "Oshawott"]
+  ]
+  
+  commands = starters.map { |s| s[1] }
+  commands << "Annulla"
+  
+  choice = pbMessage(
+    _INTL("Quale starter desidera?"),
+    commands,
+    -1
+  )
+  
+  if choice >= 0 && choice < starters.length
+    species = starters[choice][0]
+    pbAddPokemon(species, 5)
+  end
+end
