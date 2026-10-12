@@ -694,3 +694,9 @@
 667,GIORNALIDEPOCA,Giornali d'epoca,Giornali d'epoca,8,0,"È una mucchio di giornali del passato. Un esperto potrebbe saper interpretarli.",0,0,0,
 668,REGISTRIDEGLIINDICENTI,Registro degli Incidenti,Registro degli Incidenti,8,0,"È una registro contenente i una serie di incidenti del passato. Un esperto potrebbe saper interpretarli.",0,0,0,
 669,PAPERDIRICERCA,Articoli Scientifici,Articoli Scientifici,8,0,"È una piccola pila di articoli scientifici di ricerca. Un esperto potrebbe saper interpretarli.",0,0,0,
+#--------------------------------
+670,DRAGONINITE,Dragoninite,Dragoninite,1,0,"Una delle misteriose Megapietre. Se la tiene Dragonite, in lotta può megaevolversi.",0,0,12,
+671,PERSIANITE,Persianite,Persianite,1,0,"Una delle misteriose Megapietre. Se la tiene Persian, in lotta può megaevolversi.",0,0,12,
+672,MILOTICITE,Miloticite,Miloticite,1,0,"Una delle misteriose Megapietre. Se la tiene Milotic, in lotta può megaevolversi.",0,0,12,
+673,VOLCARONITE,Volcaronite,Volcaronite,1,0,"Una delle misteriose Megapietre. Se la tiene Volcarona, in lotta può megaevolversi.",0,0,12,
+674,HAXORUSITE,Haxorusite,Haxorusite,1,0,"Una delle misteriose Megapietre. Se la tiene Haxorus, in lotta può megaevolversi.",0,0,12,

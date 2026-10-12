@@ -1804,3 +1804,69 @@ BattlerPlayerY = 0
 BattlerEnemyX = -5
 BattlerEnemyY = 15
 Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
+#-------------------------------
+#-------------------------------
+# CAMPIONI
+#-------------------------------
+#-------------------------------
+[DRAGONITE,1]
+FormName = Mega Dragonite
+MegaStone = DRAGONINITE
+BaseStats = 91,124,115,100,145,125
+Abilities = MULTISCALE
+HiddenAbility = MULTISCALE
+Weight = 290.0
+#-------------------------------
+[DRAGONITE,2]
+FormName = Fuoco
+Type1 = FIRE
+#-------------------------------
+[DRAGONITE,3]
+FormName = Acqua
+Type1 = WATER
+#-------------------------------
+[DRAGONITE,4]
+FormName = Roccia
+Type1 = ROCK
+#-------------------------------
+[DRAGONITE,5]
+FormName = Elettro
+Type1 = ELECTRIC
+#-------------------------------
+[DRAGONITE,6]
+FormName = Acciaio
+Type1 = STEEL
+#-------------------------------
+[PERSIAN,2]
+FormName = Mega Persian
+MegaStone = PERSIANITE
+Type1 = NORMAL
+Type2 = DARK
+BaseStats = 65,110,75,135,65,90
+Abilities = TOUGHCLAWS
+HiddenAbility = TOUGHCLAWS
+#-------------------------------
+[MILOTIC,1]
+FormName = Mega Milotic
+MegaStone = MILOTICITE
+Type1 = WATER
+Type2 = FAIRY
+BaseStats = 95,60,109,91,130,155
+Abilities = COMPETITIVE
+HiddenAbility = COMPETITIVE
+#-------------------------------
+[VOLCARONA,1]
+FormName = Mega Volcarona
+MegaStone = VOLCARONITE
+BaseStats = 85,60,95,115,160,135
+Abilities = DROUGHT
+HiddenAbility = DROUGHT
+#-------------------------------
+[HAXORUS,1]
+FormName = Mega Haxorus
+MegaStone = HAXORUSITE
+Type1 = DRAGON
+Type2 = STEEL
+BaseStats = 76,177,110,112,70,95
+Abilities = MOLDBREAKER
+HiddenAbility = MOLDBREAKER
