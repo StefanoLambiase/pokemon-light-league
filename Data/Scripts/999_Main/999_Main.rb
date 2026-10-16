@@ -1051,7 +1051,7 @@ module QuestModule
     :QuestGiver => "Prof. Taiani",
     :Stage1 => "Trova i Campioni.",
     :Location1 => "???",
-    :QuestDescription => "Trova e sconfiggi i 6 Campioni, e Giovanni, che sono sparsi in luoghi isolati della regione di Rain'Bow.",
+    :QuestDescription => "Trova e sconfiggi i 7 Campioni, e Giovanni, che sono sparsi in luoghi isolati della regione di Rain'Bow.",
     :RewardString => "nil"
   }
 
