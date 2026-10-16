@@ -658,7 +658,65 @@ end
 #Returns Party that was stored in variable
 def pbRentReturn
   $Trainer.party = $game_variables[99]
-  Kernel.pbMessage(_INTL("Ti è stata restituità la tua squadra."))
+  Kernel.pbMessage(_INTL("Ti è stata restituita la tua squadra."))
+end
+
+# PP shop
+def pbPPShop
+  # Lista: [Specie, Prezzo, Livello]
+  pool = [
+    [:ROTOM, 10000, 35],
+    [:PACHIRISU, 2500, 35],
+    [:WHIMSICOTT, 5000, 35],
+    [:WOBBUFFET, 2500, 35],
+    [:CHANSEY, 7500, 35],
+    [:ACCELGOR, 10000, 35],
+    [:ESCAVALIER, 10000, 35],
+    [:SIGILYPH, 5000, 35],
+  ]
+
+  # Porygon sempre presente
+  offers = [[:PORYGON, 10000, 35]]
+
+  # Due Pokémon casuali, senza duplicati
+  2.times do
+    index = rand(pool.length)
+    offers << pool.delete_at(index)
+  end
+
+  loop do
+    commands = offers.map do |species, price, level|
+      name = PBSpecies.getName(getID(PBSpecies, species))
+      "#{name} Lv.#{level} - $#{price}"
+    end
+
+    commands << "Esci"
+
+    pbMessage(_INTL("Quale Pokémon desideri acquistare?"))
+    choice = pbShowCommands(nil, commands, -1)
+
+    break if choice < 0 || choice >= offers.length
+
+    species, price, level = offers[choice]
+    name = PBSpecies.getName(getID(PBSpecies, species))
+
+    if $Trainer.money < price
+      pbMessage(_INTL("Non sono una ONLUS, mi spiace ma non hai abbastanza soldi."))
+      next
+    end
+
+    if pbConfirmMessage(
+      _INTL("Vuoi acquistare {1} per ${2}?", name, price)
+    )
+      # Consegna prima il Pokémon
+      if pbAddPokemon(species, level)
+        $Trainer.money -= price
+        pbMessage(_INTL("Ecco a te!"))
+      else
+        pbMessage(_INTL("Come vuoi, sarà per un'altra volta."))
+      end
+    end
+  end
 end
 
 #Pokémon randomizer
