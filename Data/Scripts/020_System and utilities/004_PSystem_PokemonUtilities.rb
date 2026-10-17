@@ -719,6 +719,44 @@ def pbPPShop
   end
 end
 
+def pbChangeRotomForm()
+  rotom = $Trainer.party.find do |p|
+    p && isConst?(p.species, PBSpecies, :ROTOM) && !p.isEgg?
+  end
+
+  if !rotom
+    pbMessage(_INTL("Un catalogo di elettrodomestici. Ad un Pokémon potrebbe interessare..."))
+    return
+  end
+
+  commands = [
+    "Nessuno",
+    "Forno a microonde",
+    "Lavatrice",
+    "Frigorifero",
+    "Ventilatore",
+    "Tagliaerba",
+    "Annulla"
+  ]
+
+  choice = pbMessage(
+    _INTL("Quale elettrodomestico interessa a {1}?", rotom.name),
+    commands,
+    -1
+  )
+
+  return if choice < 0 || choice >= 6
+
+  if rotom.form == choice
+    pbMessage(_INTL("{1} è già in questa forma!", rotom.name))
+    return
+  end
+
+  rotom.form = choice
+
+  pbMessage(_INTL("{1} ha cambiato forma!", rotom.name))
+end
+
 #Pokémon randomizer
 #============================================================
 #Random_Pokemon script by leilou
