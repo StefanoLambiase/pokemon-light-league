@@ -689,8 +689,11 @@ ShowArea = true
 #-------------------------------
 [195]
 # Tana dei Draghi
+BattleBack = rocky_eve
+Weather = Storm,100
 Bicycle = false
 Outdoor = true
+WildBattleBGM = _wild_dragon_battle_ost.wav
 ShowArea = true
 #-------------------------------
 [196]
@@ -807,23 +810,54 @@ ShowArea = true
 [214]
 # Cima della Lega Tempesta
 SnapEdges = true
+BattleBack = storm
 Bicycle = false
 Outdoor = true
 BicycleAlways = false
 ShowArea = false
 #-------------------------------
 [216]
-# Cima della Lega Tempesta
+# Pergola Town
 SnapEdges = true
+BattleBack = city
 Bicycle = true
 Outdoor = true
+BicycleAlways = false
+ShowArea = true
+#-------------------------------
+[227]
+# Palestra Polistatistica di Bobbino
+SnapEdges = true
+BattleBack = elite3
+Bicycle = false
+Outdoor = false
 BicycleAlways = false
 ShowArea = true
 #-------------------------------
 [228]
 # Via Vittoria
 SnapEdges = true
+BattleBack = field
 Bicycle = true
 Outdoor = true
 BicycleAlways = false
+ShowArea = true
+#-------------------------------
+[231]
+# Sotto l'Isola del Drago
+Bicycle = false
+Outdoor = false
+ShowArea = false
+#-------------------------------
+[232]
+# Antro del Vulcano
+DiveMap = 231
+Bicycle = true
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[233]
+# Nave Naufragata
+Bicycle = false
+Outdoor = false
 ShowArea = true
