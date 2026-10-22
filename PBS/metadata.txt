@@ -690,7 +690,7 @@ ShowArea = true
 [195]
 # Tana dei Draghi
 BattleBack = rocky_eve
-Weather = Storm,100
+Weather = Rain,100
 Bicycle = false
 Outdoor = true
 WildBattleBGM = _wild_dragon_battle_ost.wav
