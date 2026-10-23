@@ -21,8 +21,8 @@ SCREEN_WIDTH       = 512
 SCREEN_HEIGHT      = 384
 SCREEN_ZOOM        = 1.0
 BORDER_FULLY_SHOWS = false
-BORDER_WIDTH       = 78
-BORDER_HEIGHT      = 78
+BORDER_WIDTH       = 157 # 78
+BORDER_HEIGHT      = 140 # 78
 MAP_VIEW_MODE      = 1
 # To forbid the player from changing the screen size themselves, quote out or
 # delete the relevant bit of code in the PScreen_Options script section.
