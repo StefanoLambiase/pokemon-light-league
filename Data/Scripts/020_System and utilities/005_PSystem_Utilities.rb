@@ -1361,5 +1361,8 @@ def pbSelectStarter
   if choice >= 0 && choice < starters.length
     species = starters[choice][0]
     pbAddPokemon(species, 5)
+    return true
   end
+
+  return false
 end
