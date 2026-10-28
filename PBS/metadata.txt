@@ -495,7 +495,10 @@ ShowArea = true
 #-------------------------------
 [106]
 # Scogliera del nord
+BattleBack = grass
+Bicycle = true
 Outdoor = true
+ShowArea = true
 #-------------------------------
 [108]
 # Rajedi Town
