@@ -1870,3 +1870,44 @@ Type2 = STEEL
 BaseStats = 76,177,110,112,70,95
 Abilities = MOLDBREAKER
 HiddenAbility = MOLDBREAKER
+#-------------------------------
+[TAURO,1]
+FormName = Predatore
+Type1 = NORMAL
+Type2 = DARK
+BaseStats = 100,135,85,45,80,105
+Abilities = STRONGJAW
+HiddenAbility = STRONGJAW
+#-------------------------------
+[TAURO,2]
+FormName = Immondizia
+Type1 = NORMAL
+Type2 = POISON
+BaseStats = 115,100,110,70,105,50
+Abilities = POISONTOUCH
+HiddenAbility = POISONTOUCH
+#-------------------------------
+[TAURO,3]
+FormName = Ingegnere
+Type1 = NORMAL
+Type2 = STEEL
+BaseStats = 90,70,115,120,95,60
+Abilities = DOWNLOAD
+HiddenAbility = DOWNLOAD
+#-------------------------------
+[TAURO,4]
+FormName = Bosco Petalo
+Type1 = NORMAL
+Type2 = GRASS
+BaseStats = 100,120,95,60,90,85
+Abilities = RECKLESS,SAPSIPPER
+HiddenAbility = RECKLESS
+#-------------------------------
+[TAURO,5]
+FormName = Monte Corona
+Type1 = NORMAL
+Type2 = ROCK
+BaseStats = 105,135,125,40,75,70
+Abilities = ROCKHEAD
+HiddenAbility = ROCKHEAD
+#-------------------------------
