@@ -112,13 +112,13 @@
 104,SERGIO,Bevitore,180,_SergioBattleOst,,,Male,255,
 105,PROFTAIANI2,Competitivologo prof.,180,_BlueBattleOst,,,Male,255
 #----------- Champions---------------
-106,BLUE,Campione di Kanto,180,_BlueBattleOst,Battle victory leader,,Male,255,
-107,GIOVANNI,Leader del Team Rocket,180,_GiovanniBattleOst,Battle victory leader,,Male,255,
-108,LANCE,Campione di Johto,180,_LanceBattleOst,Battle victory leader,,Male,255,
-109,ADRIANO,Campione di Hoenn,180,_AdrianoBattleOst,Battle victory leader,,Male,255,
+106,BLUE,Campione di Kanto,180,_BlueBattleOst,Battle victory leader,_championEncounter,Male,255,
+107,GIOVANNI,Leader del Team Rocket,180,_GiovanniBattleOst,Battle victory leader,_championEncounter,Male,255,
+108,LANCE,Campione di Johto,180,_LanceBattleOst,Battle victory leader,_championEncounter,Male,255,
+109,ADRIANO,Campione di Hoenn,180,_AdrianoBattleOst,Battle victory leader,_championEncounter,Male,255,
 110,CAMILLA,Campionessa di Sinnoh,180,_CamillaBattleOst,Battle victory leader,,Female,255,
-111,NARDO,Campione in pensione,180,_NardoBattleOst,Battle victory leader,,Male,255,
-112,IRIS,Campionessa di Unima,180,_IrisBattleOst,Battle victory leader,,Female,255,
+111,NARDO,Campione in pensione,180,_NardoBattleOst,Battle victory leader,_championEncounter,Male,255,
+112,IRIS,Campionessa di Unima,180,_IrisBattleOst,Battle victory leader,_championEncounter,Female,255,
 113,PN,Campione di Krota,180,_PNBattleOst,Battle victory leader,,Male,255,
 #------------Lega della Luce---------
 114,SANDMAN,Superquattro,180,_SandmanElite4Ost,_VictoryLega,,Male,255,

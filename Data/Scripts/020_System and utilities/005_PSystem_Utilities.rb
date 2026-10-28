@@ -1332,21 +1332,21 @@ end
 
 def pbSelectStarter
   starters = [
-    [:BULBASAUR, "Bulbasaur"],
-    [:CHARMANDER, "Charmander"],
-    [:SQUIRTLE, "Squirtle"],
-    [:CHIKORITA, "Chikorita"],
-    [:CYNDAQUIL, "Cyndaquil"],
-    [:TOTODILE, "Totodile"],
-    [:TREECKO, "Treecko"],
-    [:TORCHIC, "Torchic"],
-    [:MUDKIP, "Mudkip"],
-    [:TURTWIG, "Turtwig"],
-    [:CHIMCHAR, "Chimchar"],
-    [:PIPLUP, "Piplup"],
-    [:SNIVY, "Snivy"],
-    [:TEPIG, "Tepig"],
-    [:OSHAWOTT, "Oshawott"]
+    [:VENUSAUR, "Venusaur"],
+    [:CHARIZARD, "Charizard"],
+    [:BLASTOISE, "Blastoise"],
+    [:MEGANIUM, "Meganium"],
+    [:TYPHLOSION, "Typhlosion"],
+    [:FERALIGATR, "Feraligatr"],
+    [:SCEPTILE, "Sceptile"],
+    [:BLAZIKEN, "Blaziken"],
+    [:SWAMPERT, "Swampert"],
+    [:TORTERRA, "Torterra"],
+    [:INFERNAPE, "Infernape"],
+    [:EMPOLEON, "Empoleon"],
+    [:SERPERIOR, "Serperior"],
+    [:EMBOAR, "Emboar"],
+    [:SAMUROTT, "Samurott"]
   ]
   
   commands = starters.map { |s| s[1] }
@@ -1360,7 +1360,7 @@ def pbSelectStarter
   
   if choice >= 0 && choice < starters.length
     species = starters[choice][0]
-    pbAddPokemon(species, 5)
+    pbAddPokemon(species, 45)
     return true
   end
 
