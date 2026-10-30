@@ -1284,12 +1284,12 @@ def pbChangeNatureWithStardust
 
   unless $PokemonBag.pbHasItem?(item)
     pbMessage("Ti serve una Polvostella!")
-    return
+    return false
   end
 
   pbChooseNonEggPokemon(1, 2)
   index = $game_variables[1]
-  return if index.nil? || index < 0
+  return false if index.nil? || index < 0
 
   pkmn = $Trainer.party[index]
 
@@ -1307,20 +1307,20 @@ def pbChangeNatureWithStardust
     -1
   )
 
-  return if choice.nil? || choice < 0
+  return false if choice.nil? || choice < 0
 
   if pkmn.nature == choice
     pbMessage("Questo Pokémon ha già questa natura!")
-    return
+    return false
   end
 
   unless pbConfirmMessage(
     _INTL("Consumare una Polvostella per cambiare natura?")
   )
-    return
+    return false
   end
 
-  return unless $PokemonBag.pbDeleteItem(item, 1)
+  return false unless $PokemonBag.pbDeleteItem(item, 1)
 
   pkmn.setNature(choice)
 
@@ -1328,6 +1328,8 @@ def pbChangeNatureWithStardust
     "{1} mediterà a lungo per diventare {2}!",
     pkmn.name, natures[choice]
   ))
+
+  return true
 end
 
 def pbSelectStarter

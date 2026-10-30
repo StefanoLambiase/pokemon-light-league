@@ -931,6 +931,14 @@ module QuestModule
     :QuestGiver => "Maresciallo Cuomo",
     :Stage1 => "Trova P.P.",
     :Location1 => "???",
+    :Stage2 => "Denuncia lo Spacciatore.",
+    :Location2 => "Ospedale",
+    :Stage3 => "Parla con Cuomo.",
+    :Location3 => "Ospedale",
+    :Stage4 => "Aggiorna Cuomo.",
+    :Location4 => "Pokégear",
+    :Stage5 => "Entra nel covo.",
+    :Location5 => "Gangur Town",
     :QuestDescription => "La malavita di Rain'Bow sta gestende un contrabbando di Pokémon. Trova il capo, P.P., ed informa Cuomo.",
     :RewardString => "nil"
   }

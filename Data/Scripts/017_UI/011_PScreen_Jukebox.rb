@@ -61,11 +61,11 @@ class PokemonJukeboxScreen
     cmdMarch   = -1
     cmdLullaby = -1
     cmdOak     = -1
-    cmdCustom  = -1
+    # cmdCustom  = -1
     commands[cmdMarch = commands.length]   = _INTL("March")
     commands[cmdLullaby = commands.length] = _INTL("Lullaby")
     commands[cmdOak = commands.length]     = _INTL("Oak")
-    commands[cmdCustom = commands.length]  = _INTL("Custom")
+    # commands[cmdCustom = commands.length]  = _INTL("Custom")
     commands[commands.length]              = _INTL("Exit")
     @scene.pbStartScene(commands)
     loop do
@@ -88,40 +88,40 @@ class PokemonJukeboxScreen
         pbBGMPlay("Radio - Oak", 100, 100)
         $PokemonMap.whiteFluteUsed = false if $PokemonMap
         $PokemonMap.blackFluteUsed = false if $PokemonMap
-      elsif cmdCustom>=0 && cmd==cmdCustom
-        pbPlayDecisionSE
-        files = [_INTL("(Default)")]
-        Dir.chdir("Audio/BGM/") {
-          Dir.glob("*.mp3") { |f| files.push(f) }
-          Dir.glob("*.MP3") { |f| files.push(f) }
-          Dir.glob("*.ogg") { |f| files.push(f) }
-          Dir.glob("*.OGG") { |f| files.push(f) }
-          Dir.glob("*.wav") { |f| files.push(f) }
-          Dir.glob("*.WAV") { |f| files.push(f) }
-          Dir.glob("*.mid") { |f| files.push(f) }
-          Dir.glob("*.MID") { |f| files.push(f) }
-          Dir.glob("*.midi") { |f| files.push(f) }
-          Dir.glob("*.MIDI") { |f| files.push(f) }
-        }
-        @scene.pbSetCommands(files,0)
-        loop do
-          cmd2 = @scene.pbScene
-          if cmd2<0
-            pbPlayCancelSE
-            break
-          elsif cmd2==0
-            pbPlayDecisionSE
-            $game_system.setDefaultBGM(nil)
-            $PokemonMap.whiteFluteUsed = false if $PokemonMap
-            $PokemonMap.blackFluteUsed = false if $PokemonMap
-          else
-            pbPlayDecisionSE
-            $game_system.setDefaultBGM(files[cmd2])
-            $PokemonMap.whiteFluteUsed = false if $PokemonMap
-            $PokemonMap.blackFluteUsed = false if $PokemonMap
-          end
-        end
-        @scene.pbSetCommands(nil,cmdCustom)
+      # elsif cmdCustom>=0 && cmd==cmdCustom
+      #   pbPlayDecisionSE
+      #   files = [_INTL("(Default)")]
+      #   Dir.chdir("Audio/BGM/") {
+      #     Dir.glob("*.mp3") { |f| files.push(f) }
+      #     Dir.glob("*.MP3") { |f| files.push(f) }
+      #     Dir.glob("*.ogg") { |f| files.push(f) }
+      #     Dir.glob("*.OGG") { |f| files.push(f) }
+      #     Dir.glob("*.wav") { |f| files.push(f) }
+      #     Dir.glob("*.WAV") { |f| files.push(f) }
+      #     Dir.glob("*.mid") { |f| files.push(f) }
+      #     Dir.glob("*.MID") { |f| files.push(f) }
+      #     Dir.glob("*.midi") { |f| files.push(f) }
+      #     Dir.glob("*.MIDI") { |f| files.push(f) }
+      #   }
+      #   @scene.pbSetCommands(files,0)
+      #   loop do
+      #     cmd2 = @scene.pbScene
+      #     if cmd2<0
+      #       pbPlayCancelSE
+      #       break
+      #     elsif cmd2==0
+      #       pbPlayDecisionSE
+      #       $game_system.setDefaultBGM(nil)
+      #       $PokemonMap.whiteFluteUsed = false if $PokemonMap
+      #       $PokemonMap.blackFluteUsed = false if $PokemonMap
+      #     else
+      #       pbPlayDecisionSE
+      #       $game_system.setDefaultBGM(files[cmd2])
+      #       $PokemonMap.whiteFluteUsed = false if $PokemonMap
+      #       $PokemonMap.blackFluteUsed = false if $PokemonMap
+      #     end
+      #   end
+      #   @scene.pbSetCommands(nil,cmdCustom)
       else   # Exit
         pbPlayCloseMenuSE
         break
