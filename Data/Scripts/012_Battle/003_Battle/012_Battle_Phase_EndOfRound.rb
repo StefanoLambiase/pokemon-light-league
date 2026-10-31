@@ -104,7 +104,7 @@ class PokeBattle_Battle
         pbDisplay(_INTL("{1} will not survive the end of the world!",b.pbThis))
         @scene.pbAnimation(getConst(PBMoves,:AQUARING),b,b)
         @scene.pbDamageAnimation(b)
-        b.pbReduceHP(b.totalhp/5,false)
+        b.pbReduceHP(b.totalhp/4,false)
         b.pbItemHPHealCheck
         b.pbFaint if b.fainted?
       when PBWeather::ShadowSky

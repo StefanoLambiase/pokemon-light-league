@@ -1703,7 +1703,7 @@ EffortPoints = 0,0,0,3,0,0
 Pokedex = Un Electrode corrotto dal potere delle tenebre e dell'oscurità. La sua capacità esplosiva è aumentata del 7%.
 #-------------------------------
 [GIRATINA,2]
-FormName = Dark forme
+FormName = Dark form
 Type1 = DARK
 Type2 = GHOST
 BaseStats = 130,130,90,110,130,90
@@ -1771,8 +1771,8 @@ Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESH
 Color = Blue
 BattlerPlayerX = 0
 BattlerPlayerY = 0
-BattlerEnemyX = 4
-BattlerEnemyY = -4
+BattlerEnemyX = -15
+BattlerEnemyY = 50
 Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
 #--------------------------------
 [KYOGRE,4]
@@ -1786,8 +1786,8 @@ Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESH
 Color = Blue
 BattlerPlayerX = 0
 BattlerPlayerY = 0
-BattlerEnemyX = 4
-BattlerEnemyY = -4
+BattlerEnemyX = -15
+BattlerEnemyY = 50
 Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
 #--------------------------------
 [KYOGRE,5]
@@ -1801,8 +1801,8 @@ Moves = 0,DAZZLINGGLEAM,1,DAZZLINGGLEAM,1,IMPRISON,1,NASTYPLOT,1,ICEBEAM,1,ICESH
 Color = Blue
 BattlerPlayerX = 0
 BattlerPlayerY = 0
-BattlerEnemyX = -5
-BattlerEnemyY = 15
+BattlerEnemyX = -15
+BattlerEnemyY = 50
 Pokedex = Un pokémon in grado di dominare la Terra con il potere della tempesta.
 #-------------------------------
 #-------------------------------

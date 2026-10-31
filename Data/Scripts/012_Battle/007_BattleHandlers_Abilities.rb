@@ -2480,9 +2480,9 @@ BattleHandlers::MoveImmunityTargetAbility.add(:SKYFALL,
         user.pbParalyze(target,msg)
       end
     else
-      battle.pbDisplay(_INTL("{1} si è sovraccaricato!",b.pbThis))
+      battle.pbDisplay(_INTL("{1} si è sovraccaricato!",user.pbThis))
       battle.pbAnimation(getConst(PBMoves,:CHARGE), target, user)
-      user.pbReduceHP(user.totalhp/4)
+      user.pbReduceHP(user.totalhp / 4)
       user.pbLowerStatStageByAbility(PBStats::SPEED,1,user,false)
       user.pbLowerStatStageByAbility(PBStats::SPDEF,1,user,false)
     end
