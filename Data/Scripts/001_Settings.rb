@@ -348,8 +348,8 @@ PLANT_SPARKLE_ANIMATION_ID   = 7
 #      languages to choose from.
 #===============================================================================
 LANGUAGES = [
-#  ["English", "english.dat"],
-#  ["Deutsch", "deutsch.dat"]
+  ["English", "language_english.dat"],
+  ["Italian", "language_italian.dat"]
 ]
 
 #===============================================================================

@@ -822,7 +822,7 @@ ShowArea = false
 [216]
 # Pergola Town
 SnapEdges = true
-BattleBack = city
+BattleBack = field
 Bicycle = true
 Outdoor = true
 BicycleAlways = false
@@ -830,7 +830,7 @@ ShowArea = true
 #-------------------------------
 [227]
 # Palestra Polistatistica di Bobbino
-SnapEdges = true
+SnapEdges = false
 BattleBack = elite3
 Bicycle = false
 Outdoor = false
