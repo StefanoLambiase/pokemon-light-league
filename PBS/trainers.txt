@@ -1608,8 +1608,8 @@ Pokemon = KYOGRE,60
     Ability = 0
     Shiny = no
     Nature = BRAVE
-    IV = 0,0,0,0,0,0
-    EV = 0,0,0,0,0,0
+    IV = 31,31,31,0,31,31
+    EV = 252,0,0,0,0,0
     Shadow = no
     Ball = 0
 [ANCESTRAL2,Alfonso]
@@ -1619,8 +1619,8 @@ Pokemon = KYOGRE,60
     Ability = 0
     Shiny = no
     Nature = BRAVE
-    IV = 0,0,0,0,0,0
-    EV = 0,0,0,0,0,0
+    IV = 31,31,31,0,31,31
+    EV = 252,0,0,0,0,0
     Shadow = no
     Ball = 0
 [ANCESTRAL3,Alfonso]
@@ -1630,8 +1630,8 @@ Pokemon = KYOGRE,60
     Ability = 0
     Shiny = no
     Nature = BRAVE
-    IV = 0,0,0,0,0,0
-    EV = 0,0,0,0,0,0
+    IV = 31,31,31,0,31,31
+    EV = 252,0,0,0,0,0
     Shadow = no
     Ball = 0
 [ANCESTRAL4,Alfonso]
@@ -1641,8 +1641,8 @@ Pokemon = KYOGRE,60
     Ability = 0
     Shiny = no
     Nature = BRAVE
-    IV = 0,0,0,0,0,0
-    EV = 0,0,0,0,0,0
+    IV = 31,31,31,0,31,31
+    EV = 252,0,0,0,0,0
     Shadow = no
     Ball = 0
 #------------ Friend Trainer -------------------
