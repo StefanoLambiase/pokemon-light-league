@@ -2286,3 +2286,260 @@ Pokemon = TAURO,68
     Ability = 0
     Nature = ADAMANT
     IV = 31
+#-------------------------------
+[BURGLAR,Criminale,0]
+Pokemon = MIGHTYENA,100
+    Moves = CRUNCH,ICEFANG,FIREFANG,THUNDERFANG
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = WEEZING,100
+    Moves = SLUDGEBOMB,FLAMETHROWER,SHADOWBALL,WILLOWISP
+    Ability = 0
+    Nature = MODEST
+    IV = 0
+    EV = 0
+#-------------------------------
+[BURGLAR,Criminale,1]
+Pokemon = LIEPARD,100
+    Moves = NIGHTSLASH,FAKEOUT,UTURN,PLAYROUGH
+    Ability = 0
+    Nature = JOLLY
+    IV = 0
+    EV = 0
+Pokemon = ABSOL,100
+    Moves = NIGHTSLASH,PSYCHOCUT,QUICKATTACK,SCARYFACE
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+#-------------------------------
+[BURGLAR,Criminale,2]
+Pokemon = CRAWDAUNT,100
+    Moves = CRABHAMMER,CRUNCH,XSCISSOR,KNOCKOFF
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = SEVIPER,100
+    Moves = POISONJAB,CRUNCH,FLAMETHROWER,GLARE
+    Ability = 0
+    Nature = NAUGHTY
+    IV = 0
+    EV = 0
+#-------------------------------
+[BURGLAR,Criminale,3]
+Pokemon = CACTURNE,100
+    Moves = SEEDBOMB,FEINTATTACK,DRAINPUNCH,SPIKES
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = SWALOT,100
+    Moves = SLUDGEBOMB,ICEBEAM,GIGADRAIN,YAWN
+    Ability = 1
+    Nature = MODEST
+    IV = 0
+    EV = 0
+#-------------------------------
+[BURGLAR,Criminale,4]
+Pokemon = MURKROW,100
+    Moves = DRILLPECK,FEINTATTACK,NIGHTSHADE,HAZE
+    Ability = 1
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = PURUGLY,100
+    Moves = FAKEOUT,BODYSLAM,SHADOWCLAW,UTURN
+    Ability = 0
+    Nature = JOLLY
+    IV = 0
+    EV = 0
+#-------------------------------
+[RECLUTAELITE,Guardia,0]
+Pokemon = HONCHKROW,100
+    Item = SCOPELENS
+    Moves = BRAVEBIRD,NIGHTSLASH,SUCKERPUNCH,HEATWAVE
+    Ability = 1
+    Nature = ADAMANT
+    IV = 10
+    EV = 0
+Pokemon = DRAPION,100
+    Item = BLACKSLUDGE
+    Moves = CRUNCH,POISONJAB,EARTHQUAKE,ICEFANG
+    Ability = 1
+    Nature = ADAMANT
+    IV = 10
+    EV = 0
+#-------------------------------
+[RECLUTAELITE,Guardia,1]
+Pokemon = HOUNDOOM,100
+    Item = LIFEORB
+    Moves = FLAMETHROWER,DARKPULSE,SLUDGEBOMB,SNARL
+    Ability = 1
+    Nature = TIMID
+    IV = 10
+    EV = 0
+Pokemon = TOXICROAK,100
+    Item = SITRUSBERRY
+    Moves = DRAINPUNCH,POISONJAB,SUCKERPUNCH,FAKEOUT
+    Ability = 1
+    Nature = ADAMANT
+    IV = 10
+    EV = 0
+#-------------------------------
+[RECLUTAELITE,Guardia,2]
+Pokemon = KROOKODILE,100
+    Item = EXPERTBELT
+    Moves = EARTHQUAKE,CRUNCH,STONEEDGE,DRAGONCLAW
+    Ability = 0
+    Nature = JOLLY
+    IV = 10
+    EV = 0
+Pokemon = WEAVILE,100
+    Item = FOCUSSASH
+    Moves = ICESHARD,NIGHTSLASH,ICEPUNCH,FAKEOUT
+    Ability = 0
+    Nature = JOLLY
+    IV = 10
+    EV = 0
+#-------------------------------
+[RECLUTAELITE,Guardia,3]
+Pokemon = BISHARP,100
+    Moves = IRONHEAD,NIGHTSLASH,SUCKERPUNCH,XSCISSOR
+    Ability = 0
+    Nature = ADAMANT
+    IV = 10
+    EV = 0
+Pokemon = MISMAGIUS,100
+    Item = LEFTOVERS
+    Moves = SHADOWBALL,DAZZLINGGLEAM,THUNDERBOLT,WILLOWISP
+    Ability = 0
+    Nature = TIMID
+    IV = 10
+    EV = 0
+#-------------------------------
+[RECLUTAELITE,Guardia,4]
+Pokemon = CROBAT,100
+    Item = SITRUSBERRY
+    Moves = CROSSPOISON,BRAVEBIRD,UTURN,CRUNCH
+    Ability = 0
+    Nature = JOLLY
+    IV = 10
+    EV = 0
+Pokemon = SKUNTANK,100
+    Item = BLACKSLUDGE
+    Moves = CRUNCH,POISONJAB,SUCKERPUNCH,FLAMETHROWER
+    Ability = 1
+    Nature = ADAMANT
+    IV = 10
+    EV = 0
+#-------------------------------
+[PP,P.P.,0]
+Pokemon = PORYGON2,100
+    Moves = TRIATTACK,ICEBEAM,THUNDERBOLT,RECOVER
+    Ability = 0
+    Nature = MODEST
+    IV = 0
+    EV = 0
+Pokemon = POLITOED,100
+    Moves = SURF,ICEBEAM,PSYCHIC,BODYSLAM
+    Ability = 0
+    Nature = MODEST
+    IV = 0
+    EV = 0
+Pokemon = STEELIX,100
+    Moves = IRONHEAD,EARTHQUAKE,STONEEDGE,CRUNCH
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = GENGAR,100
+    Item = LIFEORB
+    Moves = SHADOWBALL,SLUDGEBOMB,THUNDERBOLT,FOCUSBLAST
+    Ability = 0
+    Nature = TIMID
+    IV = 0
+    EV = 0
+#-------------------------------
+[PP,P.P.,1]
+Pokemon = SLOWKING,100
+    Moves = SURF,PSYCHIC,FLAMETHROWER,ICEBEAM
+    Ability = 0
+    Nature = CALM
+    IV = 0
+    EV = 0
+Pokemon = MAGMORTAR,100
+    Moves = FLAMETHROWER,THUNDERBOLT,FOCUSBLAST,PSYCHIC
+    Ability = 0
+    Nature = MODEST
+    IV = 0
+    EV = 0
+Pokemon = GOLEM,100
+    Moves = EARTHQUAKE,ROCKSLIDE,FIREPUNCH,SUCKERPUNCH
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = MILOTIC,100
+    Item = LEFTOVERS
+    Moves = SCALD,ICEBEAM,DRAGONPULSE,ICYWIND
+    Ability = 1
+    Nature = CALM
+    IV = 0
+    EV = 0
+#-------------------------------
+[PP,P.P.,2]
+Pokemon = RHYPERIOR,100
+    Moves = EARTHQUAKE,ROCKSLIDE,MEGAHORN,ICEPUNCH
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = SCIZOR,100
+    Moves = BULLETPUNCH,XSCISSOR,KNOCKOFF,AERIALACE
+    Ability = 1
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = DUSKNOIR,100
+    Moves = SHADOWSNEAK,ICEPUNCH,FIREPUNCH,EARTHQUAKE
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = KINGDRA,100
+    Item = SCOPELENS
+    Moves = SURF,DRAGONPULSE,ICEBEAM,HYDROPUMP
+    Ability = 1
+    Nature = MODEST
+    IV = 0
+    EV = 0
+#-------------------------------
+[PP,P.P.,3]
+Pokemon = ACCELGOR,100
+    Moves = BUGBUZZ,FOCUSBLAST,ENERGYBALL,SLUDGEBOMB
+    Ability = 0
+    Nature = TIMID
+    IV = 0
+    EV = 0
+Pokemon = GOREBYSS,100
+    Moves = SURF,PSYCHIC,ICEBEAM,DRAININGKISS
+    Ability = 0
+    Nature = MODEST
+    IV = 0
+    EV = 0
+Pokemon = CONKELDURR,100
+    Moves = DRAINPUNCH,MACHPUNCH,STONEEDGE,ICEPUNCH
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
+Pokemon = ELECTIVIRE,100
+    Item = EXPERTBELT
+    Moves = THUNDERPUNCH,CROSSCHOP,ICEPUNCH,FIREPUNCH
+    Ability = 0
+    Nature = ADAMANT
+    IV = 0
+    EV = 0
