@@ -1368,3 +1368,49 @@ def pbSelectStarter
 
   return false
 end
+
+# ===========================
+# Covo Criminale (P.P.)
+# ===========================
+# Criminale: versioni 0-4
+def pbRandomCriminal
+  setBattleRule("canLose")
+  return pbTrainerBattle(
+    :BURGLAR, "Criminale", "", false, rand(5)
+  )
+end
+
+# P.P.: versioni 0-3
+def pbRandomPP
+  setBattleRule("canLose")
+  return pbTrainerBattle(
+    :PP, "P.P.", "", false, rand(4)
+  )
+end
+
+def pbRandomGuardie
+  return false unless pbCanDoubleBattle?
+
+  id = rand(5)
+  dati = pbLoadTrainer(:RECLUTAELITE, "Guardia", id)
+  return false if !dati || dati[2].length < 2
+
+  # Due allenatori, ciascuno con un Pokémon
+  recluta1 = pbLoadTrainer(:RECLUTAELITE, "Guardia", id)
+  recluta2 = pbLoadTrainer(:RECLUTAELITE, "Guardia", id)
+
+  squadra1 = [recluta1[2][0]]
+  squadra2 = [recluta2[2][1]]
+
+  recluta1[0].party = squadra1
+  recluta2[0].party = squadra2
+
+  setBattleRule("double")
+  setBattleRule("canLose")
+  risultato = pbTrainerBattleCore(
+    [recluta1[0], squadra1, "", recluta1[1]],
+    [recluta2[0], squadra2, "", recluta2[1]]
+  )
+
+  return risultato == 1
+end
